@@ -88,7 +88,7 @@ fun LibraryScreen(
         )
 
         Spacer(Modifier.height(40.dp))
-        Eyebrow("FEIYAN ENGLISH · 2026", color = InkFaint)
+        Eyebrow("ENGLISH TIME · 2026", color = InkFaint)
         Spacer(Modifier.height(28.dp + LocalBottomOverlayPadding.current))
     }
 }

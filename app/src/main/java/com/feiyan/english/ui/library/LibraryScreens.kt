@@ -169,7 +169,7 @@ fun DisclaimerScreen(
 
             Spacer(Modifier.height(12.dp))
             Text(
-                text = "FEIYAN ENGLISH",
+                text = "ENGLISH TIME",
                 style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 1.2.sp),
                 color = InkFaint,
             )
@@ -189,7 +189,7 @@ fun AboutAppScreen(
     LibraryListScaffold(
         eyebrow = "ABOUT · 关于",
         title = "关于",
-        subtitle = "飞岩英语 · 播客 / 小说 / 外刊",
+        subtitle = "英语时光 · 播客 / 小说 / 外刊",
         action = null,
         onBack = onBack,
         modifier = modifier,

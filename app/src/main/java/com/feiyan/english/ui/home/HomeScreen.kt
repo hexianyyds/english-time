@@ -232,12 +232,12 @@ private fun BrandHeader(onSearchClick: () -> Unit) {
         verticalAlignment = Alignment.CenterVertically,
     ) {
         Text(
-            text = "飞岩",
+            text = "英语时光",
             style = MaterialTheme.typography.titleMedium.copy(fontSize = 18.sp, letterSpacing = 3.sp),
             color = Ink,
         )
         Spacer(Modifier.width(10.dp))
-        Eyebrow("FEIYAN")
+        Eyebrow("ENGLISH TIME")
         Spacer(Modifier.weight(1f))
         Box(
             Modifier

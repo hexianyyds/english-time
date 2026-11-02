@@ -76,13 +76,13 @@ jobs:
       - name: Collect APK
         run: |
           mkdir -p out
-          find app/build/outputs/apk/release -name '*.apk' -exec cp {} out/feiyan-english-${{ steps.version.outputs.name }}.apk \;
+          find app/build/outputs/apk/release -name '*.apk' -exec cp {} out/english-time-${{ steps.version.outputs.name }}.apk \;
           ls -lh out
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: feiyan-english-${{ steps.version.outputs.name }}
+          name: english-time-${{ steps.version.outputs.name }}
           path: out/*.apk
           if-no-files-found: error
 

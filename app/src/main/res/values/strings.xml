@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">飞岩英语</string>
-    <string name="app_name_en">Feiyan English</string>
+    <string name="app_name">英语时光</string>
+    <string name="app_name_en">English Time</string>
     <string name="playback_channel_name">正在播放</string>
 </resources>

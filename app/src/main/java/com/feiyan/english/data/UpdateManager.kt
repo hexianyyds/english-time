@@ -65,7 +65,7 @@ object UpdateManager {
         val request = Request.Builder()
             .url("https://api.github.com/repos/$repo/releases/latest")
             .header("Accept", "application/vnd.github+json")
-            .header("User-Agent", "FeiyanEnglish/${BuildConfig.VERSION_NAME}")
+            .header("User-Agent", "EnglishTime/${BuildConfig.VERSION_NAME}")
             .get()
             .build()
         client.newCall(request).execute().use { response ->
@@ -109,10 +109,10 @@ object UpdateManager {
     ): File = withContext(Dispatchers.IO) {
         val request = Request.Builder()
             .url(info.apkUrl)
-            .header("User-Agent", "FeiyanEnglish/${BuildConfig.VERSION_NAME}")
+            .header("User-Agent", "EnglishTime/${BuildConfig.VERSION_NAME}")
             .get()
             .build()
-        val target = File(context.cacheDir, "feiyan-${info.version}.apk")
+        val target = File(context.cacheDir, "english-time-${info.version}.apk")
         client.newCall(request).execute().use { response ->
             if (!response.isSuccessful) throw IllegalStateException("下载失败：HTTP ${response.code}")
             val body = response.body
