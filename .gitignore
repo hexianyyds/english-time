@@ -1,10 +1,7 @@
 *.iml
 .gradle/
 /local.properties
-/keystore.properties
-*.jks
 *.keystore
-.idea/
 .DS_Store
 /build
 /captures
@@ -15,3 +12,5 @@ app/build/
 _temp/
 .playwright-mcp/
 *.log
+*.jks
+!signing/feiyan-release.jks
