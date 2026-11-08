@@ -141,7 +141,7 @@ private fun EgChip(label: String, selected: Boolean, onClick: () -> Unit) {
         color = if (selected) Kaki else InkMuted,
         maxLines = 1,
         modifier = Modifier
-            .clip(RoundedCornerShape(2.dp))
+            .clip(RoundedCornerShape(20.dp))
             .background(if (selected) KakiSoft else Color.Transparent)
             .clickable(onClick = onClick)
             .padding(horizontal = 12.dp, vertical = 8.dp),

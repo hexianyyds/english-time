@@ -122,8 +122,8 @@ private fun YyBooksContent(onBookClick: (String) -> Unit, modifier: Modifier = M
 
 @Composable
 private fun BookCard(book: YyBook, onClick: () -> Unit) {
-    Column(Modifier.width(108.dp).clickable(onClick = onClick)) {
-        BookCover(id = book.id, width = 108.dp, height = 146.dp)
+    Column(Modifier.width(124.dp).clickable(onClick = onClick)) {
+        BookCover(id = book.id, width = 124.dp, height = 168.dp)
         Spacer(Modifier.height(9.dp))
         Text(
             text = book.cnName,

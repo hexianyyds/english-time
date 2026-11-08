@@ -121,7 +121,7 @@ private fun Header(book: ByBook, chapterCount: Int) {
             Box(
                 Modifier
                     .size(96.dp, 130.dp)
-                    .clip(RoundedCornerShape(4.dp))
+                    .clip(RoundedCornerShape(10.dp))
                     .background(KakiSoft),
             ) {
                 if (!book.logoUrl.isNullOrBlank()) {

@@ -21,7 +21,7 @@ fun BookCover(
     width: Dp,
     height: Dp,
     modifier: Modifier = Modifier,
-    corner: Dp = 3.dp,
+    corner: Dp = 10.dp,
 ) {
     Box(
         modifier

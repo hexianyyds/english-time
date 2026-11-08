@@ -101,7 +101,7 @@ fun ByReaderScreen(
                         style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 1.sp),
                         color = Kaki,
                         modifier = Modifier
-                            .clip(RoundedCornerShape(2.dp))
+                            .clip(RoundedCornerShape(20.dp))
                             .background(KakiSoft)
                             .clickable { viewModel.speak(chapter) }
                             .padding(horizontal = 12.dp, vertical = 7.dp),
@@ -126,9 +126,9 @@ fun ByReaderScreen(
                     .align(Alignment.BottomCenter)
                     .fillMaxWidth()
                     .padding(horizontal = 24.dp, vertical = 36.dp)
-                    .clip(RoundedCornerShape(3.dp))
+                    .clip(RoundedCornerShape(10.dp))
                     .background(PaperCard)
-                    .border(0.8.dp, HairlineColor, RoundedCornerShape(3.dp))
+                    .border(0.8.dp, HairlineColor, RoundedCornerShape(10.dp))
                     .clickable { tip = null }
                     .padding(16.dp),
             ) {
@@ -167,9 +167,9 @@ fun ByReaderScreen(
                     .align(Alignment.BottomCenter)
                     .fillMaxWidth()
                     .padding(horizontal = 24.dp, vertical = 24.dp)
-                    .clip(RoundedCornerShape(3.dp))
+                    .clip(RoundedCornerShape(10.dp))
                     .background(PaperCard)
-                    .border(0.8.dp, HairlineColor, RoundedCornerShape(3.dp))
+                    .border(0.8.dp, HairlineColor, RoundedCornerShape(10.dp))
                     .padding(14.dp),
             ) {
                 Text(
@@ -244,7 +244,7 @@ private fun Paragraph(paragraph: ByParagraph, onWordTap: (ByWord) -> Unit) {
             Modifier
                 .fillMaxWidth()
                 .padding(top = 16.dp)
-                .clip(RoundedCornerShape(3.dp))
+                .clip(RoundedCornerShape(10.dp))
                 .background(KakiSoft.copy(alpha = 0.35f)),
         ) {
             AsyncImage(

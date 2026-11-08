@@ -98,7 +98,7 @@ fun XyPodcastScreen(
 private fun PodcastHeader(podcast: XyPodcast) {
     Column(Modifier.padding(horizontal = 24.dp).padding(top = 12.dp)) {
         Row(verticalAlignment = Alignment.Top) {
-            Cover(podcast.image?.best, size = 100.dp, corner = 4.dp)
+            Cover(podcast.image?.best, size = 100.dp, corner = 10.dp)
             Spacer(Modifier.width(18.dp))
             Column(Modifier.weight(1f)) {
                 Text(

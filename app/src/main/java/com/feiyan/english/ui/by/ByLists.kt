@@ -88,7 +88,7 @@ private fun BookRow(book: ByBook, onClick: () -> Unit) {
         Box(
             Modifier
                 .size(58.dp, 78.dp)
-                .clip(RoundedCornerShape(3.dp))
+                .clip(RoundedCornerShape(10.dp))
                 .background(KakiSoft),
         ) {
             if (!book.logoUrl.isNullOrBlank()) {

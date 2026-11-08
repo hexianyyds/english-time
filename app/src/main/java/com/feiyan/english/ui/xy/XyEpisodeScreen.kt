@@ -120,7 +120,7 @@ private fun Content(
                 Modifier.fillMaxWidth().padding(horizontal = 24.dp).padding(top = 12.dp),
                 verticalAlignment = Alignment.Top,
             ) {
-                Cover(episode.image?.best, size = 84.dp, corner = 4.dp)
+                Cover(episode.image?.best, size = 84.dp, corner = 10.dp)
                 Spacer(Modifier.width(16.dp))
                 Column(Modifier.weight(1f)) {
                     Text(

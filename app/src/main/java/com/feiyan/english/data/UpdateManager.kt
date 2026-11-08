@@ -49,7 +49,7 @@ object UpdateManager {
 
     val configured: Boolean get() = repo.isNotBlank()
 
-    val currentVersion: String get() = BuildConfig.VERSION_NAME
+    val currentVersion: String get() = BuildConfig.VERSION_NAME.substringBefore("-")
 
     fun autoUpdateEnabled(context: Context): Boolean =
         context.getSharedPreferences(PREFS, Context.MODE_PRIVATE).getBoolean(KEY_AUTO, false)

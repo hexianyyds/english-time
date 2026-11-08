@@ -5,6 +5,7 @@ import coil3.ImageLoader
 import coil3.PlatformContext
 import coil3.SingletonImageLoader
 import coil3.request.crossfade
+import com.feiyan.english.data.BdProgressStore
 import com.feiyan.english.data.LibraryStore
 import com.feiyan.english.data.TokenStore
 import com.feiyan.english.player.PlayerController
@@ -15,6 +16,7 @@ class FeiyanApplication : Application(), SingletonImageLoader.Factory {
         super.onCreate()
         TokenStore.init(this)
         LibraryStore.init(this)
+        BdProgressStore.init(this)
         PlayerController.connect(this)
     }
 

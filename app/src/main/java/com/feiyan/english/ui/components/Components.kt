@@ -124,7 +124,7 @@ fun CoverOrMonogram(
 fun Eyebrow(text: String, modifier: Modifier = Modifier, color: Color = InkFaint) {
     Text(
         text = text,
-        style = MaterialTheme.typography.labelSmall,
+        style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 1.8.sp),
         color = color,
         maxLines = 1,
     )
@@ -144,7 +144,7 @@ fun SectionHeader(
     ) {
         Text(
             text = title,
-            style = MaterialTheme.typography.bodyMedium.copy(letterSpacing = 1.4.sp),
+            style = MaterialTheme.typography.titleMedium.copy(letterSpacing = 1.sp),
             color = Ink,
         )
         Spacer(Modifier.width(8.dp))
@@ -184,7 +184,7 @@ fun PlayPauseButton(
         Icon(
             imageVector = if (playing) FeiyanIcons.Pause else FeiyanIcons.Play,
             contentDescription = if (playing) "暂停" else "播放",
-            tint = if (filled) Color.White else Ink,
+            tint = if (filled) MaterialTheme.colorScheme.onPrimary else Ink,
             modifier = Modifier.size(size * 0.42f),
         )
     }
@@ -199,7 +199,7 @@ fun ChannelCard(
     Column(
         modifier = modifier.width(132.dp).clickable(onClick = onClick),
     ) {
-        Cover(channel.cover, size = 132.dp, corner = 4.dp)
+        Cover(channel.cover, size = 132.dp, corner = 10.dp)
         Spacer(Modifier.height(10.dp))
         Text(
             text = channel.englishName.orEmpty(),
@@ -233,7 +233,7 @@ fun ProgrammeRow(
             .padding(horizontal = 24.dp, vertical = 14.dp),
         verticalAlignment = Alignment.CenterVertically,
     ) {
-        Cover(channel.cover, size = 46.dp, corner = 4.dp)
+        Cover(channel.cover, size = 46.dp, corner = 10.dp)
         Spacer(Modifier.width(14.dp))
         Column(Modifier.weight(1f)) {
             Text(
@@ -285,15 +285,16 @@ fun NowPlayingCard(
         modifier = modifier
             .fillMaxWidth()
             .padding(horizontal = 24.dp, vertical = 6.dp)
-            .clip(RoundedCornerShape(2.dp))
+            .clip(RoundedCornerShape(16.dp))
             .background(PaperCard)
-            .padding(16.dp)
-            .clickable(onClick = onClick),
+            .border(1.dp, Hairline, RoundedCornerShape(16.dp))
+            .clickable(onClick = onClick)
+            .padding(16.dp),
     ) {
         Eyebrow("NOW PLAYING · 正在播放", color = InkFaint)
         Spacer(Modifier.height(12.dp))
         Row(verticalAlignment = Alignment.CenterVertically) {
-            CoverOrMonogram(state.cover, state.title, size = 56.dp, corner = 3.dp)
+            CoverOrMonogram(state.cover, state.title, size = 56.dp, corner = 10.dp)
             Spacer(Modifier.width(14.dp))
             Column(Modifier.weight(1f)) {
                 Text(
@@ -361,21 +362,25 @@ fun MiniPlayer(
     if (!state.hasMedia) return
     val duration = if (state.durationMs > 0) state.durationMs else 0L
     val fraction = if (duration > 0) (state.positionMs.toFloat() / duration).coerceIn(0f, 1f) else 0f
+    val cardShape = RoundedCornerShape(16.dp)
 
     Column(
         modifier
             .fillMaxWidth()
-            .background(Paper),
+            .padding(horizontal = 14.dp)
+            .clip(cardShape)
+            .background(PaperCard)
+            .border(1.dp, Hairline, cardShape),
     ) {
-        ProgressLine(fraction, height = 1.dp)
+        ProgressLine(fraction, height = 2.dp)
         Row(
             Modifier
                 .fillMaxWidth()
                 .clickable(onClick = onClick)
-                .padding(start = 16.dp, end = 8.dp, top = 8.dp, bottom = 8.dp),
+                .padding(start = 12.dp, end = 6.dp, top = 7.dp, bottom = 7.dp),
             verticalAlignment = Alignment.CenterVertically,
         ) {
-            CoverOrMonogram(state.cover, state.title, size = 40.dp, corner = 3.dp)
+            CoverOrMonogram(state.cover, state.title, size = 40.dp, corner = 10.dp)
             Spacer(Modifier.width(12.dp))
             Column(Modifier.weight(1f)) {
                 Text(
@@ -443,11 +448,16 @@ fun FavoriteButton(item: LibraryItem, modifier: Modifier = Modifier) {
  */
 val LocalBottomOverlayPadding = staticCompositionLocalOf { 0.dp }
 
-/** Haze 2.x 的毛玻璃样式：模糊 + 纸色薄染 + 极轻噪点。 */
-private val glassStyle = HazeBlurStyle {
-    blurRadius(28.dp)
-    colorEffects(listOf(HazeColorEffect.tint(Paper.copy(alpha = 0.58f))))
-    noiseFactor(0.03f)
+/** Haze 2.x 的毛玻璃样式：模糊 + 表面色薄染 + 极轻噪点（颜色跟随主题）。 */
+@Composable
+private fun rememberGlassStyle(): HazeBlurStyle {
+    // 在组合期读取主题色，再交给非组合 lambda 捕获，日夜两用
+    val tint = Paper.copy(alpha = 0.58f)
+    return HazeBlurStyle {
+        blurRadius(28.dp)
+        colorEffects(listOf(HazeColorEffect.tint(tint)))
+        noiseFactor(0.03f)
+    }
 }
 
 /**
@@ -460,26 +470,34 @@ fun FeiyanBottomBar(
     hazeState: HazeState,
     modifier: Modifier = Modifier,
 ) {
-    val shape = RoundedCornerShape(29.dp)
+    val shape = RoundedCornerShape(22.dp)
     Row(
         modifier
             .fillMaxWidth()
-            .padding(horizontal = 26.dp, vertical = 8.dp)
-            .height(58.dp)
+            .padding(horizontal = 18.dp, vertical = 8.dp)
+            .height(64.dp)
             .clip(shape)
             .hazeBlur(
                 input = HazeInput.Backdrop(hazeState),
-                style = glassStyle,
+                style = rememberGlassStyle(),
             )
-            .border(0.8.dp, Hairline.copy(alpha = 0.75f), shape)
+            .border(1.dp, Hairline.copy(alpha = 0.75f), shape)
             .padding(horizontal = 4.dp),
         horizontalArrangement = Arrangement.SpaceEvenly,
         verticalAlignment = Alignment.CenterVertically,
     ) {
-        BottomTab("播客", FeiyanIcons.Mic, currentRoute == "home") { onSelect("home") }
-        BottomTab("小说", FeiyanIcons.BookOpen, currentRoute == "novels") { onSelect("novels") }
-        BottomTab("文章", FeiyanIcons.Article, currentRoute == "articles") { onSelect("articles") }
-        BottomTab("我的", FeiyanIcons.Person, currentRoute == "library") { onSelect("library") }
+        BottomTab(
+            label = "学习",
+            icon = FeiyanIcons.BookOpen,
+            selected = currentRoute == "study",
+            modifier = Modifier.weight(1f),
+        ) { onSelect("study") }
+        BottomTab(
+            label = "我的",
+            icon = FeiyanIcons.Person,
+            selected = currentRoute == "library",
+            modifier = Modifier.weight(1f),
+        ) { onSelect("library") }
     }
 }
 
@@ -488,20 +506,21 @@ private fun BottomTab(
     label: String,
     icon: ImageVector,
     selected: Boolean,
+    modifier: Modifier = Modifier,
     onClick: () -> Unit,
 ) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
-        modifier = Modifier
-            .width(64.dp)
-            .clip(RoundedCornerShape(24.dp))
+        modifier = modifier
+            .height(56.dp)
+            .clip(RoundedCornerShape(20.dp))
             .clickable(onClick = onClick)
             .padding(vertical = 6.dp),
     ) {
         Icon(
             imageVector = icon,
             contentDescription = label,
-            tint = if (selected) Ink else InkFaint,
+            tint = if (selected) Kaki else InkFaint,
             modifier = Modifier.size(20.dp),
         )
         Spacer(Modifier.height(4.dp))
@@ -562,7 +581,7 @@ fun ErrorView(message: String, modifier: Modifier = Modifier, onRetry: () -> Uni
             ),
             color = Kaki,
             modifier = Modifier
-                .clip(RoundedCornerShape(2.dp))
+                .clip(RoundedCornerShape(20.dp))
                 .clickable(onClick = onRetry)
                 .padding(horizontal = 16.dp, vertical = 10.dp),
         )
@@ -576,7 +595,7 @@ fun TagBadge(text: String, modifier: Modifier = Modifier) {
         style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.6.sp),
         color = Kaki,
         modifier = modifier
-            .clip(RoundedCornerShape(2.dp))
+            .clip(RoundedCornerShape(20.dp))
             .background(KakiSoft)
             .padding(horizontal = 5.dp, vertical = 2.dp),
     )

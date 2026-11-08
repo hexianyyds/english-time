@@ -16,6 +16,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.MeshGradientPainter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextOverflow
@@ -41,13 +42,16 @@ fun EmCover(
     modifier: Modifier = Modifier,
 ) {
     val large = size >= 100.dp
-    // Compose 1.12 的 MeshGradientPainter：纸质渐变，比纯色块更有层次
-    val mesh = remember(category) { paperMeshPainter() }
+    // Compose 1.12 的 MeshGradientPainter：主题色渐变，比纯色块更有层次
+    val deep = PaperDeep
+    val base = Paper
+    val accent = KakiSoft
+    val mesh = remember(category, deep, base, accent) { buildMeshPainter(deep, base, accent) }
     Box(
         modifier
             .size(size)
-            .clip(RoundedCornerShape(3.dp))
-            .border(0.8.dp, Hairline, RoundedCornerShape(3.dp)),
+            .clip(RoundedCornerShape(10.dp))
+            .border(0.8.dp, Hairline, RoundedCornerShape(10.dp)),
     ) {
         Image(
             painter = mesh,
@@ -81,12 +85,13 @@ fun EmCover(
 }
 
 /**
- * 纸色网格渐变：PaperDeep → Paper → KakiSoft 的极弱过渡。
+ * 主题色网格渐变：PaperDeep → Paper → KakiSoft 的极弱过渡。
+ * 颜色由组合期传入，日夜主题自动适配。
  */
-private fun paperMeshPainter(): MeshGradientPainter =
+private fun buildMeshPainter(deep: Color, base: Color, accent: Color): MeshGradientPainter =
     MeshGradientPainter(rows = 2, columns = 2) {
-        setVertex(0, 0, Offset(0f, 0f), PaperDeep)
-        setVertex(0, 1, Offset(1f, 0f), Paper)
-        setVertex(1, 0, Offset(0f, 1f), Paper)
-        setVertex(1, 1, Offset(1f, 1f), KakiSoft)
+        setVertex(0, 0, Offset(0f, 0f), deep)
+        setVertex(0, 1, Offset(1f, 0f), base)
+        setVertex(1, 0, Offset(0f, 1f), base)
+        setVertex(1, 1, Offset(1f, 1f), accent)
     }

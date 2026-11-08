@@ -1,0 +1,2631 @@
+{
+  "Good morning, how are you today?": {
+    "t": "早上好，你今天怎么样？",
+    "w": [
+      [
+        "good morning",
+        "",
+        "早上好（上午问候语）"
+      ],
+      [
+        "today",
+        "/təˈdeɪ/",
+        "adv. 今天"
+      ]
+    ],
+    "g": "How are you? 是常用问候，常答 Fine, thanks. And you?"
+  },
+  "Could you speak a little more slowly, please?": {
+    "t": "请你说得稍微慢一点，好吗？",
+    "w": [
+      [
+        "a little",
+        "",
+        "稍微，一点儿"
+      ],
+      [
+        "slowly",
+        "/ˈsləʊli/",
+        "adv. 慢慢地"
+      ],
+      [
+        "Could you ...?",
+        "",
+        "你能……吗？（礼貌请求）"
+      ]
+    ],
+    "g": "more slowly 是副词比较级，修饰动词 speak。"
+  },
+  "I would like a cup of tea with a little milk.": {
+    "t": "我想要一杯加少许牛奶的茶。",
+    "w": [
+      [
+        "would like",
+        "",
+        "想要（比 want 更礼貌）"
+      ],
+      [
+        "a cup of",
+        "",
+        "一杯"
+      ],
+      [
+        "a little",
+        "",
+        "少许（修饰不可数名词）"
+      ]
+    ],
+    "g": "a little 修饰不可数名词，a few 修饰可数名词。"
+  },
+  "What time does the next train leave?": {
+    "t": "下一班火车几点开？",
+    "w": [
+      [
+        "what time",
+        "",
+        "几点"
+      ],
+      [
+        "leave",
+        "/liːv/",
+        "v. 离开，出发"
+      ]
+    ],
+    "g": "时刻表上的安排用一般现在时表示将来。"
+  },
+  "Please turn off the lights when you leave the room.": {
+    "t": "离开房间时请关灯。",
+    "w": [
+      [
+        "turn off",
+        "",
+        "关掉（电器、灯等）"
+      ],
+      [
+        "light",
+        "/laɪt/",
+        "n. 灯"
+      ]
+    ],
+    "g": "turn off 反义为 turn on；代词须放中间：turn them off。"
+  },
+  "It looks like it is going to rain this afternoon.": {
+    "t": "看起来今天下午要下雨了。",
+    "w": [
+      [
+        "look like",
+        "",
+        "看起来像，似乎"
+      ],
+      [
+        "be going to",
+        "",
+        "将要（有迹象表明）"
+      ]
+    ],
+    "g": "be going to 表示根据眼前迹象判断将发生的事。"
+  },
+  "Thank you so much for your help yesterday.": {
+    "t": "非常感谢你昨天的帮助。",
+    "w": [
+      [
+        "thank you for",
+        "",
+        "因……感谢你"
+      ],
+      [
+        "so much",
+        "",
+        "非常"
+      ]
+    ],
+    "g": "thank sb for sth/doing sth，for 后接名词或动名词。"
+  },
+  "Excuse me, where is the nearest post office?": {
+    "t": "打扰一下，最近的邮局在哪里？",
+    "w": [
+      [
+        "excuse me",
+        "",
+        "打扰一下，劳驾"
+      ],
+      [
+        "nearest",
+        "/ˈnɪərɪst/",
+        "adj. 最近的（near 的最高级）"
+      ],
+      [
+        "post office",
+        "/ˈpəʊst ɒfɪs/",
+        "n. 邮局"
+      ]
+    ],
+    "g": "向陌生人问路先说 Excuse me 引起注意。"
+  },
+  "I'm sorry, but I didn't catch your name.": {
+    "t": "抱歉，我没听清你的名字。",
+    "w": [
+      [
+        "catch",
+        "/kætʃ/",
+        "v. 听清，听懂"
+      ],
+      [
+        "I'm sorry, but",
+        "",
+        "抱歉，不过……（委婉开口）"
+      ]
+    ],
+    "g": "catch 在此意为“听清”，不是“抓住”。"
+  },
+  "Let's meet in front of the library at three o'clock.": {
+    "t": "我们三点在图书馆前面见吧。",
+    "w": [
+      [
+        "in front of",
+        "",
+        "在……前面"
+      ],
+      [
+        "library",
+        "/ˈlaɪbrəri/",
+        "n. 图书馆"
+      ],
+      [
+        "o'clock",
+        "/əˈklɒk/",
+        "……点钟（整点）"
+      ]
+    ],
+    "g": "Let's + 动词原形 表示提议；具体钟点前用 at。"
+  },
+  "My brother practices the piano every evening after dinner.": {
+    "t": "我哥哥每天晚饭后练钢琴。",
+    "w": [
+      [
+        "practice",
+        "/ˈpræktɪs/",
+        "v. 练习"
+      ],
+      [
+        "piano",
+        "/piˈænəʊ/",
+        "n. 钢琴"
+      ]
+    ],
+    "g": "乐器前通常加 the：play/practise the piano。"
+  },
+  "How much does this blue jacket cost?": {
+    "t": "这件蓝色夹克多少钱？",
+    "w": [
+      [
+        "how much",
+        "",
+        "多少（钱）"
+      ],
+      [
+        "jacket",
+        "/ˈdʒækɪt/",
+        "n. 夹克，外套"
+      ],
+      [
+        "cost",
+        "/kɒst/",
+        "v. 花费，价钱为"
+      ]
+    ],
+    "g": "cost 的主语是物品；问价也可说 How much is it?"
+  },
+  "I usually walk to school with my best friend.": {
+    "t": "我通常和我最好的朋友一起走路上学。",
+    "w": [
+      [
+        "usually",
+        "/ˈjuːʒuəli/",
+        "adv. 通常"
+      ],
+      [
+        "walk to school",
+        "",
+        "步行上学"
+      ],
+      [
+        "best friend",
+        "",
+        "最好的朋友"
+      ]
+    ],
+    "g": "go to school 中 school 不加 the，指去上学。"
+  },
+  "May I have some more of this delicious soup?": {
+    "t": "我可以再来点这道美味的汤吗？",
+    "w": [
+      [
+        "May I ...?",
+        "",
+        "我可以……吗？（礼貌请求许可）"
+      ],
+      [
+        "some more",
+        "",
+        "再来一些"
+      ],
+      [
+        "delicious",
+        "/dɪˈlɪʃəs/",
+        "adj. 美味的"
+      ]
+    ],
+    "g": "请求、提供时的疑问句常用 some 而非 any。"
+  },
+  "Can I borrow your pencil for a minute?": {
+    "t": "我能借用一下你的铅笔吗？",
+    "w": [
+      [
+        "borrow",
+        "/ˈbɒrəʊ/",
+        "v. 借（入）"
+      ],
+      [
+        "for a minute",
+        "",
+        "一会儿"
+      ]
+    ],
+    "g": "borrow 是向别人借，lend 是借给别人。"
+  },
+  "I hope you like your birthday present.": {
+    "t": "希望你喜欢你的生日礼物。",
+    "w": [
+      [
+        "hope",
+        "/həʊp/",
+        "v. 希望"
+      ],
+      [
+        "present",
+        "/ˈpreznt/",
+        "n. 礼物"
+      ]
+    ],
+    "g": "hope 后接从句，that 常省略。"
+  },
+  "We are having fish and rice for dinner tonight.": {
+    "t": "我们今晚吃鱼和米饭。",
+    "w": [
+      [
+        "have ... for dinner",
+        "",
+        "晚饭吃……"
+      ],
+      [
+        "tonight",
+        "/təˈnaɪt/",
+        "adv. 今晚"
+      ]
+    ],
+    "g": "现在进行时可表示已安排好的近期计划。"
+  },
+  "Please close the window because it is getting cold in here.": {
+    "t": "请关上窗户，因为这里越来越冷了。",
+    "w": [
+      [
+        "get cold",
+        "",
+        "变冷"
+      ],
+      [
+        "in here",
+        "",
+        "在这里面"
+      ]
+    ],
+    "g": "get + 形容词 表示状态变化，进行时强调“渐渐”。"
+  },
+  "The movie starts at half past seven, so we should hurry.": {
+    "t": "电影七点半开始，所以我们得快点。",
+    "w": [
+      [
+        "half past seven",
+        "",
+        "七点半"
+      ],
+      [
+        "hurry",
+        "/ˈhʌri/",
+        "v. 赶快，匆忙"
+      ]
+    ],
+    "g": "past 表示“过了几点”，to 表示“差几分到几点”。"
+  },
+  "My favorite season is autumn because the leaves turn red and gold.": {
+    "t": "我最喜欢的季节是秋天，因为树叶会变成红色和金色。",
+    "w": [
+      [
+        "favorite",
+        "/ˈfeɪvərɪt/",
+        "adj. 最喜爱的"
+      ],
+      [
+        "autumn",
+        "/ˈɔːtəm/",
+        "n. 秋天"
+      ],
+      [
+        "turn",
+        "/tɜːn/",
+        "v. 变成"
+      ]
+    ],
+    "g": "turn + 颜色形容词 表示颜色变化；leaf 复数为 leaves。"
+  },
+  "Excuse me, is this seat taken?": {
+    "t": "打扰一下，这个座位有人吗？",
+    "w": [
+      [
+        "seat",
+        "/siːt/",
+        "n. 座位"
+      ],
+      [
+        "taken",
+        "/ˈteɪkən/",
+        "adj. 已被占用的"
+      ]
+    ],
+    "g": "询问座位的固定说法；没人可答 No, go ahead."
+  },
+  "She speaks English and French very well.": {
+    "t": "她英语和法语都说得很好。",
+    "w": [
+      [
+        "French",
+        "/frentʃ/",
+        "n. 法语"
+      ],
+      [
+        "very well",
+        "",
+        "很好（副词）"
+      ]
+    ],
+    "g": "well 是副词修饰动词，不能说 speaks very good。"
+  },
+  "I left my umbrella on the bus this morning.": {
+    "t": "今天早上我把伞落在公交车上了。",
+    "w": [
+      [
+        "leave",
+        "/liːv/",
+        "v. 遗忘，落下（过去式 left）"
+      ],
+      [
+        "umbrella",
+        "/ʌmˈbrelə/",
+        "n. 雨伞"
+      ]
+    ],
+    "g": "“把东西落在某处”用 leave，不用 forget。"
+  },
+  "Don't forget to take your keys when you go out.": {
+    "t": "出门时别忘了带钥匙。",
+    "w": [
+      [
+        "forget to do",
+        "",
+        "忘记去做（还没做）"
+      ],
+      [
+        "go out",
+        "",
+        "出门，外出"
+      ]
+    ],
+    "g": "forget to do 忘了要做；forget doing 忘了做过。"
+  },
+  "The children are playing football in the park.": {
+    "t": "孩子们正在公园里踢足球。",
+    "w": [
+      [
+        "children",
+        "/ˈtʃɪldrən/",
+        "n. 孩子们（child 的复数）"
+      ],
+      [
+        "play football",
+        "",
+        "踢足球"
+      ]
+    ],
+    "g": "球类运动前不加 the：play football。"
+  },
+  "What would you like to drink with your meal?": {
+    "t": "您用餐时想喝点什么？",
+    "w": [
+      [
+        "would like to",
+        "",
+        "想要（做）"
+      ],
+      [
+        "meal",
+        "/miːl/",
+        "n. 一餐，饭"
+      ]
+    ],
+    "g": "What would you like...? 是餐厅点单的礼貌问法。"
+  },
+  "The supermarket is just around the corner.": {
+    "t": "超市就在拐角处。",
+    "w": [
+      [
+        "supermarket",
+        "/ˈsuːpəmɑːkɪt/",
+        "n. 超市"
+      ],
+      [
+        "around the corner",
+        "",
+        "在拐角处；很近"
+      ]
+    ],
+    "g": "around the corner 也可喻指“即将到来”。"
+  },
+  "Would you mind waiting here for a few minutes?": {
+    "t": "你介意在这儿等几分钟吗？",
+    "w": [
+      [
+        "would you mind doing",
+        "",
+        "你介意……吗（礼貌请求）"
+      ],
+      [
+        "a few",
+        "",
+        "几个（修饰可数名词）"
+      ]
+    ],
+    "g": "mind 后接动名词；同意时答 No, not at all."
+  },
+  "I get up at seven every morning and have breakfast with my family.": {
+    "t": "我每天早上七点起床，和家人一起吃早饭。",
+    "w": [
+      [
+        "get up",
+        "",
+        "起床"
+      ],
+      [
+        "have breakfast",
+        "",
+        "吃早饭"
+      ]
+    ],
+    "g": "三餐前一般不加冠词：have breakfast/lunch/dinner。"
+  },
+  "Our cat likes to sleep in the sun near the window.": {
+    "t": "我们家的猫喜欢在窗边晒着太阳睡觉。",
+    "w": [
+      [
+        "in the sun",
+        "",
+        "在阳光下"
+      ],
+      [
+        "near",
+        "/nɪə/",
+        "prep. 在……附近"
+      ]
+    ],
+    "g": "like to do 与 like doing 都可表示喜欢做某事。"
+  },
+  "Could you please pass me the salt?": {
+    "t": "请把盐递给我好吗？",
+    "w": [
+      [
+        "pass",
+        "/pɑːs/",
+        "v. 传递，递"
+      ],
+      [
+        "salt",
+        "/sɔːlt/",
+        "n. 盐"
+      ]
+    ],
+    "g": "pass sb sth = pass sth to sb，餐桌常用语。"
+  },
+  "I think I have caught a cold because my throat hurts.": {
+    "t": "我觉得我感冒了，因为我嗓子疼。",
+    "w": [
+      [
+        "catch a cold",
+        "",
+        "感冒"
+      ],
+      [
+        "throat",
+        "/θrəʊt/",
+        "n. 喉咙"
+      ],
+      [
+        "hurt",
+        "/hɜːt/",
+        "v. 疼痛"
+      ]
+    ],
+    "g": "have caught 为现在完成时，强调已感冒的结果。"
+  },
+  "Let's take a photo together before we go home.": {
+    "t": "我们回家前一起拍张照吧。",
+    "w": [
+      [
+        "take a photo",
+        "",
+        "拍照"
+      ],
+      [
+        "together",
+        "/təˈɡeðə/",
+        "adv. 一起"
+      ],
+      [
+        "go home",
+        "",
+        "回家"
+      ]
+    ],
+    "g": "home 作副词，go home 不加 to。"
+  },
+  "The baby is sleeping, so please keep your voice down.": {
+    "t": "宝宝在睡觉，请小声点。",
+    "w": [
+      [
+        "keep one's voice down",
+        "",
+        "压低声音，小声说话"
+      ],
+      [
+        "voice",
+        "/vɔɪs/",
+        "n. 嗓音，声音"
+      ]
+    ],
+    "g": "keep ... down 表示使保持低位，常用于请人安静。"
+  },
+  "My mother makes the best dumplings in the world.": {
+    "t": "我妈妈包的饺子是世界上最好吃的。",
+    "w": [
+      [
+        "dumpling",
+        "/ˈdʌmplɪŋ/",
+        "n. 饺子"
+      ],
+      [
+        "in the world",
+        "",
+        "在世界上"
+      ]
+    ],
+    "g": "最高级前加 the，常与 in + 范围 连用。"
+  },
+  "We usually visit our grandparents on Sunday afternoons.": {
+    "t": "我们通常在星期天下午去看望祖父母。",
+    "w": [
+      [
+        "visit",
+        "/ˈvɪzɪt/",
+        "v. 拜访，看望"
+      ],
+      [
+        "grandparents",
+        "/ˈɡrænpeərənts/",
+        "n. 祖父母；外祖父母"
+      ]
+    ],
+    "g": "具体某天的上下午用 on；复数表示经常性。"
+  },
+  "Would you like to come to my party on Saturday?": {
+    "t": "你周六想来参加我的聚会吗？",
+    "w": [
+      [
+        "would you like to",
+        "",
+        "你想要……吗（礼貌邀请）"
+      ],
+      [
+        "party",
+        "/ˈpɑːti/",
+        "n. 聚会"
+      ]
+    ],
+    "g": "接受邀请答 I'd love to；星期前用 on。"
+  },
+  "I'm afraid I can't come because I have to finish my homework.": {
+    "t": "恐怕我来不了，因为我得完成作业。",
+    "w": [
+      [
+        "I'm afraid",
+        "",
+        "恐怕（委婉表达坏消息）"
+      ],
+      [
+        "have to",
+        "",
+        "不得不，必须"
+      ],
+      [
+        "homework",
+        "/ˈhəʊmwɜːk/",
+        "n. 家庭作业（不可数）"
+      ]
+    ],
+    "g": "I'm afraid 用于委婉拒绝，并非“害怕”。"
+  },
+  "He always drinks a glass of warm milk before bed.": {
+    "t": "他总是在睡前喝一杯热牛奶。",
+    "w": [
+      [
+        "a glass of",
+        "",
+        "一杯（玻璃杯装）"
+      ],
+      [
+        "warm",
+        "/wɔːm/",
+        "adj. 温热的"
+      ],
+      [
+        "before bed",
+        "",
+        "睡前"
+      ]
+    ],
+    "g": "before bed 是固定说法，bed 前不加冠词。"
+  },
+  "Could you answer the phone for me while I'm cooking?": {
+    "t": "我做饭的时候你能帮我接一下电话吗？",
+    "w": [
+      [
+        "answer the phone",
+        "",
+        "接电话"
+      ],
+      [
+        "while",
+        "/waɪl/",
+        "conj. 当……的时候"
+      ]
+    ],
+    "g": "while 常接进行时，表示某动作持续期间。"
+  },
+  "This dish is a little too spicy for me.": {
+    "t": "这道菜对我来说有点太辣了。",
+    "w": [
+      [
+        "dish",
+        "/dɪʃ/",
+        "n. 菜肴"
+      ],
+      [
+        "spicy",
+        "/ˈspaɪsi/",
+        "adj. 辣的"
+      ],
+      [
+        "too ... for sb",
+        "",
+        "对某人来说太……"
+      ]
+    ],
+    "g": "a little too 委婉表达“有点太”。"
+  },
+  "There is a small bakery next to our apartment building.": {
+    "t": "我们公寓楼旁边有一家小面包店。",
+    "w": [
+      [
+        "bakery",
+        "/ˈbeɪkəri/",
+        "n. 面包店"
+      ],
+      [
+        "next to",
+        "",
+        "紧挨着，在……旁边"
+      ],
+      [
+        "apartment building",
+        "",
+        "公寓楼"
+      ]
+    ],
+    "g": "There is/are 表示“某处有某物”。"
+  },
+  "I need to buy some bread, eggs, and apples on the way home.": {
+    "t": "我回家路上需要买些面包、鸡蛋和苹果。",
+    "w": [
+      [
+        "on the way home",
+        "",
+        "在回家的路上"
+      ],
+      [
+        "bread",
+        "/bred/",
+        "n. 面包（不可数）"
+      ]
+    ],
+    "g": "这里 bread 用作不可数名词（指不同种类的面包时可说 breads）；home 前不加 to。"
+  },
+  "It was nice to meet you, and I hope to see you again soon.": {
+    "t": "很高兴认识你，希望很快能再见到你。",
+    "w": [
+      [
+        "nice to meet you",
+        "",
+        "很高兴认识你"
+      ],
+      [
+        "hope to do",
+        "",
+        "希望做某事"
+      ],
+      [
+        "soon",
+        "/suːn/",
+        "adv. 很快，不久"
+      ]
+    ],
+    "g": "告别时用过去式 It was nice to meet you。"
+  },
+  "Take care and have a wonderful weekend.": {
+    "t": "保重，祝你周末愉快。",
+    "w": [
+      [
+        "take care",
+        "",
+        "保重"
+      ],
+      [
+        "wonderful",
+        "/ˈwʌndəfl/",
+        "adj. 极好的"
+      ],
+      [
+        "weekend",
+        "/ˌwiːkˈend/",
+        "n. 周末"
+      ]
+    ],
+    "g": "Have a nice/good ... 是常用的道别祝福。"
+  },
+  "My sister and I share a bedroom, and we often talk late into the night.": {
+    "t": "我和姐姐住同一间卧室，我们常常聊到深夜。",
+    "w": [
+      [
+        "share",
+        "/ʃeə/",
+        "v. 共用，分享"
+      ],
+      [
+        "late into the night",
+        "",
+        "直到深夜"
+      ]
+    ],
+    "g": "礼貌起见把自己放后面：My sister and I。"
+  },
+  "Could you help me carry these boxes upstairs?": {
+    "t": "你能帮我把这些箱子搬到楼上吗？",
+    "w": [
+      [
+        "help sb do",
+        "",
+        "帮某人做某事"
+      ],
+      [
+        "carry",
+        "/ˈkæri/",
+        "v. 搬，提，扛"
+      ],
+      [
+        "upstairs",
+        "/ˌʌpˈsteəz/",
+        "adv. 往楼上"
+      ]
+    ],
+    "g": "help sb (to) do，to 常省略。"
+  },
+  "I'm looking for a birthday present for my father.": {
+    "t": "我在给我爸爸找生日礼物。",
+    "w": [
+      [
+        "look for",
+        "",
+        "寻找"
+      ],
+      [
+        "birthday present",
+        "",
+        "生日礼物"
+      ]
+    ],
+    "g": "look for 强调找的过程，find 强调找到的结果。"
+  },
+  "Our neighbors have a friendly dog called Lucky.": {
+    "t": "我们的邻居有一只叫 Lucky 的友善的狗。",
+    "w": [
+      [
+        "neighbor",
+        "/ˈneɪbə/",
+        "n. 邻居"
+      ],
+      [
+        "friendly",
+        "/ˈfrendli/",
+        "adj. 友好的"
+      ],
+      [
+        "called",
+        "/kɔːld/",
+        "名叫……的"
+      ]
+    ],
+    "g": "called 为过去分词作后置定语，意为“名叫”。"
+  },
+  "Please wash your hands before you sit down to eat.": {
+    "t": "坐下吃饭前请先洗手。",
+    "w": [
+      [
+        "wash one's hands",
+        "",
+        "洗手"
+      ],
+      [
+        "sit down",
+        "",
+        "坐下"
+      ]
+    ],
+    "g": "sit down to eat 中不定式表示目的。"
+  },
+  "On cold winter nights, the whole family sits around the fire, drinking hot tea and telling stories.": {
+    "t": "在寒冷的冬夜，全家人围坐在火炉旁，喝着热茶，讲着故事。",
+    "w": [
+      [
+        "the whole family",
+        "",
+        "全家人"
+      ],
+      [
+        "sit around",
+        "",
+        "围坐在……周围"
+      ],
+      [
+        "tell stories",
+        "",
+        "讲故事"
+      ]
+    ],
+    "g": "drinking 和 telling 是现在分词，表示伴随动作。"
+  },
+  "My grandmother grows tomatoes and beans in her garden, and every autumn she teaches us how to cook her favorite dishes.": {
+    "t": "我奶奶在她的菜园里种西红柿和豆子，每年秋天她都教我们做她最喜欢的菜。",
+    "w": [
+      [
+        "grow",
+        "/ɡrəʊ/",
+        "v. 种植"
+      ],
+      [
+        "bean",
+        "/biːn/",
+        "n. 豆子"
+      ],
+      [
+        "teach sb how to do",
+        "",
+        "教某人如何做"
+      ]
+    ],
+    "g": "疑问词 + 不定式（how to cook）可作宾语。"
+  },
+  "Could you explain that word again, please?": {
+    "t": "请您再解释一下那个词好吗？",
+    "w": [
+      [
+        "explain",
+        "/ɪkˈspleɪn/",
+        "v. 解释，说明"
+      ],
+      [
+        "again",
+        "/əˈɡen/",
+        "adv. 再一次"
+      ]
+    ],
+    "g": "Could you...? 是比 Can you...? 更礼貌的请求句式。"
+  },
+  "How do you pronounce this word?": {
+    "t": "这个词怎么读？",
+    "w": [
+      [
+        "pronounce",
+        "/prəˈnaʊns/",
+        "v. 发音，读"
+      ],
+      [
+        "word",
+        "/wɜːd/",
+        "n. 单词"
+      ]
+    ],
+    "g": "pronounce 是动词，名词是 pronunciation，注意拼写不同。"
+  },
+  "I have been learning English for three years.": {
+    "t": "我学英语已经三年了。",
+    "w": [
+      [
+        "have been learning",
+        "",
+        "现在完成进行时：一直在学"
+      ],
+      [
+        "for three years",
+        "",
+        "持续三年"
+      ]
+    ],
+    "g": "have been doing + for 一段时间，表示从过去持续到现在的动作。"
+  },
+  "Our teacher gave us a lot of homework today.": {
+    "t": "今天老师给我们布置了很多作业。",
+    "w": [
+      [
+        "homework",
+        "/ˈhəʊmwɜːk/",
+        "n. 家庭作业（不可数）"
+      ],
+      [
+        "a lot of",
+        "",
+        "许多，大量"
+      ]
+    ],
+    "g": "homework 不可数，不能说 homeworks。"
+  },
+  "Please open your books to page twenty-five.": {
+    "t": "请把书翻到第二十五页。",
+    "w": [
+      [
+        "open to",
+        "",
+        "翻到（某页）"
+      ],
+      [
+        "page",
+        "/peɪdʒ/",
+        "n. 页"
+      ]
+    ],
+    "g": "open to page 25 = 翻到第25页；也可说 turn to page 25。"
+  },
+  "I don't understand this question, so could you help me?": {
+    "t": "我不明白这个问题，您能帮帮我吗？",
+    "w": [
+      [
+        "understand",
+        "/ˌʌndəˈstænd/",
+        "v. 理解，明白"
+      ],
+      [
+        "question",
+        "/ˈkwestʃən/",
+        "n. 问题"
+      ]
+    ],
+    "g": "so 连接因果：前因后果，意为“所以”。"
+  },
+  "Reading English stories before bed helps me learn new words.": {
+    "t": "睡前读英文故事帮助我学习新单词。",
+    "w": [
+      [
+        "before bed",
+        "",
+        "睡前"
+      ],
+      [
+        "help sb. do",
+        "",
+        "帮助某人做某事"
+      ]
+    ],
+    "g": "动名词短语 Reading... 作主语，谓语用单数 helps。"
+  },
+  "Listen carefully and repeat after me.": {
+    "t": "仔细听，跟我读。",
+    "w": [
+      [
+        "carefully",
+        "/ˈkeəfəli/",
+        "adv. 仔细地"
+      ],
+      [
+        "repeat after",
+        "",
+        "跟着（某人）重复/读"
+      ]
+    ],
+    "g": "repeat after me 是课堂常用语“跟我读”。"
+  },
+  "The exam will start at nine o'clock tomorrow morning.": {
+    "t": "考试将在明天早上九点开始。",
+    "w": [
+      [
+        "exam",
+        "/ɪɡˈzæm/",
+        "n. 考试"
+      ],
+      [
+        "o'clock",
+        "/əˈklɒk/",
+        "……点钟（整点）"
+      ]
+    ],
+    "g": "o'clock 只用于整点；时间状语顺序由小到大：九点→明早。"
+  },
+  "I always write new words in a small notebook.": {
+    "t": "我总是把新单词写在一个小本子上。",
+    "w": [
+      [
+        "notebook",
+        "/ˈnəʊtbʊk/",
+        "n. 笔记本"
+      ],
+      [
+        "always",
+        "/ˈɔːlweɪz/",
+        "adv. 总是"
+      ]
+    ],
+    "g": "频度副词 always 放在实义动词前、be 动词后。"
+  },
+  "Mistakes are a normal part of learning a language.": {
+    "t": "犯错是学习语言的正常组成部分。",
+    "w": [
+      [
+        "mistake",
+        "/mɪˈsteɪk/",
+        "n. 错误"
+      ],
+      [
+        "a normal part of",
+        "",
+        "……的正常一部分"
+      ]
+    ],
+    "g": "介词 of 后接动名词 learning。"
+  },
+  "Try to guess the meaning of a new word from the sentence around it.": {
+    "t": "试着根据上下文句子猜测生词的意思。",
+    "w": [
+      [
+        "guess",
+        "/ɡes/",
+        "v. 猜测"
+      ],
+      [
+        "meaning",
+        "/ˈmiːnɪŋ/",
+        "n. 意思，含义"
+      ],
+      [
+        "around",
+        "/əˈraʊnd/",
+        "prep. 在……周围"
+      ]
+    ],
+    "g": "guess...from... 表示“根据……猜出……”。"
+  },
+  "She is preparing for an important job interview next week.": {
+    "t": "她正在为下周一场重要的求职面试做准备。",
+    "w": [
+      [
+        "prepare for",
+        "",
+        "为……做准备"
+      ],
+      [
+        "job interview",
+        "",
+        "求职面试"
+      ]
+    ],
+    "g": "prepare for sth. 为某事做准备；prepare sth. 是准备某物。"
+  },
+  "I will send you the report by Friday afternoon.": {
+    "t": "我最迟周五下午把报告发给你。",
+    "w": [
+      [
+        "report",
+        "/rɪˈpɔːt/",
+        "n. 报告"
+      ],
+      [
+        "by",
+        "/baɪ/",
+        "prep. 不迟于（某时间）"
+      ]
+    ],
+    "g": "by + 时间：最迟在该时间完成，不晚于它；before 则是在该时间之前。"
+  },
+  "Let's have a short meeting after lunch to discuss the plan.": {
+    "t": "午饭后我们开个短会讨论一下计划吧。",
+    "w": [
+      [
+        "have a meeting",
+        "",
+        "开会"
+      ],
+      [
+        "discuss",
+        "/dɪˈskʌs/",
+        "v. 讨论"
+      ]
+    ],
+    "g": "discuss 是及物动词，直接接宾语，不说 discuss about。"
+  },
+  "He works as a nurse at the city hospital.": {
+    "t": "他在市医院当护士。",
+    "w": [
+      [
+        "work as",
+        "",
+        "担任，以……身份工作"
+      ],
+      [
+        "nurse",
+        "/nɜːs/",
+        "n. 护士"
+      ]
+    ],
+    "g": "work as + 职业，表示从事某职业。"
+  },
+  "Please check your answers carefully before you hand in your paper.": {
+    "t": "交卷前请仔细检查答案。",
+    "w": [
+      [
+        "check",
+        "/tʃek/",
+        "v. 检查"
+      ],
+      [
+        "hand in",
+        "",
+        "上交，交上"
+      ],
+      [
+        "paper",
+        "/ˈpeɪpə/",
+        "n. 试卷"
+      ]
+    ],
+    "g": "hand in 是短语动词，意为“上交”；paper 此处指试卷。"
+  },
+  "Our school library has thousands of books in English.": {
+    "t": "我们学校图书馆有数千本英文书。",
+    "w": [
+      [
+        "library",
+        "/ˈlaɪbrəri/",
+        "n. 图书馆"
+      ],
+      [
+        "thousands of",
+        "",
+        "成千上万的，数以千计的"
+      ]
+    ],
+    "g": "thousands of 表概数；具体数字时用 three thousand，不加 s。"
+  },
+  "Speaking slowly and clearly is more important than speaking fast.": {
+    "t": "说得慢而清楚比说得快更重要。",
+    "w": [
+      [
+        "clearly",
+        "/ˈklɪəli/",
+        "adv. 清楚地"
+      ],
+      [
+        "more important than",
+        "",
+        "比……更重要"
+      ]
+    ],
+    "g": "动名词短语作主语，谓语用单数 is。"
+  },
+  "I study for thirty minutes every evening, even on weekends.": {
+    "t": "我每天晚上学习三十分钟，周末也不例外。",
+    "w": [
+      [
+        "even",
+        "/ˈiːvn/",
+        "adv. 甚至，即使"
+      ],
+      [
+        "on weekends",
+        "",
+        "在周末"
+      ]
+    ],
+    "g": "even 用来强调出乎意料或更进一步的情况。"
+  },
+  "Could you check my pronunciation of this sentence?": {
+    "t": "您能帮我检查一下这句话的发音吗？",
+    "w": [
+      [
+        "pronunciation",
+        "/prəˌnʌnsiˈeɪʃn/",
+        "n. 发音"
+      ],
+      [
+        "sentence",
+        "/ˈsentəns/",
+        "n. 句子"
+      ]
+    ],
+    "g": "pronunciation 拼写中是 nun，不是 noun。"
+  },
+  "My dream is to become a teacher and help children learn.": {
+    "t": "我的梦想是成为一名老师，帮助孩子们学习。",
+    "w": [
+      [
+        "dream",
+        "/driːm/",
+        "n. 梦想"
+      ],
+      [
+        "become",
+        "/bɪˈkʌm/",
+        "v. 成为"
+      ]
+    ],
+    "g": "to become... 不定式作表语，说明梦想的内容。"
+  },
+  "Working in a team teaches us how to listen to others.": {
+    "t": "团队合作教会我们如何倾听他人。",
+    "w": [
+      [
+        "work in a team",
+        "",
+        "团队合作"
+      ],
+      [
+        "listen to",
+        "",
+        "倾听，听……说"
+      ]
+    ],
+    "g": "teach sb. how to do sth. 教某人如何做某事。"
+  },
+  "The teacher asked us to read the first paragraph aloud.": {
+    "t": "老师让我们朗读第一段。",
+    "w": [
+      [
+        "paragraph",
+        "/ˈpærəɡrɑːf/",
+        "n. 段落"
+      ],
+      [
+        "read aloud",
+        "",
+        "朗读，大声读"
+      ]
+    ],
+    "g": "ask sb. to do sth. 要求某人做某事。"
+  },
+  "The best way to learn a language is to use it every day.": {
+    "t": "学习语言的最好方法就是每天使用它。",
+    "w": [
+      [
+        "the best way to do",
+        "",
+        "做某事的最好方法"
+      ],
+      [
+        "every day",
+        "",
+        "每天"
+      ]
+    ],
+    "g": "every day 两个词是副词“每天”；everyday 一个词是形容词“日常的”。"
+  },
+  "Learning a new language takes time and patience, so read a little every day and don't be afraid to make mistakes.": {
+    "t": "学习一门新语言需要时间和耐心，所以每天读一点，不要害怕犯错。",
+    "w": [
+      [
+        "patience",
+        "/ˈpeɪʃns/",
+        "n. 耐心"
+      ],
+      [
+        "take time",
+        "",
+        "需要时间"
+      ],
+      [
+        "be afraid to do",
+        "",
+        "害怕做某事"
+      ],
+      [
+        "make mistakes",
+        "",
+        "犯错"
+      ]
+    ],
+    "g": "犯错用 make mistakes，不说 do mistakes。"
+  },
+  "When you read aloud, speak clearly at a steady pace and pause briefly at every comma.": {
+    "t": "朗读时要吐字清楚、速度平稳，每个逗号处稍作停顿。",
+    "w": [
+      [
+        "steady",
+        "/ˈstedi/",
+        "adj. 平稳的，稳定的"
+      ],
+      [
+        "pace",
+        "/peɪs/",
+        "n. 速度，节奏"
+      ],
+      [
+        "pause",
+        "/pɔːz/",
+        "v. 停顿"
+      ],
+      [
+        "briefly",
+        "/ˈbriːfli/",
+        "adv. 短暂地"
+      ]
+    ],
+    "g": "at a steady pace 以平稳的速度，介词用 at。"
+  },
+  "If you practice for just ten minutes every day, you will be surprised by how much progress you make in a year.": {
+    "t": "如果你每天只练习十分钟，一年后你会惊讶于自己进步有多大。",
+    "w": [
+      [
+        "practice",
+        "/ˈpræktɪs/",
+        "v. 练习"
+      ],
+      [
+        "be surprised by",
+        "",
+        "对……感到惊讶"
+      ],
+      [
+        "make progress",
+        "",
+        "取得进步"
+      ]
+    ],
+    "g": "if 条件句主句用将来时，从句用一般现在时；progress 不可数。"
+  },
+  "It's a beautiful sunny day, so let's go for a walk.": {
+    "t": "今天阳光明媚，我们去散散步吧。",
+    "w": [
+      [
+        "sunny",
+        "/ˈsʌni/",
+        "adj. 晴朗的"
+      ],
+      [
+        "go for a walk",
+        "",
+        "去散步"
+      ]
+    ],
+    "g": "Let's do... 用于提议“我们一起……吧”。"
+  },
+  "The weather forecast says it will snow tomorrow.": {
+    "t": "天气预报说明天会下雪。",
+    "w": [
+      [
+        "weather forecast",
+        "/ˈweðə ˌfɔːkɑːst/",
+        "天气预报"
+      ],
+      [
+        "snow",
+        "/snəʊ/",
+        "v. 下雪"
+      ]
+    ],
+    "g": "says 这里指“（文字、预报）写着/说”。"
+  },
+  "Don't forget to bring your passport and your ticket.": {
+    "t": "别忘了带上你的护照和票。",
+    "w": [
+      [
+        "forget to do",
+        "",
+        "忘记要做某事"
+      ],
+      [
+        "passport",
+        "/ˈpɑːspɔːt/",
+        "n. 护照"
+      ]
+    ],
+    "g": "forget to do 忘了去做；forget doing 忘了做过。"
+  },
+  "How long does it take to get to the airport?": {
+    "t": "去机场要多长时间？",
+    "w": [
+      [
+        "how long",
+        "",
+        "多长时间"
+      ],
+      [
+        "it takes... to do",
+        "",
+        "做某事需要（时间）"
+      ],
+      [
+        "get to",
+        "",
+        "到达"
+      ]
+    ],
+    "g": "It takes + 时间 + to do 是表达耗时的常用句型。"
+  },
+  "Could you tell me the way to the train station?": {
+    "t": "您能告诉我去火车站怎么走吗？",
+    "w": [
+      [
+        "the way to",
+        "",
+        "去……的路"
+      ],
+      [
+        "train station",
+        "",
+        "火车站"
+      ]
+    ],
+    "g": "问路常用：Could you tell me the way to...?"
+  },
+  "We missed the last bus, so we took a taxi home.": {
+    "t": "我们错过了末班车，所以打车回家了。",
+    "w": [
+      [
+        "miss",
+        "/mɪs/",
+        "v. 错过"
+      ],
+      [
+        "take a taxi",
+        "",
+        "乘出租车"
+      ]
+    ],
+    "g": "home 是副词，take a taxi home 前不加 to。"
+  },
+  "It is very hot today, so remember to drink plenty of water.": {
+    "t": "今天很热，记得多喝水。",
+    "w": [
+      [
+        "remember to do",
+        "",
+        "记得去做某事"
+      ],
+      [
+        "plenty of",
+        "",
+        "大量的，充足的"
+      ]
+    ],
+    "g": "plenty of 可接可数或不可数名词。"
+  },
+  "The wind is so strong that I can hardly walk.": {
+    "t": "风太大了，我几乎走不动。",
+    "w": [
+      [
+        "so...that",
+        "",
+        "如此……以至于"
+      ],
+      [
+        "hardly",
+        "/ˈhɑːdli/",
+        "adv. 几乎不"
+      ]
+    ],
+    "g": "hardly 本身含否定意义，不再与 not 连用。"
+  },
+  "I would like to book a room for two nights, please.": {
+    "t": "我想订一个房间，住两晚。",
+    "w": [
+      [
+        "would like to",
+        "",
+        "想要（礼貌说法）"
+      ],
+      [
+        "book",
+        "/bʊk/",
+        "v. 预订"
+      ]
+    ],
+    "g": "book 作动词意为“预订”，如 book a table/ticket。"
+  },
+  "Is breakfast included in the price?": {
+    "t": "价格包含早餐吗？",
+    "w": [
+      [
+        "be included in",
+        "",
+        "包含在……中"
+      ],
+      [
+        "price",
+        "/praɪs/",
+        "n. 价格"
+      ]
+    ],
+    "g": "被动语态 be included，住酒店时常用问句。"
+  },
+  "The view from the top of the mountain was amazing.": {
+    "t": "山顶的景色美极了。",
+    "w": [
+      [
+        "view",
+        "/vjuː/",
+        "n. 景色，风景"
+      ],
+      [
+        "amazing",
+        "/əˈmeɪzɪŋ/",
+        "adj. 令人惊叹的"
+      ]
+    ],
+    "g": "-ing 形容词描述事物令人……；-ed 形容词描述人的感受。"
+  },
+  "Take an umbrella with you because it might rain later.": {
+    "t": "带把伞吧，待会儿可能会下雨。",
+    "w": [
+      [
+        "umbrella",
+        "/ʌmˈbrelə/",
+        "n. 雨伞"
+      ],
+      [
+        "might",
+        "/maɪt/",
+        "modal v. 可能"
+      ]
+    ],
+    "g": "might 表示可能性较小的推测；take sth. with you 随身带。"
+  },
+  "We are going to the beach for our summer holiday.": {
+    "t": "我们暑假要去海滩。",
+    "w": [
+      [
+        "beach",
+        "/biːtʃ/",
+        "n. 海滩"
+      ],
+      [
+        "summer holiday",
+        "",
+        "暑假"
+      ]
+    ],
+    "g": "现在进行时 are going 可表示已安排好的将来计划。"
+  },
+  "Excuse me, which platform does the train to London leave from?": {
+    "t": "打扰一下，去伦敦的火车从几号站台出发？",
+    "w": [
+      [
+        "excuse me",
+        "",
+        "打扰一下，劳驾"
+      ],
+      [
+        "platform",
+        "/ˈplætfɔːm/",
+        "n. 站台"
+      ],
+      [
+        "leave from",
+        "",
+        "从……出发"
+      ]
+    ],
+    "g": "介词 from 放在句末是英语疑问句的常见用法。"
+  },
+  "The flight has been delayed because of the heavy fog.": {
+    "t": "由于大雾，航班延误了。",
+    "w": [
+      [
+        "delay",
+        "/dɪˈleɪ/",
+        "v. 延误，推迟"
+      ],
+      [
+        "because of",
+        "",
+        "因为（后接名词）"
+      ],
+      [
+        "heavy fog",
+        "",
+        "大雾"
+      ]
+    ],
+    "g": "because of + 名词；because + 句子。"
+  },
+  "Spring is warm and windy, and the flowers begin to bloom.": {
+    "t": "春天温暖多风，花儿开始绽放。",
+    "w": [
+      [
+        "windy",
+        "/ˈwɪndi/",
+        "adj. 多风的"
+      ],
+      [
+        "bloom",
+        "/bluːm/",
+        "v. 开花"
+      ]
+    ],
+    "g": "begin to do 开始做某事。"
+  },
+  "Autumn mornings are cool and clear in my hometown.": {
+    "t": "在我的家乡，秋天的早晨凉爽而晴朗。",
+    "w": [
+      [
+        "autumn",
+        "/ˈɔːtəm/",
+        "n. 秋天"
+      ],
+      [
+        "hometown",
+        "/ˈhəʊmtaʊn/",
+        "n. 家乡"
+      ]
+    ],
+    "g": "autumn 结尾 n 不发音；美式多用 fall。"
+  },
+  "Could you recommend a good local restaurant?": {
+    "t": "您能推荐一家不错的本地餐馆吗？",
+    "w": [
+      [
+        "recommend",
+        "/ˌrekəˈmend/",
+        "v. 推荐"
+      ],
+      [
+        "local",
+        "/ˈləʊkl/",
+        "adj. 当地的，本地的"
+      ]
+    ],
+    "g": "recommend 拼写：一个 c，两个 m。"
+  },
+  "I'm lost, so could you show me where we are on this map?": {
+    "t": "我迷路了，您能在这张地图上指给我看我们在哪儿吗？",
+    "w": [
+      [
+        "be lost",
+        "",
+        "迷路"
+      ],
+      [
+        "show sb. sth.",
+        "",
+        "给某人看/指出某物"
+      ]
+    ],
+    "g": "where we are 是宾语从句，用陈述语序。"
+  },
+  "We took hundreds of photos during our trip to the mountains.": {
+    "t": "我们在山区旅行时拍了几百张照片。",
+    "w": [
+      [
+        "take photos",
+        "",
+        "拍照"
+      ],
+      [
+        "hundreds of",
+        "",
+        "数以百计的"
+      ],
+      [
+        "during",
+        "/ˈdjʊərɪŋ/",
+        "prep. 在……期间"
+      ]
+    ],
+    "g": "拍照用 take photos；trip to 去某地的旅行。"
+  },
+  "Last summer my family went to the seaside, where we swam every morning and watched the sun go down every evening.": {
+    "t": "去年夏天我们全家去了海边，每天早上游泳，每天傍晚看日落。",
+    "w": [
+      [
+        "seaside",
+        "/ˈsiːsaɪd/",
+        "n. 海边"
+      ],
+      [
+        "go down",
+        "",
+        "（太阳）落下"
+      ],
+      [
+        "watch sb./sth. do",
+        "",
+        "观看……做某事（全过程）"
+      ]
+    ],
+    "g": "where 引导非限制性定语从句，修饰 the seaside。"
+  },
+  "The train was so crowded that we had to stand near the door for the whole two-hour journey.": {
+    "t": "火车太挤了，整整两个小时的旅程我们都只能站在门边。",
+    "w": [
+      [
+        "crowded",
+        "/ˈkraʊdɪd/",
+        "adj. 拥挤的"
+      ],
+      [
+        "so...that",
+        "",
+        "如此……以至于"
+      ],
+      [
+        "journey",
+        "/ˈdʒɜːni/",
+        "n. 旅程"
+      ]
+    ],
+    "g": "two-hour 作形容词，hour 用单数且加连字符。"
+  },
+  "Go straight along this street, turn left at the second traffic light, and you will see the museum on your right.": {
+    "t": "沿着这条街直走，在第二个红绿灯左转，博物馆就在你右边。",
+    "w": [
+      [
+        "go straight along",
+        "",
+        "沿着……直走"
+      ],
+      [
+        "turn left",
+        "",
+        "向左转"
+      ],
+      [
+        "traffic light",
+        "",
+        "红绿灯"
+      ],
+      [
+        "museum",
+        "/mjuˈziːəm/",
+        "n. 博物馆"
+      ]
+    ],
+    "g": "祈使句 + and + 将来时，表示“做了……就会……”。"
+  },
+  "Every morning I wake up at six, drink a glass of water, and take a short walk in the park before breakfast.": {
+    "t": "每天早上我六点醒来，喝一杯水，早饭前在公园里散一会儿步。",
+    "w": [
+      [
+        "wake up",
+        "",
+        "醒来"
+      ],
+      [
+        "take a walk",
+        "",
+        "散步"
+      ],
+      [
+        "a glass of",
+        "",
+        "一杯（水等）"
+      ]
+    ],
+    "g": "一般现在时表示日常习惯；三个动作并列用逗号和 and。"
+  },
+  "The library in our town is open every day, and anyone can borrow books or use the computers for free.": {
+    "t": "我们镇上的图书馆每天开放，任何人都可以免费借书或使用电脑。",
+    "w": [
+      [
+        "library",
+        "/ˈlaɪbrəri/",
+        "n. 图书馆"
+      ],
+      [
+        "borrow",
+        "/ˈbɒrəʊ/",
+        "v. 借（入）"
+      ],
+      [
+        "for free",
+        "",
+        "免费"
+      ]
+    ],
+    "g": "borrow 是“借入”，lend 是“借出”，别混用。"
+  },
+  "Our class is planning a picnic next Saturday, and everyone is going to bring something delicious to share.": {
+    "t": "我们班计划下周六去野餐，每个人都会带些好吃的东西来分享。",
+    "w": [
+      [
+        "picnic",
+        "/ˈpɪknɪk/",
+        "n. 野餐"
+      ],
+      [
+        "delicious",
+        "/dɪˈlɪʃəs/",
+        "adj. 美味的"
+      ],
+      [
+        "share",
+        "/ʃeə/",
+        "v. 分享"
+      ]
+    ],
+    "g": "something 的形容词要后置：something delicious。"
+  },
+  "Before going to bed, I put my phone away and read a few pages of a good book to help me relax.": {
+    "t": "睡觉前，我会把手机收起来，读几页好书，帮助自己放松。",
+    "w": [
+      [
+        "put away",
+        "",
+        "phr. 把……收起来"
+      ],
+      [
+        "relax",
+        "/rɪˈlæks/",
+        "v. 放松"
+      ],
+      [
+        "a few",
+        "",
+        "几个，一些"
+      ]
+    ],
+    "g": "before 后接动名词：before going to bed。"
+  },
+  "Actions speak louder than words.": {
+    "t": "行动胜于言语。",
+    "w": [
+      [
+        "action",
+        "/ˈækʃn/",
+        "n. 行动"
+      ],
+      [
+        "louder",
+        "/ˈlaʊdə/",
+        "adv. 更响亮地；此处比喻更有说服力（loud 的比较级）"
+      ]
+    ],
+    "g": "谚语：做比说更能证明一个人。"
+  },
+  "Practice makes perfect.": {
+    "t": "熟能生巧。",
+    "w": [
+      [
+        "practice",
+        "/ˈpræktɪs/",
+        "n. 练习"
+      ],
+      [
+        "perfect",
+        "/ˈpɜːfɪkt/",
+        "adj. 完美的"
+      ]
+    ],
+    "g": "谚语：通过反复练习，才能达到熟练或完善。"
+  },
+  "Where there's a will, there's a way.": {
+    "t": "有志者，事竟成。",
+    "w": [
+      [
+        "will",
+        "/wɪl/",
+        "n. 意志，决心"
+      ],
+      [
+        "way",
+        "/weɪ/",
+        "n. 办法"
+      ]
+    ],
+    "g": "谚语：只要决心够强，总能找到办法。will 此处是名词。"
+  },
+  "Don't count your chickens before they hatch.": {
+    "t": "蛋未孵出，先别数鸡；别高兴得太早。",
+    "w": [
+      [
+        "count",
+        "/kaʊnt/",
+        "v. 数，清点"
+      ],
+      [
+        "hatch",
+        "/hætʃ/",
+        "v. 孵化"
+      ]
+    ],
+    "g": "谚语：事情还没成功之前，别过早打如意算盘。"
+  },
+  "Rome wasn't built in a day.": {
+    "t": "罗马不是一天建成的。",
+    "w": [
+      [
+        "Rome",
+        "/rəʊm/",
+        "n. 罗马"
+      ],
+      [
+        "built",
+        "/bɪlt/",
+        "v. 建造（build 的过去分词）"
+      ]
+    ],
+    "g": "谚语：大事需要长期努力，不可急于求成。被动语态。"
+  },
+  "The early bird catches the worm.": {
+    "t": "早起的鸟儿有虫吃。",
+    "w": [
+      [
+        "early bird",
+        "",
+        "早起的人；捷足先登者"
+      ],
+      [
+        "worm",
+        "/wɜːm/",
+        "n. 虫子"
+      ]
+    ],
+    "g": "谚语：先行动的人先得到机会。"
+  },
+  "A friend in need is a friend indeed.": {
+    "t": "患难见真情。",
+    "w": [
+      [
+        "in need",
+        "",
+        "在困难中，在需要时"
+      ],
+      [
+        "indeed",
+        "/ɪnˈdiːd/",
+        "adv. 确实，真正地"
+      ]
+    ],
+    "g": "谚语：在你困难时帮你的才是真朋友。"
+  },
+  "Better late than never.": {
+    "t": "迟做总比不做好。",
+    "w": [
+      [
+        "better than",
+        "",
+        "比……好"
+      ],
+      [
+        "never",
+        "/ˈnevə/",
+        "adv. 从不"
+      ]
+    ],
+    "g": "谚语：晚一点也比永远不做强。省略句，完整为 It is better…"
+  },
+  "Every cloud has a silver lining.": {
+    "t": "黑暗中总有一线光明。",
+    "w": [
+      [
+        "silver lining",
+        "",
+        "（乌云的）银边；困境中的希望"
+      ],
+      [
+        "lining",
+        "/ˈlaɪnɪŋ/",
+        "n. 衬里，边"
+      ]
+    ],
+    "g": "谚语：再糟的处境也有好的一面。"
+  },
+  "Honesty is the best policy.": {
+    "t": "诚实为上策。",
+    "w": [
+      [
+        "honesty",
+        "/ˈɒnəsti/",
+        "n. 诚实"
+      ],
+      [
+        "policy",
+        "/ˈpɒləsi/",
+        "n. 策略，方针"
+      ]
+    ],
+    "g": "谚语：诚实做人做事最终最有利。honesty 的 h 不发音。"
+  },
+  "Time and tide wait for no man.": {
+    "t": "岁月不待人。",
+    "w": [
+      [
+        "tide",
+        "/taɪd/",
+        "n. 潮汐"
+      ],
+      [
+        "wait for",
+        "",
+        "等待"
+      ]
+    ],
+    "g": "谚语：时间一去不返，要抓紧时机。"
+  },
+  "Two heads are better than one.": {
+    "t": "三个臭皮匠，顶个诸葛亮。",
+    "w": [
+      [
+        "head",
+        "/hed/",
+        "n. 头脑；人"
+      ],
+      [
+        "better than",
+        "",
+        "比……好"
+      ]
+    ],
+    "g": "谚语：两人一起想办法胜过一个人。"
+  },
+  "When in Rome, do as the Romans do.": {
+    "t": "入乡随俗。",
+    "w": [
+      [
+        "Roman",
+        "/ˈrəʊmən/",
+        "n. 罗马人"
+      ],
+      [
+        "do as",
+        "",
+        "照……做"
+      ]
+    ],
+    "g": "谚语：到了别处就遵从当地习俗。When in Rome 省略了 you are。"
+  },
+  "An apple a day keeps the doctor away.": {
+    "t": "一天一苹果，医生远离我。",
+    "w": [
+      [
+        "keep away",
+        "",
+        "phr. 使远离"
+      ],
+      [
+        "a day",
+        "",
+        "每天"
+      ]
+    ],
+    "g": "谚语：坚持健康饮食就少生病。a day 表示“每天”。"
+  },
+  "All that glitters is not gold.": {
+    "t": "闪光的未必都是金子。",
+    "w": [
+      [
+        "glitter",
+        "/ˈɡlɪtə/",
+        "v. 闪闪发光"
+      ],
+      [
+        "gold",
+        "/ɡəʊld/",
+        "n. 金子"
+      ]
+    ],
+    "g": "谚语：外表好看不代表有价值。all…not 为部分否定。"
+  },
+  "A journey of a thousand miles begins with a single step.": {
+    "t": "千里之行，始于足下。",
+    "w": [
+      [
+        "journey",
+        "/ˈdʒɜːni/",
+        "n. 旅程"
+      ],
+      [
+        "begin with",
+        "",
+        "以……开始"
+      ],
+      [
+        "single",
+        "/ˈsɪŋɡl/",
+        "adj. 单个的"
+      ]
+    ],
+    "g": "源自老子：再大的目标也要从第一步做起。"
+  },
+  "Don't judge a book by its cover.": {
+    "t": "不要以貌取人。",
+    "w": [
+      [
+        "judge",
+        "/dʒʌdʒ/",
+        "v. 评判"
+      ],
+      [
+        "cover",
+        "/ˈkʌvə/",
+        "n. 封面"
+      ]
+    ],
+    "g": "谚语：不能只凭外表判断人或事。judge…by… 凭……判断。"
+  },
+  "Look before you leap.": {
+    "t": "三思而后行。",
+    "w": [
+      [
+        "leap",
+        "/liːp/",
+        "v. 跳跃"
+      ]
+    ],
+    "g": "谚语：行动前先想清楚后果。"
+  },
+  "No pain, no gain.": {
+    "t": "不劳无获。",
+    "w": [
+      [
+        "pain",
+        "/peɪn/",
+        "n. 痛苦，辛苦"
+      ],
+      [
+        "gain",
+        "/ɡeɪn/",
+        "n. 收获"
+      ]
+    ],
+    "g": "谚语：不吃苦就没有收获。pain 与 gain 押韵。"
+  },
+  "The pen is mightier than the sword.": {
+    "t": "笔比剑更有力量。",
+    "w": [
+      [
+        "mightier",
+        "/ˈmaɪtiə/",
+        "adj. 更强大的（mighty 比较级）"
+      ],
+      [
+        "sword",
+        "/sɔːd/",
+        "n. 剑"
+      ]
+    ],
+    "g": "谚语：文字思想比武力更有影响力。sword 的 w 不发音。"
+  },
+  "Easy come, easy go.": {
+    "t": "来得容易，去得也快。",
+    "w": [
+      [
+        "easy come, easy go",
+        "",
+        "来得容易去得快"
+      ]
+    ],
+    "g": "谚语：轻易得来的东西（尤指钱）也容易失去。"
+  },
+  "Birds of a feather flock together.": {
+    "t": "物以类聚，人以群分。",
+    "w": [
+      [
+        "of a feather",
+        "",
+        "同一类的"
+      ],
+      [
+        "flock",
+        "/flɒk/",
+        "v. 聚集，成群"
+      ]
+    ],
+    "g": "谚语：性情相近的人会聚在一起。"
+  },
+  "Great minds think alike.": {
+    "t": "英雄所见略同。",
+    "w": [
+      [
+        "mind",
+        "/maɪnd/",
+        "n. 头脑；有才智的人"
+      ],
+      [
+        "alike",
+        "/əˈlaɪk/",
+        "adv. 相似地"
+      ]
+    ],
+    "g": "常用作玩笑：两人想法一致时说。"
+  },
+  "It's never too late to learn.": {
+    "t": "活到老，学到老。",
+    "w": [
+      [
+        "never too late to",
+        "",
+        "做……永远不晚"
+      ]
+    ],
+    "g": "谚语：任何年纪学习都不算晚。too…to… 结构。"
+  },
+  "Laughter is the best medicine.": {
+    "t": "笑是最好的良药。",
+    "w": [
+      [
+        "laughter",
+        "/ˈlɑːftə/",
+        "n. 笑声"
+      ],
+      [
+        "medicine",
+        "/ˈmedsn/",
+        "n. 药"
+      ]
+    ],
+    "g": "谚语：快乐有益身心健康。"
+  },
+  "Necessity is the mother of invention.": {
+    "t": "需要是发明之母。",
+    "w": [
+      [
+        "necessity",
+        "/nəˈsesəti/",
+        "n. 需要，必需"
+      ],
+      [
+        "invention",
+        "/ɪnˈvenʃn/",
+        "n. 发明"
+      ]
+    ],
+    "g": "谚语：人们在迫切需要时最能想出新办法。"
+  },
+  "Out of sight, out of mind.": {
+    "t": "眼不见，心不念。",
+    "w": [
+      [
+        "out of sight",
+        "",
+        "看不见"
+      ],
+      [
+        "out of mind",
+        "",
+        "被忘记"
+      ]
+    ],
+    "g": "谚语：久不见面，感情或记忆就会淡去。"
+  },
+  "Slow and steady wins the race.": {
+    "t": "稳扎稳打者胜。",
+    "w": [
+      [
+        "steady",
+        "/ˈstedi/",
+        "adj. 稳定的"
+      ],
+      [
+        "win the race",
+        "",
+        "赢得比赛"
+      ]
+    ],
+    "g": "源自龟兔赛跑：稳步坚持胜过急躁。主语视为整体用单数。"
+  },
+  "There's no place like home.": {
+    "t": "金窝银窝，不如自己的狗窝。",
+    "w": [
+      [
+        "no place like",
+        "",
+        "没有地方比得上"
+      ]
+    ],
+    "g": "谚语：哪里都不如家好。"
+  },
+  "Beauty is in the eye of the beholder.": {
+    "t": "情人眼里出西施。",
+    "w": [
+      [
+        "beholder",
+        "/bɪˈhəʊldə/",
+        "n. 观看者"
+      ],
+      [
+        "beauty",
+        "/ˈbjuːti/",
+        "n. 美"
+      ]
+    ],
+    "g": "谚语：美是主观的，因人而异。"
+  },
+  "Don't put all your eggs in one basket.": {
+    "t": "不要把所有鸡蛋放在一个篮子里。",
+    "w": [
+      [
+        "basket",
+        "/ˈbɑːskɪt/",
+        "n. 篮子"
+      ],
+      [
+        "put all your eggs in one basket",
+        "",
+        "孤注一掷"
+      ]
+    ],
+    "g": "谚语：要分散风险，别把希望押在一处。"
+  },
+  "Every dog has its day.": {
+    "t": "人人皆有得意时。",
+    "w": [
+      [
+        "have one's day",
+        "",
+        "有得意/走运的时候"
+      ]
+    ],
+    "g": "谚语：再普通的人也会有成功的时刻。its 不是 it's。"
+  },
+  "Fortune favors the bold.": {
+    "t": "天佑勇者。",
+    "w": [
+      [
+        "fortune",
+        "/ˈfɔːtʃuːn/",
+        "n. 运气"
+      ],
+      [
+        "favor",
+        "/ˈfeɪvə/",
+        "v. 偏爱，眷顾"
+      ],
+      [
+        "the bold",
+        "",
+        "勇敢的人"
+      ]
+    ],
+    "g": "谚语：敢于冒险的人更易成功。the + 形容词 表一类人。"
+  },
+  "Haste makes waste.": {
+    "t": "欲速则不达。",
+    "w": [
+      [
+        "haste",
+        "/heɪst/",
+        "n. 匆忙"
+      ],
+      [
+        "waste",
+        "/weɪst/",
+        "n. 浪费"
+      ]
+    ],
+    "g": "谚语：做事太急反而出错、白费力气。"
+  },
+  "Kill two birds with one stone.": {
+    "t": "一石二鸟；一举两得。",
+    "w": [
+      [
+        "kill two birds with one stone",
+        "",
+        "一举两得"
+      ],
+      [
+        "stone",
+        "/stəʊn/",
+        "n. 石头"
+      ]
+    ],
+    "g": "习语：一个行动同时达成两个目的。"
+  },
+  "Many hands make light work.": {
+    "t": "人多好办事。",
+    "w": [
+      [
+        "light",
+        "/laɪt/",
+        "adj. 轻松的"
+      ],
+      [
+        "make light work",
+        "",
+        "使工作变轻松"
+      ]
+    ],
+    "g": "谚语：大家一起干，活就轻松了。light 此处意为“轻松”。"
+  },
+  "No news is good news.": {
+    "t": "没有消息就是好消息。",
+    "w": [
+      [
+        "news",
+        "/njuːz/",
+        "n. 消息（不可数）"
+      ]
+    ],
+    "g": "谚语：没听到消息说明没出事。news 不可数，作单数。"
+  },
+  "Patience is a virtue.": {
+    "t": "耐心是一种美德。",
+    "w": [
+      [
+        "patience",
+        "/ˈpeɪʃns/",
+        "n. 耐心"
+      ],
+      [
+        "virtue",
+        "/ˈvɜːtʃuː/",
+        "n. 美德"
+      ]
+    ],
+    "g": "谚语：劝人耐心等待，不要急躁。"
+  },
+  "Seeing is believing.": {
+    "t": "眼见为实。",
+    "w": [
+      [
+        "believe",
+        "/bɪˈliːv/",
+        "v. 相信"
+      ]
+    ],
+    "g": "谚语：亲眼看到才可信。动名词作主语和表语。"
+  },
+  "Strike while the iron is hot.": {
+    "t": "趁热打铁。",
+    "w": [
+      [
+        "strike",
+        "/straɪk/",
+        "v. 打，击"
+      ],
+      [
+        "iron",
+        "/ˈaɪən/",
+        "n. 铁"
+      ]
+    ],
+    "g": "谚语：抓住时机立即行动。"
+  },
+  "You reap what you sow.": {
+    "t": "种瓜得瓜，种豆得豆。",
+    "w": [
+      [
+        "reap",
+        "/riːp/",
+        "v. 收割，收获"
+      ],
+      [
+        "sow",
+        "/səʊ/",
+        "v. 播种"
+      ]
+    ],
+    "g": "谚语：自己的行为决定后果。sow 读 /səʊ/。"
+  },
+  "A picture is worth a thousand words.": {
+    "t": "一图胜千言。",
+    "w": [
+      [
+        "worth",
+        "/wɜːθ/",
+        "adj. 值……的"
+      ]
+    ],
+    "g": "谚语：图像比文字更直观。be worth + 名词。"
+  },
+  "Knowledge is power.": {
+    "t": "知识就是力量。",
+    "w": [
+      [
+        "knowledge",
+        "/ˈnɒlɪdʒ/",
+        "n. 知识"
+      ],
+      [
+        "power",
+        "/ˈpaʊə/",
+        "n. 力量"
+      ]
+    ],
+    "g": "培根名言。knowledge 的 k 不发音，不可数。"
+  },
+  "Where there's smoke, there's fire.": {
+    "t": "无风不起浪。",
+    "w": [
+      [
+        "smoke",
+        "/sməʊk/",
+        "n. 烟"
+      ],
+      [
+        "fire",
+        "/ˈfaɪə/",
+        "n. 火"
+      ]
+    ],
+    "g": "谚语：有传言，往往事出有因。"
+  },
+  "A bird in the hand is worth two in the bush.": {
+    "t": "一鸟在手胜过二鸟在林。",
+    "w": [
+      [
+        "bush",
+        "/bʊʃ/",
+        "n. 灌木丛"
+      ],
+      [
+        "worth",
+        "/wɜːθ/",
+        "adj. 值……的"
+      ]
+    ],
+    "g": "谚语：已到手的东西比不确定的更可贵。"
+  },
+  "Still waters run deep.": {
+    "t": "静水流深。",
+    "w": [
+      [
+        "still",
+        "/stɪl/",
+        "adj. 静止的"
+      ],
+      [
+        "run deep",
+        "",
+        "（水）深；（感情等）深沉"
+      ]
+    ],
+    "g": "谚语：沉默寡言的人往往内心深沉、有见识。"
+  },
+  "Every little helps.": {
+    "t": "积少成多。",
+    "w": [
+      [
+        "every little",
+        "",
+        "每一点点"
+      ],
+      [
+        "help",
+        "/help/",
+        "v. 有帮助"
+      ]
+    ],
+    "g": "谚语：哪怕一点点贡献也有用。"
+  }
+}

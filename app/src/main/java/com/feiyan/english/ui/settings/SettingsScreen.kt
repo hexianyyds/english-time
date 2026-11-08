@@ -34,6 +34,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.feiyan.english.ui.components.Eyebrow
 import com.feiyan.english.ui.components.Hairline
+import com.feiyan.english.ui.components.ThemeToggleButton
 import com.feiyan.english.ui.icons.FeiyanIcons
 import com.feiyan.english.ui.theme.Hairline as HairlineColor
 import com.feiyan.english.ui.theme.Ink
@@ -88,7 +89,31 @@ fun SettingsScreen(
             color = InkMuted,
         )
 
-        Spacer(Modifier.height(28.dp))
+        Spacer(Modifier.height(22.dp))
+        Row(
+            Modifier.fillMaxWidth(),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Column(Modifier.weight(1f)) {
+                Text(
+                    text = "外观模式",
+                    style = MaterialTheme.typography.titleSmall.copy(fontSize = 16.sp),
+                    color = Ink,
+                )
+                Spacer(Modifier.height(4.dp))
+                Text(
+                    text = "一键切换日间 / 夜间，选择会保存在本机。",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = InkFaint,
+                )
+            }
+            Spacer(Modifier.width(12.dp))
+            ThemeToggleButton()
+        }
+        Spacer(Modifier.height(20.dp))
+        Hairline()
+        Spacer(Modifier.height(24.dp))
+
         CookieSection(
             title = "飞岩播客 Cookie",
             hint = "feiyanpod.com 登录后，开发者工具 → Application → Cookies，复制 token 的值。",
@@ -172,9 +197,9 @@ private fun CookieSection(
         Box(
             Modifier
                 .fillMaxWidth()
-                .clip(RoundedCornerShape(3.dp))
+                .clip(RoundedCornerShape(10.dp))
                 .background(KakiSoft.copy(alpha = 0.28f))
-                .border(0.8.dp, HairlineColor, RoundedCornerShape(3.dp))
+                .border(0.8.dp, HairlineColor, RoundedCornerShape(10.dp))
                 .padding(horizontal = 14.dp, vertical = 13.dp),
         ) {
             BasicTextField(
@@ -216,7 +241,7 @@ private fun CookieSection(
                 style = MaterialTheme.typography.bodyMedium.copy(letterSpacing = 1.sp),
                 color = Kaki,
                 modifier = Modifier
-                    .clip(RoundedCornerShape(2.dp))
+                    .clip(RoundedCornerShape(20.dp))
                     .background(KakiSoft)
                     .clickable(enabled = !credential.busy, onClick = onSave)
                     .padding(horizontal = 18.dp, vertical = 12.dp),
@@ -227,7 +252,7 @@ private fun CookieSection(
                 style = MaterialTheme.typography.bodyMedium.copy(letterSpacing = 1.sp),
                 color = if (credential.saved.isBlank()) InkFaint else InkMuted,
                 modifier = Modifier
-                    .clip(RoundedCornerShape(2.dp))
+                    .clip(RoundedCornerShape(20.dp))
                     .clickable(enabled = credential.saved.isNotBlank(), onClick = onClear)
                     .padding(horizontal = 12.dp, vertical = 12.dp),
             )

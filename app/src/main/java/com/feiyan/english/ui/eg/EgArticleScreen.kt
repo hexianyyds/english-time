@@ -1,6 +1,7 @@
 package com.feiyan.english.ui.eg
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -37,7 +38,9 @@ import com.feiyan.english.ui.components.Hairline
 import com.feiyan.english.ui.components.LoadingView
 import com.feiyan.english.ui.components.LocalBottomOverlayPadding
 import com.feiyan.english.ui.icons.FeiyanIcons
+import com.feiyan.english.ui.theme.Hairline as HairlineColor
 import com.feiyan.english.ui.theme.Ink
+import com.feiyan.english.ui.theme.PaperCard
 import com.feiyan.english.ui.theme.InkFaint
 import com.feiyan.english.ui.theme.InkMuted
 import com.feiyan.english.ui.theme.Kaki
@@ -110,7 +113,7 @@ private fun Reader(article: EgArticleDetail) {
                             style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 1.2.sp),
                             color = Kaki,
                             modifier = Modifier
-                                .clip(RoundedCornerShape(2.dp))
+                                .clip(RoundedCornerShape(20.dp))
                                 .background(KakiSoft)
                                 .padding(horizontal = 7.dp, vertical = 3.dp),
                         )
@@ -139,11 +142,12 @@ private fun Reader(article: EgArticleDetail) {
                     Modifier
                         .fillMaxWidth()
                         .padding(top = 18.dp)
-                        .clip(RoundedCornerShape(2.dp))
-                        .background(KakiSoft.copy(alpha = 0.4f))
+                        .clip(RoundedCornerShape(14.dp))
+                        .background(PaperCard)
+                        .border(1.dp, HairlineColor, RoundedCornerShape(14.dp))
                         .padding(14.dp),
                 ) {
-                    Eyebrow("中文摘要")
+                    Eyebrow("中文摘要 · SUMMARY")
                     Spacer(Modifier.height(7.dp))
                     Text(
                         text = article.summaryZh,

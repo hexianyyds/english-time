@@ -4,9 +4,11 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -80,7 +82,7 @@ fun YyChapterScreen(
                 style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.8.sp),
                 color = if (showChinese) Kaki else InkFaint,
                 modifier = Modifier
-                    .clip(RoundedCornerShape(2.dp))
+                    .clip(RoundedCornerShape(20.dp))
                     .background(if (showChinese) KakiSoft else InkFaint.copy(alpha = 0.08f))
                     .clickable { showChinese = !showChinese }
                     .padding(horizontal = 10.dp, vertical = 6.dp),
@@ -155,12 +157,24 @@ private fun ChapterContent(
                     color = Ink,
                 )
                 if (showChinese && !paragraph.chinese.isNullOrBlank()) {
-                    Spacer(Modifier.height(6.dp))
-                    Text(
-                        text = paragraph.chinese!!,
-                        style = MaterialTheme.typography.bodySmall.copy(fontSize = 12.5.sp, lineHeight = 20.sp),
-                        color = InkFaint,
-                    )
+                    Spacer(Modifier.height(7.dp))
+                    Row(Modifier.fillMaxWidth().height(IntrinsicSize.Min)) {
+                        Box(
+                            Modifier
+                                .width(2.dp)
+                                .fillMaxHeight()
+                                .clip(RoundedCornerShape(2.dp))
+                                .background(MaterialTheme.colorScheme.primary.copy(alpha = 0.55f)),
+                        )
+                        Text(
+                            text = paragraph.chinese!!,
+                            style = MaterialTheme.typography.bodySmall.copy(fontSize = 12.5.sp, lineHeight = 20.sp),
+                            color = InkMuted,
+                            modifier = Modifier
+                                .padding(start = 12.dp)
+                                .fillMaxWidth(),
+                        )
+                    }
                 }
             }
         }
@@ -175,7 +189,7 @@ private fun ChapterContent(
                             style = MaterialTheme.typography.bodyMedium.copy(letterSpacing = 0.8.sp),
                             color = Kaki,
                             modifier = Modifier
-                                .clip(RoundedCornerShape(2.dp))
+                                .clip(RoundedCornerShape(20.dp))
                                 .background(KakiSoft)
                                 .clickable { onPrev(chapter.i - 1) }
                                 .padding(horizontal = 16.dp, vertical = 10.dp),
@@ -188,7 +202,7 @@ private fun ChapterContent(
                             style = MaterialTheme.typography.bodyMedium.copy(letterSpacing = 0.8.sp),
                             color = Kaki,
                             modifier = Modifier
-                                .clip(RoundedCornerShape(2.dp))
+                                .clip(RoundedCornerShape(20.dp))
                                 .background(KakiSoft)
                                 .clickable { onNext(chapter.next!!.toInt()) }
                                 .padding(horizontal = 16.dp, vertical = 10.dp),

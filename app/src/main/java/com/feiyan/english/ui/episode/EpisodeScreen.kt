@@ -1,6 +1,7 @@
 package com.feiyan.english.ui.episode
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -35,6 +36,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
@@ -66,7 +68,9 @@ import com.feiyan.english.ui.theme.Ink
 import com.feiyan.english.ui.theme.InkFaint
 import com.feiyan.english.ui.theme.InkMuted
 import com.feiyan.english.ui.theme.Kaki
+import com.feiyan.english.ui.theme.KakiDeep
 import com.feiyan.english.ui.theme.KakiSoft
+import com.feiyan.english.ui.theme.PaperCard
 
 @Composable
 fun EpisodeScreen(
@@ -154,41 +158,41 @@ private fun EpisodeContent(
         contentPadding = PaddingValues(bottom = 32.dp + LocalBottomOverlayPadding.current),
     ) {
         item(key = "head", contentType = "head") {
-            Row(
+            Column(
                 Modifier.fillMaxWidth().padding(horizontal = 24.dp).padding(top = 12.dp),
-                verticalAlignment = Alignment.Top,
+                horizontalAlignment = Alignment.CenterHorizontally,
             ) {
-                Cover(episode.cover, size = 84.dp, corner = 3.dp)
-                Spacer(Modifier.width(16.dp))
-                Column(Modifier.weight(1f)) {
-                    Text(
-                        text = episode.name,
-                        style = MaterialTheme.typography.titleLarge.copy(fontSize = 20.sp),
-                        color = Ink,
-                        maxLines = 3,
-                        overflow = TextOverflow.Ellipsis,
-                    )
-                    Spacer(Modifier.height(8.dp))
-                    Eyebrow(
-                        listOfNotNull(
-                            channelName.ifBlank { null },
-                            formatEpisodeDate(episode.displayDate).ifBlank { null },
-                        ).joinToString(" · "),
-                    )
-                    Spacer(Modifier.height(10.dp))
-                    Row(verticalAlignment = Alignment.CenterVertically) {
-                        if (episode.isPreview) {
-                            TagBadge("试听 ${formatDuration(episode.previewDuration)}")
-                        } else {
-                            Eyebrow(formatDuration(episode.duration), color = InkFaint)
-                        }
-                    }
+                Box(
+                    Modifier
+                        .size(216.dp)
+                        .shadow(28.dp, RoundedCornerShape(24.dp), spotColor = Color.Black.copy(alpha = 0.5f))
+                        .clip(RoundedCornerShape(24.dp)),
+                ) {
+                    Cover(episode.cover, size = 216.dp, corner = 24.dp)
                 }
+                Spacer(Modifier.height(22.dp))
+                Text(
+                    text = episode.name,
+                    style = MaterialTheme.typography.titleLarge.copy(fontSize = 19.sp, lineHeight = 27.sp),
+                    color = Ink,
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis,
+                    textAlign = TextAlign.Center,
+                )
+                Spacer(Modifier.height(9.dp))
+                Eyebrow(
+                    listOfNotNull(
+                        channelName.ifBlank { null },
+                        formatEpisodeDate(episode.displayDate).ifBlank { null },
+                        formatDuration(episode.duration),
+                    ).joinToString(" · ").uppercase(),
+                    color = InkFaint,
+                )
             }
         }
 
         item(key = "player", contentType = "player") {
-            Column(Modifier.fillMaxWidth().padding(horizontal = 24.dp).padding(top = 24.dp)) {
+            Column(Modifier.fillMaxWidth().padding(horizontal = 24.dp).padding(top = 20.dp)) {
                 Slider(
                     value = dragging ?: (positionMs.toFloat() / durationMs.toFloat()).coerceIn(0f, 1f),
                     onValueChange = { dragging = it },
@@ -253,12 +257,13 @@ private fun EpisodeContent(
                 ) {
                     Text(
                         text = "语速 ${formatSpeed(player.speed)}",
-                        style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.8.sp),
+                        style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 1.sp),
                         color = InkMuted,
                         modifier = Modifier
-                            .clip(RoundedCornerShape(2.dp))
+                            .clip(RoundedCornerShape(20.dp))
+                            .border(1.dp, HairlineColor, RoundedCornerShape(20.dp))
                             .clickable { PlayerController.setSpeed(nextSpeed(player.speed)) }
-                            .padding(horizontal = 12.dp, vertical = 6.dp),
+                            .padding(horizontal = 14.dp, vertical = 7.dp),
                     )
                 }
                 Spacer(Modifier.height(20.dp))
@@ -356,15 +361,15 @@ private fun EpisodeContent(
 private fun SeekChip(label: String, onClick: () -> Unit) {
     Box(
         Modifier
-            .size(44.dp)
+            .size(52.dp)
             .clip(CircleShape)
-            .background(Color.Transparent)
+            .background(PaperCard)
             .clickable(onClick = onClick),
         contentAlignment = Alignment.Center,
     ) {
         Text(
             text = label,
-            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.2.sp),
+            style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 0.6.sp),
             color = InkMuted,
         )
     }
@@ -372,24 +377,19 @@ private fun SeekChip(label: String, onClick: () -> Unit) {
 
 @Composable
 private fun SentenceRow(sentence: Sentence, active: Boolean, onClick: () -> Unit) {
-    Row(
+    Box(
         Modifier
             .fillMaxWidth()
-            .height(IntrinsicSize.Min)
-            .clickable(onClick = onClick)
-            .background(if (active) KakiSoft else Color.Transparent),
+            .padding(horizontal = 16.dp, vertical = 3.dp)
+            .clip(RoundedCornerShape(14.dp))
+            .background(if (active) KakiSoft else Color.Transparent)
+            .clickable(onClick = onClick),
     ) {
-        Box(
-            Modifier
-                .width(2.dp)
-                .fillMaxHeight()
-                .background(if (active) Kaki else Color.Transparent),
-        )
-        Column(Modifier.padding(start = 22.dp, end = 24.dp, top = 12.dp, bottom = 12.dp)) {
+        Column(Modifier.padding(start = 18.dp, end = 18.dp, top = 12.dp, bottom = 12.dp)) {
             Text(
                 text = sentence.content,
                 style = MaterialTheme.typography.titleSmall.copy(fontSize = 15.5.sp, lineHeight = 24.sp),
-                color = if (active) Ink else Ink.copy(alpha = 0.84f),
+                color = if (active) KakiDeep else Ink.copy(alpha = 0.84f),
             )
             if (!sentence.translate.isNullOrBlank()) {
                 Spacer(Modifier.height(5.dp))

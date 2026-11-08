@@ -29,6 +29,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.text.SpanStyle
+import androidx.compose.ui.text.buildAnnotatedString
+import androidx.compose.ui.text.withStyle
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.feiyan.english.core.model.ChannelBrief
@@ -49,6 +52,7 @@ import com.feiyan.english.ui.components.ProgrammeRow
 import com.feiyan.english.ui.components.SectionHeader
 import com.feiyan.english.ui.em.EmCover
 import com.feiyan.english.ui.icons.FeiyanIcons
+import com.feiyan.english.ui.theme.Breeze
 import com.feiyan.english.ui.theme.Ink
 import com.feiyan.english.ui.theme.InkFaint
 import com.feiyan.english.ui.theme.InkMuted
@@ -64,6 +68,7 @@ fun HomeScreen(
     onXyAllClick: () -> Unit,
     onXyEpisodeClick: (String) -> Unit,
     modifier: Modifier = Modifier,
+    showBrandHeader: Boolean = true,
 ) {
     val viewModel: HomeViewModel = viewModel()
     val state by viewModel.state.collectAsStateWithLifecycle()
@@ -86,6 +91,7 @@ fun HomeScreen(
                 onXyAllClick = onXyAllClick,
                 onXyEpisodeClick = onXyEpisodeClick,
                 onTogglePlayback = PlayerController::toggle,
+                showBrandHeader = showBrandHeader,
             )
         }
     }
@@ -106,6 +112,7 @@ private fun HomeContent(
     onXyAllClick: () -> Unit,
     onXyEpisodeClick: (String) -> Unit,
     onTogglePlayback: () -> Unit,
+    showBrandHeader: Boolean,
 ) {
     // Compose 1.12：自定义 Lazy 预取窗口，减少首页长列表滚动时的空白帧
     val listState = rememberLazyListState(
@@ -120,8 +127,10 @@ private fun HomeContent(
         modifier = Modifier.fillMaxSize(),
         contentPadding = PaddingValues(bottom = 28.dp + LocalBottomOverlayPadding.current),
     ) {
-        item(key = "brand", contentType = "brand") {
-            BrandHeader(onSearchClick = onSearchClick)
+        if (showBrandHeader) {
+            item(key = "brand", contentType = "brand") {
+                BrandHeader(onSearchClick = onSearchClick)
+            }
         }
         item(key = "hero", contentType = "hero") {
             HeroBlock(latest = latest, onChannelClick = onChannelClick)
@@ -196,7 +205,7 @@ private fun HomeContent(
                             Cover(
                                 episode.image?.best ?: xyPodcast?.image?.best,
                                 size = 132.dp,
-                                corner = 4.dp,
+                                corner = 10.dp,
                             )
                             Spacer(Modifier.height(10.dp))
                             Text(
@@ -264,7 +273,10 @@ private fun HeroBlock(latest: ChannelBrief?, onChannelClick: (String) -> Unit) {
             .padding(top = 14.dp, bottom = 8.dp),
     ) {
         Text(
-            text = "A quiet place\nto hear English.",
+            text = buildAnnotatedString {
+                append("A quiet place\nto hear ")
+                withStyle(SpanStyle(color = Breeze)) { append("English.") }
+            },
             style = MaterialTheme.typography.displaySmall,
             color = Ink,
         )

@@ -1,0 +1,1497 @@
+{
+  "generatedAt": "2026-11-08T06:52:07.556Z",
+  "source": "https://word.iciba.com/",
+  "categories": [
+    {
+      "name": "考试词表",
+      "groups": [
+        {
+          "name": "大学英语四级",
+          "classId": "5",
+          "lessonCount": 261,
+          "wordCount": 5198,
+          "meta": "261课，5198词",
+          "subcourses": [
+            {
+              "name": "四级必备词汇",
+              "classId": "11",
+              "lessonCount": 226,
+              "wordCount": 4509
+            },
+            {
+              "name": "四级救命词汇",
+              "classId": "122",
+              "lessonCount": 35,
+              "wordCount": 689
+            }
+          ]
+        },
+        {
+          "name": "英语翻译考试",
+          "classId": "714",
+          "lessonCount": 199,
+          "wordCount": 3972,
+          "meta": "199课，3972词",
+          "subcourses": [
+            {
+              "name": "二级翻译口笔译大纲",
+              "classId": "715",
+              "lessonCount": 70,
+              "wordCount": 1400
+            },
+            {
+              "name": "三级笔译（上）",
+              "classId": "716",
+              "lessonCount": 35,
+              "wordCount": 699
+            },
+            {
+              "name": "三级笔译（下）",
+              "classId": "717",
+              "lessonCount": 94,
+              "wordCount": 1873
+            }
+          ]
+        },
+        {
+          "name": "成人考试",
+          "classId": "702",
+          "lessonCount": 1284,
+          "wordCount": 25591,
+          "meta": "1284课，25591词",
+          "subcourses": [
+            {
+              "name": "成人学位英语",
+              "classId": "703",
+              "lessonCount": 144,
+              "wordCount": 2880
+            },
+            {
+              "name": "《成人大学外语学习指南》吉林",
+              "classId": "704",
+              "lessonCount": 287,
+              "wordCount": 5735
+            },
+            {
+              "name": "成人学位英语三级",
+              "classId": "705",
+              "lessonCount": 143,
+              "wordCount": 2859
+            },
+            {
+              "name": "自考英语二重点",
+              "classId": "706",
+              "lessonCount": 11,
+              "wordCount": 205
+            },
+            {
+              "name": "《英语专业自考本专科》(上)",
+              "classId": "707",
+              "lessonCount": 198,
+              "wordCount": 3952
+            },
+            {
+              "name": "《英语专业自考本专科》(下)",
+              "classId": "708",
+              "lessonCount": 171,
+              "wordCount": 3416
+            },
+            {
+              "name": "《大学英语自学教程》(上册)",
+              "classId": "709",
+              "lessonCount": 89,
+              "wordCount": 1761
+            },
+            {
+              "name": "《大学英语自学教程》(下册)",
+              "classId": "710",
+              "lessonCount": 61,
+              "wordCount": 1201
+            },
+            {
+              "name": "专科起点升本科考试大纲",
+              "classId": "711",
+              "lessonCount": 180,
+              "wordCount": 3582
+            }
+          ]
+        },
+        {
+          "name": "托业考试必备",
+          "classId": "682",
+          "lessonCount": 42,
+          "wordCount": 838,
+          "meta": "42课，838词",
+          "subcourses": []
+        },
+        {
+          "name": "BEC商务英语",
+          "classId": "679",
+          "lessonCount": 57,
+          "wordCount": 1129,
+          "meta": "57课，1129词",
+          "subcourses": [
+            {
+              "name": "BEC高级",
+              "classId": "681",
+              "lessonCount": 10,
+              "wordCount": 200
+            },
+            {
+              "name": "BEC中级",
+              "classId": "680",
+              "lessonCount": 47,
+              "wordCount": 929
+            }
+          ]
+        },
+        {
+          "name": "大学英语六级",
+          "classId": "6",
+          "lessonCount": 130,
+          "wordCount": 2581,
+          "meta": "130课，2581词",
+          "subcourses": [
+            {
+              "name": "六级必备词汇",
+              "classId": "12",
+              "lessonCount": 105,
+              "wordCount": 2087
+            },
+            {
+              "name": "六级救命词汇",
+              "classId": "123",
+              "lessonCount": 25,
+              "wordCount": 494
+            }
+          ]
+        },
+        {
+          "name": "考研词汇",
+          "classId": "142",
+          "lessonCount": 277,
+          "wordCount": 5534,
+          "meta": "277课，5534词",
+          "subcourses": [
+            {
+              "name": "考研必备词汇",
+              "classId": "13",
+              "lessonCount": 274,
+              "wordCount": 5475
+            },
+            {
+              "name": "2013考研大纲新增",
+              "classId": "143",
+              "lessonCount": 3,
+              "wordCount": 59
+            }
+          ]
+        },
+        {
+          "name": "TOEFL必备词汇",
+          "classId": "14",
+          "lessonCount": 245,
+          "wordCount": 4883,
+          "meta": "245课，4883词",
+          "subcourses": []
+        },
+        {
+          "name": "雅思必备词汇",
+          "classId": "15",
+          "lessonCount": 228,
+          "wordCount": 4541,
+          "meta": "228课，4541词",
+          "subcourses": []
+        },
+        {
+          "name": "GRE考试必备词汇",
+          "classId": "16",
+          "lessonCount": 375,
+          "wordCount": 7496,
+          "meta": "375课，7496词",
+          "subcourses": []
+        },
+        {
+          "name": "GMAT",
+          "classId": "17",
+          "lessonCount": 202,
+          "wordCount": 3997,
+          "meta": "202课，3997词",
+          "subcourses": [
+            {
+              "name": "GMAT600分词汇",
+              "classId": "36",
+              "lessonCount": 40,
+              "wordCount": 789
+            },
+            {
+              "name": "GMAT800分常考",
+              "classId": "37",
+              "lessonCount": 54,
+              "wordCount": 1064
+            },
+            {
+              "name": "GMAT词汇精选",
+              "classId": "38",
+              "lessonCount": 108,
+              "wordCount": 2144
+            }
+          ]
+        },
+        {
+          "name": "MBA联考词汇",
+          "classId": "39",
+          "lessonCount": 243,
+          "wordCount": 4847,
+          "meta": "243课，4847词",
+          "subcourses": []
+        },
+        {
+          "name": "研究生入学考试",
+          "classId": "40",
+          "lessonCount": 271,
+          "wordCount": 5404,
+          "meta": "271课，5404词",
+          "subcourses": []
+        },
+        {
+          "name": "专四必备词汇",
+          "classId": "90",
+          "lessonCount": 105,
+          "wordCount": 2097,
+          "meta": "105课，2097词",
+          "subcourses": []
+        },
+        {
+          "name": "专八必备词汇",
+          "classId": "91",
+          "lessonCount": 47,
+          "wordCount": 937,
+          "meta": "47课，937词",
+          "subcourses": []
+        },
+        {
+          "name": "SAT考试",
+          "classId": "120",
+          "lessonCount": 11,
+          "wordCount": 215,
+          "meta": "11课，215词",
+          "subcourses": [
+            {
+              "name": "SAT数学相关词汇",
+              "classId": "121",
+              "lessonCount": 11,
+              "wordCount": 215
+            }
+          ]
+        },
+        {
+          "name": "高考",
+          "classId": "138",
+          "lessonCount": 218,
+          "wordCount": 4336,
+          "meta": "218课，4336词",
+          "subcourses": [
+            {
+              "name": "高考冲刺词汇",
+              "classId": "139",
+              "lessonCount": 5,
+              "wordCount": 100
+            },
+            {
+              "name": "高考大纲词汇",
+              "classId": "140",
+              "lessonCount": 194,
+              "wordCount": 3874
+            },
+            {
+              "name": "高考常用短语",
+              "classId": "141",
+              "lessonCount": 19,
+              "wordCount": 362
+            }
+          ]
+        },
+        {
+          "name": "B级考试附加词汇",
+          "classId": "135",
+          "lessonCount": 12,
+          "wordCount": 230,
+          "meta": "12课，230词",
+          "subcourses": []
+        }
+      ]
+    },
+    {
+      "name": "小学",
+      "groups": [
+        {
+          "name": "小学牛津版",
+          "classId": "24",
+          "lessonCount": 64,
+          "wordCount": 1166,
+          "meta": "64课，1166词",
+          "subcourses": [
+            {
+              "name": "一年级 上学期",
+              "classId": "63",
+              "lessonCount": 5,
+              "wordCount": 83
+            },
+            {
+              "name": "一年级 下学期",
+              "classId": "64",
+              "lessonCount": 3,
+              "wordCount": 51
+            },
+            {
+              "name": "二年级 上学期",
+              "classId": "65",
+              "lessonCount": 3,
+              "wordCount": 51
+            },
+            {
+              "name": "二年级 下学期",
+              "classId": "66",
+              "lessonCount": 3,
+              "wordCount": 59
+            },
+            {
+              "name": "三年级 上学期",
+              "classId": "67",
+              "lessonCount": 4,
+              "wordCount": 75
+            },
+            {
+              "name": "三年级 下学期",
+              "classId": "68",
+              "lessonCount": 4,
+              "wordCount": 69
+            },
+            {
+              "name": "四年级 上学期",
+              "classId": "69",
+              "lessonCount": 4,
+              "wordCount": 68
+            },
+            {
+              "name": "四年级 下学期",
+              "classId": "70",
+              "lessonCount": 5,
+              "wordCount": 97
+            },
+            {
+              "name": "五年级 上学期",
+              "classId": "71",
+              "lessonCount": 5,
+              "wordCount": 83
+            },
+            {
+              "name": "五年级 下学期",
+              "classId": "72",
+              "lessonCount": 4,
+              "wordCount": 73
+            },
+            {
+              "name": "六年级 上学期",
+              "classId": "73",
+              "lessonCount": 14,
+              "wordCount": 275
+            },
+            {
+              "name": "六年级 下学期",
+              "classId": "74",
+              "lessonCount": 10,
+              "wordCount": 182
+            }
+          ]
+        },
+        {
+          "name": "小学深圳版",
+          "classId": "659",
+          "lessonCount": 57,
+          "wordCount": 1027,
+          "meta": "57课，1027词",
+          "subcourses": [
+            {
+              "name": "第一册",
+              "classId": "655",
+              "lessonCount": 8,
+              "wordCount": 152
+            },
+            {
+              "name": "第二册",
+              "classId": "656",
+              "lessonCount": 8,
+              "wordCount": 142
+            },
+            {
+              "name": "第三册",
+              "classId": "657",
+              "lessonCount": 2,
+              "wordCount": 37
+            },
+            {
+              "name": "第四册",
+              "classId": "658",
+              "lessonCount": 3,
+              "wordCount": 49
+            },
+            {
+              "name": "第五册",
+              "classId": "149",
+              "lessonCount": 3,
+              "wordCount": 51
+            },
+            {
+              "name": "第六册",
+              "classId": "150",
+              "lessonCount": 4,
+              "wordCount": 63
+            },
+            {
+              "name": "第七册",
+              "classId": "151",
+              "lessonCount": 3,
+              "wordCount": 56
+            },
+            {
+              "name": "第八册",
+              "classId": "152",
+              "lessonCount": 4,
+              "wordCount": 77
+            },
+            {
+              "name": "第九册",
+              "classId": "154",
+              "lessonCount": 6,
+              "wordCount": 104
+            },
+            {
+              "name": "第十册",
+              "classId": "155",
+              "lessonCount": 8,
+              "wordCount": 154
+            },
+            {
+              "name": "第十一册",
+              "classId": "156",
+              "lessonCount": 8,
+              "wordCount": 142
+            }
+          ]
+        },
+        {
+          "name": "河北版小学英语",
+          "classId": "673",
+          "lessonCount": 15,
+          "wordCount": 211,
+          "meta": "15课，211词",
+          "subcourses": [
+            {
+              "name": "Student Book 1",
+              "classId": "265",
+              "lessonCount": 2,
+              "wordCount": 21
+            },
+            {
+              "name": "Student Book 2",
+              "classId": "266",
+              "lessonCount": 3,
+              "wordCount": 42
+            },
+            {
+              "name": "Student Book 3",
+              "classId": "267",
+              "lessonCount": 1,
+              "wordCount": 11
+            },
+            {
+              "name": "Student Book 4",
+              "classId": "268",
+              "lessonCount": 2,
+              "wordCount": 28
+            },
+            {
+              "name": "Student Book 5",
+              "classId": "269",
+              "lessonCount": 1,
+              "wordCount": 15
+            },
+            {
+              "name": "Student Book 6",
+              "classId": "270",
+              "lessonCount": 1,
+              "wordCount": 20
+            },
+            {
+              "name": "Student Book 7",
+              "classId": "271",
+              "lessonCount": 2,
+              "wordCount": 33
+            },
+            {
+              "name": "Student Book 8",
+              "classId": "272",
+              "lessonCount": 3,
+              "wordCount": 41
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "初中英语",
+      "groups": [
+        {
+          "name": "初中牛津版",
+          "classId": "23",
+          "lessonCount": 123,
+          "wordCount": 2405,
+          "meta": "123课，2405词",
+          "subcourses": [
+            {
+              "name": "初一 上学期",
+              "classId": "57",
+              "lessonCount": 27,
+              "wordCount": 525
+            },
+            {
+              "name": "初一 下学期",
+              "classId": "58",
+              "lessonCount": 24,
+              "wordCount": 472
+            },
+            {
+              "name": "初二 上学期",
+              "classId": "59",
+              "lessonCount": 21,
+              "wordCount": 405
+            },
+            {
+              "name": "初二 下学期",
+              "classId": "60",
+              "lessonCount": 15,
+              "wordCount": 297
+            },
+            {
+              "name": "初三 上学期",
+              "classId": "61",
+              "lessonCount": 20,
+              "wordCount": 389
+            },
+            {
+              "name": "初三 下学期",
+              "classId": "62",
+              "lessonCount": 16,
+              "wordCount": 317
+            }
+          ]
+        },
+        {
+          "name": "初中人教版",
+          "classId": "103",
+          "lessonCount": 140,
+          "wordCount": 2729,
+          "meta": "140课，2729词",
+          "subcourses": [
+            {
+              "name": "七年级上",
+              "classId": "105",
+              "lessonCount": 30,
+              "wordCount": 584
+            },
+            {
+              "name": "七年级下",
+              "classId": "106",
+              "lessonCount": 20,
+              "wordCount": 384
+            },
+            {
+              "name": "八年级上",
+              "classId": "107",
+              "lessonCount": 28,
+              "wordCount": 549
+            },
+            {
+              "name": "八年级下",
+              "classId": "108",
+              "lessonCount": 25,
+              "wordCount": 481
+            },
+            {
+              "name": "九年级",
+              "classId": "109",
+              "lessonCount": 37,
+              "wordCount": 731
+            }
+          ]
+        },
+        {
+          "name": "仁爱版",
+          "classId": "671",
+          "lessonCount": 93,
+          "wordCount": 1797,
+          "meta": "93课，1797词",
+          "subcourses": [
+            {
+              "name": "七年级上册",
+              "classId": "221",
+              "lessonCount": 19,
+              "wordCount": 378
+            },
+            {
+              "name": "七年级下册",
+              "classId": "222",
+              "lessonCount": 19,
+              "wordCount": 368
+            },
+            {
+              "name": "八年级上册",
+              "classId": "223",
+              "lessonCount": 18,
+              "wordCount": 345
+            },
+            {
+              "name": "八年级下册",
+              "classId": "224",
+              "lessonCount": 17,
+              "wordCount": 323
+            },
+            {
+              "name": "九年级上册",
+              "classId": "225",
+              "lessonCount": 12,
+              "wordCount": 235
+            },
+            {
+              "name": "九年级下册",
+              "classId": "226",
+              "lessonCount": 8,
+              "wordCount": 148
+            }
+          ]
+        },
+        {
+          "name": "初中河北版",
+          "classId": "674",
+          "lessonCount": 96,
+          "wordCount": 1874,
+          "meta": "96课，1874词",
+          "subcourses": [
+            {
+              "name": "Student Book 1",
+              "classId": "273",
+              "lessonCount": 20,
+              "wordCount": 399
+            },
+            {
+              "name": "Student Book 2",
+              "classId": "274",
+              "lessonCount": 18,
+              "wordCount": 349
+            },
+            {
+              "name": "Student Book 3",
+              "classId": "276",
+              "lessonCount": 16,
+              "wordCount": 310
+            },
+            {
+              "name": "Student Book 4",
+              "classId": "277",
+              "lessonCount": 16,
+              "wordCount": 310
+            },
+            {
+              "name": "Student Book 5",
+              "classId": "278",
+              "lessonCount": 12,
+              "wordCount": 239
+            },
+            {
+              "name": "Student Book 6",
+              "classId": "279",
+              "lessonCount": 14,
+              "wordCount": 267
+            }
+          ]
+        },
+        {
+          "name": "新初中人教版",
+          "classId": "727",
+          "lessonCount": 43,
+          "wordCount": 837,
+          "meta": "43课，837词",
+          "subcourses": [
+            {
+              "name": "新初中人教版 八年级上",
+              "classId": "728",
+              "lessonCount": 18,
+              "wordCount": 345
+            },
+            {
+              "name": "新初中人教版 八年级下",
+              "classId": "729",
+              "lessonCount": 25,
+              "wordCount": 492
+            }
+          ]
+        },
+        {
+          "name": "冀教版",
+          "classId": "677",
+          "lessonCount": 17,
+          "wordCount": 323,
+          "meta": "17课，323词",
+          "subcourses": [
+            {
+              "name": "九年级上册",
+              "classId": "678",
+              "lessonCount": 17,
+              "wordCount": 323
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "高中英语",
+      "groups": [
+        {
+          "name": "高中牛津版",
+          "classId": "22",
+          "lessonCount": 136,
+          "wordCount": 2667,
+          "meta": "136课，2667词",
+          "subcourses": [
+            {
+              "name": "高一 上学期",
+              "classId": "51",
+              "lessonCount": 19,
+              "wordCount": 373
+            },
+            {
+              "name": "高一 下学期",
+              "classId": "52",
+              "lessonCount": 25,
+              "wordCount": 493
+            },
+            {
+              "name": "高二 上学期",
+              "classId": "53",
+              "lessonCount": 24,
+              "wordCount": 469
+            },
+            {
+              "name": "高二 下学期",
+              "classId": "54",
+              "lessonCount": 20,
+              "wordCount": 398
+            },
+            {
+              "name": "高三 上学期",
+              "classId": "55",
+              "lessonCount": 25,
+              "wordCount": 490
+            },
+            {
+              "name": "高三 下学期",
+              "classId": "56",
+              "lessonCount": 23,
+              "wordCount": 444
+            }
+          ]
+        },
+        {
+          "name": "高中人教版",
+          "classId": "104",
+          "lessonCount": 119,
+          "wordCount": 2312,
+          "meta": "119课，2312词",
+          "subcourses": [
+            {
+              "name": "必修1",
+              "classId": "110",
+              "lessonCount": 14,
+              "wordCount": 278
+            },
+            {
+              "name": "必修2",
+              "classId": "111",
+              "lessonCount": 14,
+              "wordCount": 265
+            },
+            {
+              "name": "必修3",
+              "classId": "112",
+              "lessonCount": 19,
+              "wordCount": 362
+            },
+            {
+              "name": "必修4",
+              "classId": "113",
+              "lessonCount": 15,
+              "wordCount": 299
+            },
+            {
+              "name": "必修5",
+              "classId": "114",
+              "lessonCount": 18,
+              "wordCount": 344
+            },
+            {
+              "name": "选修6",
+              "classId": "118",
+              "lessonCount": 20,
+              "wordCount": 385
+            },
+            {
+              "name": "选修7",
+              "classId": "119",
+              "lessonCount": 19,
+              "wordCount": 379
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "大学英语",
+      "groups": [
+        {
+          "name": "大学英语精读",
+          "classId": "21",
+          "lessonCount": 240,
+          "wordCount": 4757,
+          "meta": "240课，4757词",
+          "subcourses": [
+            {
+              "name": "大学英语(第一册)",
+              "classId": "45",
+              "lessonCount": 27,
+              "wordCount": 527
+            },
+            {
+              "name": "大学英语(第二册)",
+              "classId": "46",
+              "lessonCount": 37,
+              "wordCount": 735
+            },
+            {
+              "name": "大学英语(第三册)",
+              "classId": "47",
+              "lessonCount": 40,
+              "wordCount": 796
+            },
+            {
+              "name": "大学英语(第四册)",
+              "classId": "48",
+              "lessonCount": 46,
+              "wordCount": 919
+            },
+            {
+              "name": "大学英语(第五册)",
+              "classId": "49",
+              "lessonCount": 25,
+              "wordCount": 496
+            },
+            {
+              "name": "大学英语(第六册)",
+              "classId": "50",
+              "lessonCount": 65,
+              "wordCount": 1284
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "能力提升",
+      "groups": [
+        {
+          "name": "新概念英语",
+          "classId": "20",
+          "lessonCount": 247,
+          "wordCount": 4885,
+          "meta": "247课，4885词",
+          "subcourses": [
+            {
+              "name": "新概念英语1",
+              "classId": "41",
+              "lessonCount": 41,
+              "wordCount": 801
+            },
+            {
+              "name": "新概念英语2",
+              "classId": "42",
+              "lessonCount": 49,
+              "wordCount": 961
+            },
+            {
+              "name": "新概念英语3",
+              "classId": "43",
+              "lessonCount": 81,
+              "wordCount": 1610
+            },
+            {
+              "name": "新概念英语4",
+              "classId": "44",
+              "lessonCount": 76,
+              "wordCount": 1513
+            }
+          ]
+        },
+        {
+          "name": "柯林斯星级词汇",
+          "classId": "124",
+          "lessonCount": 447,
+          "wordCount": 8911,
+          "meta": "447课，8911词",
+          "subcourses": [
+            {
+              "name": "五星级词表",
+              "classId": "125",
+              "lessonCount": 24,
+              "wordCount": 472
+            },
+            {
+              "name": "四星级词表",
+              "classId": "126",
+              "lessonCount": 42,
+              "wordCount": 835
+            },
+            {
+              "name": "三星级词表",
+              "classId": "127",
+              "lessonCount": 60,
+              "wordCount": 1195
+            },
+            {
+              "name": "二星级词表",
+              "classId": "128",
+              "lessonCount": 109,
+              "wordCount": 2172
+            },
+            {
+              "name": "一星级词表",
+              "classId": "129",
+              "lessonCount": 212,
+              "wordCount": 4237
+            }
+          ]
+        },
+        {
+          "name": "朗文2000释义词汇",
+          "classId": "293",
+          "lessonCount": 49,
+          "wordCount": 976,
+          "meta": "49课，976词",
+          "subcourses": []
+        },
+        {
+          "name": "Vocabulary 10000",
+          "classId": "358",
+          "lessonCount": 55,
+          "wordCount": 1089,
+          "meta": "55课，1089词",
+          "subcourses": []
+        },
+        {
+          "name": "Vocabulary 22000",
+          "classId": "359",
+          "lessonCount": 33,
+          "wordCount": 652,
+          "meta": "33课，652词",
+          "subcourses": []
+        },
+        {
+          "name": "Vocabulary 5000",
+          "classId": "361",
+          "lessonCount": 54,
+          "wordCount": 1075,
+          "meta": "54课，1075词",
+          "subcourses": []
+        },
+        {
+          "name": "基础词汇",
+          "classId": "362",
+          "lessonCount": 59,
+          "wordCount": 1161,
+          "meta": "59课，1161词",
+          "subcourses": []
+        },
+        {
+          "name": "美国英语",
+          "classId": "675",
+          "lessonCount": 181,
+          "wordCount": 3588,
+          "meta": "181课，3588词",
+          "subcourses": [
+            {
+              "name": "初级(上册)",
+              "classId": "363",
+              "lessonCount": 29,
+              "wordCount": 580
+            },
+            {
+              "name": "初级(下册)",
+              "classId": "364",
+              "lessonCount": 25,
+              "wordCount": 485
+            },
+            {
+              "name": "中级(上册)",
+              "classId": "365",
+              "lessonCount": 46,
+              "wordCount": 919
+            },
+            {
+              "name": "中级(下册)",
+              "classId": "366",
+              "lessonCount": 50,
+              "wordCount": 985
+            },
+            {
+              "name": "高级",
+              "classId": "355",
+              "lessonCount": 31,
+              "wordCount": 619
+            }
+          ]
+        },
+        {
+          "name": "CNN student news",
+          "classId": "712",
+          "lessonCount": 3,
+          "wordCount": 48,
+          "meta": "3课，48词",
+          "subcourses": []
+        },
+        {
+          "name": "要背就背有用单词",
+          "classId": "713",
+          "lessonCount": 163,
+          "wordCount": 3247,
+          "meta": "163课，3247词",
+          "subcourses": []
+        },
+        {
+          "name": "短语动词",
+          "classId": "719",
+          "lessonCount": 22,
+          "wordCount": 431,
+          "meta": "22课，431词",
+          "subcourses": []
+        },
+        {
+          "name": "牛津核心3000词汇",
+          "classId": "724",
+          "lessonCount": 175,
+          "wordCount": 3482,
+          "meta": "175课，3482词",
+          "subcourses": [
+            {
+              "name": "牛津3000词汇（上）",
+              "classId": "294",
+              "lessonCount": 53,
+              "wordCount": 1047
+            },
+            {
+              "name": "牛津3000词汇（下）",
+              "classId": "725",
+              "lessonCount": 122,
+              "wordCount": 2435
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "行业词表",
+      "groups": [
+        {
+          "name": "医学英语",
+          "classId": "25",
+          "lessonCount": 131,
+          "wordCount": 2609,
+          "meta": "131课，2609词",
+          "subcourses": [
+            {
+              "name": "第一册",
+              "classId": "75",
+              "lessonCount": 58,
+              "wordCount": 1160
+            },
+            {
+              "name": "第二册",
+              "classId": "76",
+              "lessonCount": 46,
+              "wordCount": 909
+            },
+            {
+              "name": "第三册",
+              "classId": "77",
+              "lessonCount": 27,
+              "wordCount": 540
+            }
+          ]
+        },
+        {
+          "name": "计算机常用词汇",
+          "classId": "78",
+          "lessonCount": 191,
+          "wordCount": 3820,
+          "meta": "191课，3820词",
+          "subcourses": []
+        },
+        {
+          "name": "金融常用英语词汇",
+          "classId": "79",
+          "lessonCount": 118,
+          "wordCount": 2346,
+          "meta": "118课，2346词",
+          "subcourses": []
+        },
+        {
+          "name": "交友常用词汇",
+          "classId": "80",
+          "lessonCount": 18,
+          "wordCount": 341,
+          "meta": "18课，341词",
+          "subcourses": []
+        },
+        {
+          "name": "求职常用词汇",
+          "classId": "81",
+          "lessonCount": 11,
+          "wordCount": 202,
+          "meta": "11课，202词",
+          "subcourses": []
+        },
+        {
+          "name": "人力资源词汇",
+          "classId": "97",
+          "lessonCount": 34,
+          "wordCount": 675,
+          "meta": "34课，675词",
+          "subcourses": []
+        },
+        {
+          "name": "外贸行业必备",
+          "classId": "98",
+          "lessonCount": 14,
+          "wordCount": 263,
+          "meta": "14课，263词",
+          "subcourses": []
+        },
+        {
+          "name": "建筑专业词汇",
+          "classId": "147",
+          "lessonCount": 92,
+          "wordCount": 1836,
+          "meta": "92课，1836词",
+          "subcourses": []
+        },
+        {
+          "name": "化学（高分子）专业词汇",
+          "classId": "721",
+          "lessonCount": 17,
+          "wordCount": 327,
+          "meta": "17课，327词",
+          "subcourses": []
+        }
+      ]
+    },
+    {
+      "name": "优质生活",
+      "groups": [
+        {
+          "name": "过年必用单词",
+          "classId": "726",
+          "lessonCount": 3,
+          "wordCount": 46,
+          "meta": "3课，46词",
+          "subcourses": []
+        },
+        {
+          "name": "身体各部位名称",
+          "classId": "720",
+          "lessonCount": 7,
+          "wordCount": 130,
+          "meta": "7课，130词",
+          "subcourses": []
+        },
+        {
+          "name": "经典文学名著",
+          "classId": "683",
+          "lessonCount": 745,
+          "wordCount": 14738,
+          "meta": "745课，14738词",
+          "subcourses": [
+            {
+              "name": "海蒂（上）",
+              "classId": "684",
+              "lessonCount": 14,
+              "wordCount": 266
+            },
+            {
+              "name": "卡夫卡是谁",
+              "classId": "722",
+              "lessonCount": 66,
+              "wordCount": 1307
+            },
+            {
+              "name": "哈利波特与魔法石",
+              "classId": "723",
+              "lessonCount": 45,
+              "wordCount": 886
+            },
+            {
+              "name": "海蒂（下）",
+              "classId": "685",
+              "lessonCount": 55,
+              "wordCount": 1096
+            },
+            {
+              "name": "哈利波特与阿兹卡班囚徒",
+              "classId": "686",
+              "lessonCount": 30,
+              "wordCount": 591
+            },
+            {
+              "name": "哈利.波特与密室",
+              "classId": "689",
+              "lessonCount": 39,
+              "wordCount": 767
+            },
+            {
+              "name": "木偶奇遇记（上）",
+              "classId": "687",
+              "lessonCount": 23,
+              "wordCount": 443
+            },
+            {
+              "name": "木偶奇遇记（下）",
+              "classId": "688",
+              "lessonCount": 17,
+              "wordCount": 339
+            },
+            {
+              "name": "一千零一夜",
+              "classId": "690",
+              "lessonCount": 63,
+              "wordCount": 1244
+            },
+            {
+              "name": "傲慢与偏见（上）",
+              "classId": "691",
+              "lessonCount": 88,
+              "wordCount": 1758
+            },
+            {
+              "name": "傲慢与偏见（下）",
+              "classId": "692",
+              "lessonCount": 71,
+              "wordCount": 1412
+            },
+            {
+              "name": "白城恶魔",
+              "classId": "693",
+              "lessonCount": 11,
+              "wordCount": 208
+            },
+            {
+              "name": "麦田守望者",
+              "classId": "694",
+              "lessonCount": 14,
+              "wordCount": 275
+            },
+            {
+              "name": "小王子",
+              "classId": "695",
+              "lessonCount": 15,
+              "wordCount": 299
+            },
+            {
+              "name": "动物庄园",
+              "classId": "697",
+              "lessonCount": 26,
+              "wordCount": 511
+            },
+            {
+              "name": "1984",
+              "classId": "698",
+              "lessonCount": 18,
+              "wordCount": 359
+            },
+            {
+              "name": "瓶中信",
+              "classId": "699",
+              "lessonCount": 33,
+              "wordCount": 644
+            },
+            {
+              "name": "权力游戏（第一册）",
+              "classId": "700",
+              "lessonCount": 100,
+              "wordCount": 1997
+            },
+            {
+              "name": "国境以南 太阳以西",
+              "classId": "701",
+              "lessonCount": 17,
+              "wordCount": 336
+            }
+          ]
+        },
+        {
+          "name": "看美剧攻略",
+          "classId": "676",
+          "lessonCount": 19,
+          "wordCount": 363,
+          "meta": "19课，363词",
+          "subcourses": []
+        },
+        {
+          "name": "生活常用词汇",
+          "classId": "175",
+          "lessonCount": 26,
+          "wordCount": 514,
+          "meta": "26课，514词",
+          "subcourses": []
+        },
+        {
+          "name": "海外生活-美食篇",
+          "classId": "145",
+          "lessonCount": 19,
+          "wordCount": 366,
+          "meta": "19课，366词",
+          "subcourses": []
+        },
+        {
+          "name": "海外生活-家居篇",
+          "classId": "144",
+          "lessonCount": 13,
+          "wordCount": 252,
+          "meta": "13课，252词",
+          "subcourses": []
+        },
+        {
+          "name": "海外生活-气象篇",
+          "classId": "146",
+          "lessonCount": 11,
+          "wordCount": 203,
+          "meta": "11课，203词",
+          "subcourses": []
+        },
+        {
+          "name": "旅行相关单词",
+          "classId": "99",
+          "lessonCount": 12,
+          "wordCount": 229,
+          "meta": "12课，229词",
+          "subcourses": []
+        },
+        {
+          "name": "玩游戏必看",
+          "classId": "95",
+          "lessonCount": 40,
+          "wordCount": 769,
+          "meta": "40课，769词",
+          "subcourses": [
+            {
+              "name": "热门游戏词汇",
+              "classId": "100",
+              "lessonCount": 32,
+              "wordCount": 632
+            },
+            {
+              "name": "各类游戏集锦",
+              "classId": "101",
+              "lessonCount": 2,
+              "wordCount": 30
+            },
+            {
+              "name": "英雄联盟常用词汇",
+              "classId": "730",
+              "lessonCount": 6,
+              "wordCount": 107
+            }
+          ]
+        },
+        {
+          "name": "化妆品",
+          "classId": "87",
+          "lessonCount": 2,
+          "wordCount": 21,
+          "meta": "2课，21词",
+          "subcourses": []
+        },
+        {
+          "name": "颜色",
+          "classId": "83",
+          "lessonCount": 7,
+          "wordCount": 133,
+          "meta": "7课，133词",
+          "subcourses": []
+        },
+        {
+          "name": "动物",
+          "classId": "84",
+          "lessonCount": 11,
+          "wordCount": 202,
+          "meta": "11课，202词",
+          "subcourses": []
+        },
+        {
+          "name": "植物",
+          "classId": "85",
+          "lessonCount": 6,
+          "wordCount": 119,
+          "meta": "6课，119词",
+          "subcourses": []
+        },
+        {
+          "name": "数学术语",
+          "classId": "86",
+          "lessonCount": 11,
+          "wordCount": 209,
+          "meta": "11课，209词",
+          "subcourses": []
+        },
+        {
+          "name": "体育词汇集锦",
+          "classId": "96",
+          "lessonCount": 16,
+          "wordCount": 320,
+          "meta": "16课，320词",
+          "subcourses": [
+            {
+              "name": "足球fans必看",
+              "classId": "102",
+              "lessonCount": 16,
+              "wordCount": 320
+            }
+          ]
+        },
+        {
+          "name": "奥运会相关词",
+          "classId": "82",
+          "lessonCount": 9,
+          "wordCount": 161,
+          "meta": "9课，161词",
+          "subcourses": []
+        },
+        {
+          "name": "电话常用词汇",
+          "classId": "153",
+          "lessonCount": 13,
+          "wordCount": 258,
+          "meta": "13课，258词",
+          "subcourses": []
+        }
+      ]
+    }
+  ]
+}

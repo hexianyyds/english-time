@@ -54,9 +54,9 @@ fun UpdateDialog(
             Modifier
                 .padding(horizontal = 32.dp)
                 .fillMaxWidth()
-                .clip(RoundedCornerShape(4.dp))
+                .clip(RoundedCornerShape(16.dp))
                 .background(PaperCard)
-                .border(0.8.dp, HairlineColor, RoundedCornerShape(4.dp))
+                .border(0.8.dp, HairlineColor, RoundedCornerShape(16.dp))
                 .clickable(enabled = false) {}
                 .padding(22.dp),
         ) {
@@ -108,7 +108,7 @@ fun UpdateDialog(
                         style = MaterialTheme.typography.bodyMedium.copy(letterSpacing = 1.sp),
                         color = Kaki,
                         modifier = Modifier
-                            .clip(RoundedCornerShape(2.dp))
+                            .clip(RoundedCornerShape(20.dp))
                             .background(KakiSoft)
                             .clickable(onClick = if (info != null) onUpdate else onDismiss)
                             .padding(horizontal = 18.dp, vertical = 12.dp),

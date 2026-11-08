@@ -148,7 +148,7 @@ fun DisclaimerScreen(
         ) {
             DisclaimerBlock(
                 title = "一、内容来源",
-                body = "本应用是个人学习用途的第三方客户端，自身不生产、不存储任何内容。应用内展示的文字、音频、图片、译文等，均来自公开可访问的第三方网站接口，包括但不限于飞岩播客（feiyanpod.com）、EnglishMeasure（englishmeasure.com）、小宇宙（xiaoyuzhoufm.com）、英语小说网（yingyuxiaoshuo.com）、BookYell（bookyell.com）与 Englio（englio.ai）。所有内容的著作权归原作者与各平台所有。",
+                body = "本应用是个人学习用途的第三方客户端，自身不生产、不存储任何内容。应用内展示的文字、音频、图片、译文等，均来自公开可访问的第三方网站接口，包括但不限于飞岩播客（feiyanpod.com）、EnglishMeasure（englishmeasure.com）、小宇宙（xiaoyuzhoufm.com）、英语小说网（yingyuxiaoshuo.com）、BookYell（bookyell.com）、Englio（englio.ai）、单词森林（wordforest.cn）、爱词吧（word.iciba.com）、背单词365（beidanci365.com）、ENTTS（entts.com）与国际音标发音网站（wxaiway.com/ipa）。所有内容的著作权归原作者与各平台所有。",
             )
             DisclaimerBlock(
                 title = "二、使用范围",
@@ -247,7 +247,7 @@ fun AboutAppScreen(
                     style = MaterialTheme.typography.bodyMedium.copy(letterSpacing = 1.sp),
                     color = Kaki,
                     modifier = Modifier
-                        .clip(RoundedCornerShape(2.dp))
+                        .clip(RoundedCornerShape(20.dp))
                         .background(KakiSoft)
                         .clickable(enabled = !state.checking && !state.downloading) {
                             viewModel.check(silent = false)
@@ -278,7 +278,7 @@ fun AboutAppScreen(
                         style = MaterialTheme.typography.bodyMedium.copy(letterSpacing = 1.sp),
                         color = PaperCard,
                         modifier = Modifier
-                            .clip(RoundedCornerShape(2.dp))
+                            .clip(RoundedCornerShape(20.dp))
                             .background(Kaki)
                             .clickable { viewModel.startDownload() }
                             .padding(horizontal = 18.dp, vertical = 10.dp),
@@ -400,7 +400,7 @@ private fun LibraryRow(
             .padding(horizontal = 24.dp, vertical = 14.dp),
         verticalAlignment = Alignment.CenterVertically,
     ) {
-        CoverOrMonogram(item.cover, item.title, size = 48.dp, corner = 3.dp)
+        CoverOrMonogram(item.cover, item.title, size = 48.dp, corner = 10.dp)
         Spacer(Modifier.width(14.dp))
         Column(Modifier.weight(1f)) {
             Text(

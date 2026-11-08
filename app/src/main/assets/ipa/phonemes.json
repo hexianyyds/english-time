@@ -1,0 +1,5422 @@
+[
+  {
+    "id": "iː",
+    "symbol": "iː",
+    "category": "vowel-long",
+    "categoryLabel": "长元音",
+    "description": "长音\"衣\"，嘴角向两侧拉伸，持续时间较长",
+    "mouthShape": "嘴角向两侧拉，开口较小，持续发音",
+    "tips": "比短音 /ɪ/ 更长，嘴角拉伸更明显",
+    "examples": [
+      {
+        "word": "bee",
+        "phonetic": "/biː/",
+        "translation": "蜜蜂"
+      },
+      {
+        "word": "we",
+        "phonetic": "/wiː/",
+        "translation": "我们"
+      },
+      {
+        "word": "read",
+        "phonetic": "/riːd/",
+        "translation": "阅读"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "meat",
+        "phonetic": "/miːt/",
+        "translation": "肉"
+      },
+      {
+        "word": "heat",
+        "phonetic": "/hiːt/",
+        "translation": "热"
+      },
+      {
+        "word": "seat",
+        "phonetic": "/siːt/",
+        "translation": "座位"
+      },
+      {
+        "word": "he",
+        "phonetic": "/hiː/",
+        "translation": "他"
+      },
+      {
+        "word": "me",
+        "phonetic": "/miː/",
+        "translation": "我"
+      },
+      {
+        "word": "be",
+        "phonetic": "/biː/",
+        "translation": "是"
+      },
+      {
+        "word": "she",
+        "phonetic": "/ʃiː/",
+        "translation": "她"
+      },
+      {
+        "word": "eve",
+        "phonetic": "/iːv/",
+        "translation": "前夕"
+      },
+      {
+        "word": "sheep",
+        "phonetic": "/ʃiːp/",
+        "translation": "羊"
+      },
+      {
+        "word": "green",
+        "phonetic": "/ɡriːn/",
+        "translation": "绿色"
+      },
+      {
+        "word": "fee",
+        "phonetic": "/fiː/",
+        "translation": "费用"
+      },
+      {
+        "word": "tree",
+        "phonetic": "/triː/",
+        "translation": "树"
+      },
+      {
+        "word": "teeth",
+        "phonetic": "/tiːθ/",
+        "translation": "牙齿"
+      },
+      {
+        "word": "see",
+        "phonetic": "/siː/",
+        "translation": "看见"
+      },
+      {
+        "word": "steam",
+        "phonetic": "/stiːm/",
+        "translation": "蒸汽"
+      },
+      {
+        "word": "mean",
+        "phonetic": "/miːn/",
+        "translation": "意思"
+      },
+      {
+        "word": "sea",
+        "phonetic": "/siː/",
+        "translation": "大海"
+      },
+      {
+        "word": "flea",
+        "phonetic": "/fliː/",
+        "translation": "跳蚤"
+      },
+      {
+        "word": "tea",
+        "phonetic": "/tiː/",
+        "translation": "茶"
+      },
+      {
+        "word": "achieve",
+        "phonetic": "/əˈtʃiːv/",
+        "translation": "实现"
+      },
+      {
+        "word": "believe",
+        "phonetic": "/bɪˈliːv/",
+        "translation": "相信"
+      },
+      {
+        "word": "belief",
+        "phonetic": "/bɪˈliːf/",
+        "translation": "信念"
+      },
+      {
+        "word": "relieve",
+        "phonetic": "/rɪˈliːv/",
+        "translation": "减轻"
+      },
+      {
+        "word": "receive",
+        "phonetic": "/rɪˈsiːv/",
+        "translation": "接收"
+      },
+      {
+        "word": "conceit",
+        "phonetic": "/kənˈsiːt/",
+        "translation": "自负"
+      },
+      {
+        "word": "deceit",
+        "phonetic": "/dɪˈsiːt/",
+        "translation": "欺骗"
+      },
+      {
+        "word": "conceive",
+        "phonetic": "/kənˈsiːv/",
+        "translation": "构想"
+      }
+    ],
+    "color": "#8b5cf6",
+    "audio": "/audio/set-b/i-long.mp3"
+  },
+  {
+    "id": "ɜː",
+    "symbol": "ɜː",
+    "category": "vowel-long",
+    "categoryLabel": "长元音",
+    "description": "长音，类似\"额\"，嘴巴半开，舌头居中",
+    "mouthShape": "嘴巴半开，舌头居中，嘴唇不圆",
+    "tips": "类似汉语\"额\"但更长，嘴唇保持自然状态",
+    "examples": [
+      {
+        "word": "bird",
+        "phonetic": "/bɜːd/",
+        "translation": "鸟"
+      },
+      {
+        "word": "word",
+        "phonetic": "/wɜːd/",
+        "translation": "单词"
+      },
+      {
+        "word": "work",
+        "phonetic": "/wɜːk/",
+        "translation": "工作"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "girl",
+        "phonetic": "/ɡɜːl/",
+        "translation": "女孩"
+      },
+      {
+        "word": "learn",
+        "phonetic": "/lɜːn/",
+        "translation": "学习"
+      },
+      {
+        "word": "heard",
+        "phonetic": "/hɜːd/",
+        "translation": "听到"
+      },
+      {
+        "word": "certain",
+        "phonetic": "/ˈsɜːtn/",
+        "translation": "确定的"
+      },
+      {
+        "word": "nervous",
+        "phonetic": "/ˈnɜːvəs/",
+        "translation": "紧张的"
+      },
+      {
+        "word": "serve",
+        "phonetic": "/sɜːv/",
+        "translation": "服务"
+      },
+      {
+        "word": "skirt",
+        "phonetic": "/skɜːt/",
+        "translation": "裙子"
+      },
+      {
+        "word": "dirty",
+        "phonetic": "/ˈdɜːti/",
+        "translation": "脏的"
+      },
+      {
+        "word": "sir",
+        "phonetic": "/sɜː/",
+        "translation": "先生"
+      },
+      {
+        "word": "nurse",
+        "phonetic": "/nɜːs/",
+        "translation": "护士"
+      },
+      {
+        "word": "purse",
+        "phonetic": "/pɜːs/",
+        "translation": "钱包"
+      },
+      {
+        "word": "fur",
+        "phonetic": "/fɜː/",
+        "translation": "毛皮"
+      },
+      {
+        "word": "worship",
+        "phonetic": "/ˈwɜːʃɪp/",
+        "translation": "崇拜"
+      },
+      {
+        "word": "worth",
+        "phonetic": "/wɜːθ/",
+        "translation": "价值"
+      },
+      {
+        "word": "worm",
+        "phonetic": "/wɜːm/",
+        "translation": "虫子"
+      },
+      {
+        "word": "early",
+        "phonetic": "/ˈɜːli/",
+        "translation": "早的"
+      },
+      {
+        "word": "earn",
+        "phonetic": "/ɜːn/",
+        "translation": "赚取"
+      },
+      {
+        "word": "earth",
+        "phonetic": "/ɜːθ/",
+        "translation": "地球"
+      }
+    ],
+    "color": "#8b5cf6",
+    "audio": "/audio/set-b/er.mp3"
+  },
+  {
+    "id": "ɑː",
+    "symbol": "ɑː",
+    "category": "vowel-long",
+    "categoryLabel": "长元音",
+    "description": "长音\"啊\"，嘴巴大开，舌头后缩",
+    "mouthShape": "嘴巴大开，舌头后缩，喉咙放松",
+    "tips": "类似医生检查喉咙时发的\"啊\"音，持续时间长",
+    "examples": [
+      {
+        "word": "mark",
+        "phonetic": "/mɑːk/",
+        "translation": "标志"
+      },
+      {
+        "word": "shark",
+        "phonetic": "/ʃɑːk/",
+        "translation": "鲨鱼"
+      },
+      {
+        "word": "father",
+        "phonetic": "/fɑːðə/",
+        "translation": "父亲"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "bar",
+        "phonetic": "/bɑː/",
+        "translation": "酒吧"
+      },
+      {
+        "word": "target",
+        "phonetic": "/ˈtɑːɡɪt/",
+        "translation": "目标"
+      },
+      {
+        "word": "bark",
+        "phonetic": "/bɑːk/",
+        "translation": "树皮"
+      },
+      {
+        "word": "calm",
+        "phonetic": "/kɑːm/",
+        "translation": "平静"
+      },
+      {
+        "word": "half",
+        "phonetic": "/hɑːf/",
+        "translation": "一半"
+      },
+      {
+        "word": "palm",
+        "phonetic": "/pɑːm/",
+        "translation": "手掌"
+      },
+      {
+        "word": "arctic",
+        "phonetic": "/ˈɑːktɪk/",
+        "translation": "北极的"
+      },
+      {
+        "word": "spark",
+        "phonetic": "/spɑːk/",
+        "translation": "火花"
+      },
+      {
+        "word": "party",
+        "phonetic": "/ˈpɑːti/",
+        "translation": "派对"
+      },
+      {
+        "word": "star",
+        "phonetic": "/stɑː/",
+        "translation": "星星"
+      },
+      {
+        "word": "arm",
+        "phonetic": "/ɑːm/",
+        "translation": "手臂"
+      },
+      {
+        "word": "fast",
+        "phonetic": "/fɑːst/",
+        "translation": "快速的"
+      },
+      {
+        "word": "class",
+        "phonetic": "/klɑːs/",
+        "translation": "班级"
+      },
+      {
+        "word": "last",
+        "phonetic": "/lɑːst/",
+        "translation": "最后的"
+      },
+      {
+        "word": "ask",
+        "phonetic": "/ɑːsk/",
+        "translation": "询问"
+      },
+      {
+        "word": "glass",
+        "phonetic": "/ɡlɑːs/",
+        "translation": "玻璃杯"
+      },
+      {
+        "word": "grass",
+        "phonetic": "/ɡrɑːs/",
+        "translation": "草"
+      },
+      {
+        "word": "aunt",
+        "phonetic": "/ɑːnt/",
+        "translation": "阿姨"
+      },
+      {
+        "word": "laugh",
+        "phonetic": "/lɑːf/",
+        "translation": "笑"
+      }
+    ],
+    "color": "#8b5cf6",
+    "audio": "/audio/set-b/a-long.mp3"
+  },
+  {
+    "id": "ɔː",
+    "symbol": "ɔː",
+    "category": "vowel-long",
+    "categoryLabel": "长元音",
+    "description": "长音\"哦\"，嘴唇圆形突出，持续时间长",
+    "mouthShape": "嘴唇圆形突出，开口适中，持续发音",
+    "tips": "嘴唇要圆且突出，类似吹口哨的嘴型",
+    "examples": [
+      {
+        "word": "caught",
+        "phonetic": "/kɔːt/",
+        "translation": "捕捉"
+      },
+      {
+        "word": "walk",
+        "phonetic": "/wɔːk/",
+        "translation": "步行"
+      },
+      {
+        "word": "board",
+        "phonetic": "/bɔːd/",
+        "translation": "甲板"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "call",
+        "phonetic": "/kɔːl/",
+        "translation": "呼叫"
+      },
+      {
+        "word": "flaw",
+        "phonetic": "/flɔː/",
+        "translation": "缺陷"
+      },
+      {
+        "word": "lawyer",
+        "phonetic": "/ˈlɔːjə/",
+        "translation": "律师"
+      },
+      {
+        "word": "talk",
+        "phonetic": "/tɔːk/",
+        "translation": "谈话"
+      },
+      {
+        "word": "ball",
+        "phonetic": "/bɔːl/",
+        "translation": "球"
+      },
+      {
+        "word": "fall",
+        "phonetic": "/fɔːl/",
+        "translation": "秋天"
+      },
+      {
+        "word": "cause",
+        "phonetic": "/kɔːz/",
+        "translation": "原因"
+      },
+      {
+        "word": "taught",
+        "phonetic": "/tɔːt/",
+        "translation": "教导"
+      },
+      {
+        "word": "August",
+        "phonetic": "/ˈɔːɡəst/",
+        "translation": "八月"
+      },
+      {
+        "word": "law",
+        "phonetic": "/lɔː/",
+        "translation": "法律"
+      },
+      {
+        "word": "draw",
+        "phonetic": "/drɔː/",
+        "translation": "画"
+      },
+      {
+        "word": "awful",
+        "phonetic": "/ˈɔːfl/",
+        "translation": "糟糕的"
+      },
+      {
+        "word": "border",
+        "phonetic": "/ˈbɔːdə/",
+        "translation": "边界"
+      },
+      {
+        "word": "order",
+        "phonetic": "/ˈɔːdə/",
+        "translation": "命令"
+      },
+      {
+        "word": "nor",
+        "phonetic": "/nɔː/",
+        "translation": "也不"
+      },
+      {
+        "word": "soar",
+        "phonetic": "/sɔː/",
+        "translation": "翱翔"
+      },
+      {
+        "word": "roar",
+        "phonetic": "/rɔː/",
+        "translation": "咆哮"
+      },
+      {
+        "word": "before",
+        "phonetic": "/bɪˈfɔː/",
+        "translation": "之前"
+      },
+      {
+        "word": "store",
+        "phonetic": "/stɔː/",
+        "translation": "商店"
+      },
+      {
+        "word": "more",
+        "phonetic": "/mɔː/",
+        "translation": "更多"
+      },
+      {
+        "word": "door",
+        "phonetic": "/dɔː/",
+        "translation": "门"
+      },
+      {
+        "word": "floor",
+        "phonetic": "/flɔː/",
+        "translation": "地板"
+      },
+      {
+        "word": "war",
+        "phonetic": "/wɔː/",
+        "translation": "战争"
+      },
+      {
+        "word": "warn",
+        "phonetic": "/wɔːn/",
+        "translation": "警告"
+      },
+      {
+        "word": "warm",
+        "phonetic": "/wɔːm/",
+        "translation": "温暖的"
+      },
+      {
+        "word": "fought",
+        "phonetic": "/fɔːt/",
+        "translation": "战斗"
+      },
+      {
+        "word": "brought",
+        "phonetic": "/brɔːt/",
+        "translation": "带来"
+      },
+      {
+        "word": "ought",
+        "phonetic": "/ɔːt/",
+        "translation": "应该"
+      }
+    ],
+    "color": "#8b5cf6",
+    "audio": "/audio/set-b/o-long.mp3"
+  },
+  {
+    "id": "uː",
+    "symbol": "uː",
+    "category": "vowel-long",
+    "categoryLabel": "长元音",
+    "description": "长音\"乌\"，嘴唇圆形突出，持续时间长",
+    "mouthShape": "嘴唇圆形突出，开口小，持续发音",
+    "tips": "嘴唇要圆且突出，类似汉语\"乌\"但更长",
+    "examples": [
+      {
+        "word": "cool",
+        "phonetic": "/kuːl/",
+        "translation": "凉爽的"
+      },
+      {
+        "word": "rude",
+        "phonetic": "/ruːd/",
+        "translation": "粗鲁的"
+      },
+      {
+        "word": "tooth",
+        "phonetic": "/tuːθ/",
+        "translation": "牙齿"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "truth",
+        "phonetic": "/truːθ/",
+        "translation": "真相"
+      },
+      {
+        "word": "loose",
+        "phonetic": "/luːs/",
+        "translation": "松散的"
+      },
+      {
+        "word": "school",
+        "phonetic": "/skuːl/",
+        "translation": "学校"
+      },
+      {
+        "word": "fool",
+        "phonetic": "/fuːl/",
+        "translation": "傻瓜"
+      },
+      {
+        "word": "zoo",
+        "phonetic": "/zuː/",
+        "translation": "动物园"
+      },
+      {
+        "word": "pool",
+        "phonetic": "/puːl/",
+        "translation": "水池"
+      },
+      {
+        "word": "noon",
+        "phonetic": "/nuːn/",
+        "translation": "正午"
+      },
+      {
+        "word": "food",
+        "phonetic": "/fuːd/",
+        "translation": "食物"
+      },
+      {
+        "word": "lose",
+        "phonetic": "/luːz/",
+        "translation": "失去"
+      },
+      {
+        "word": "movie",
+        "phonetic": "/ˈmuːvi/",
+        "translation": "电影"
+      },
+      {
+        "word": "prove",
+        "phonetic": "/pruːv/",
+        "translation": "证明"
+      },
+      {
+        "word": "pollute",
+        "phonetic": "/pəˈluːt/",
+        "translation": "污染"
+      },
+      {
+        "word": "rule",
+        "phonetic": "/ruːl/",
+        "translation": "规则"
+      },
+      {
+        "word": "ruler",
+        "phonetic": "/ˈruːlə/",
+        "translation": "统治者"
+      },
+      {
+        "word": "chew",
+        "phonetic": "/tʃuː/",
+        "translation": "咀嚼"
+      },
+      {
+        "word": "jewel",
+        "phonetic": "/ˈdʒuːəl/",
+        "translation": "珠宝"
+      },
+      {
+        "word": "threw",
+        "phonetic": "/θruː/",
+        "translation": "投掷"
+      },
+      {
+        "word": "fruit",
+        "phonetic": "/fruːt/",
+        "translation": "水果"
+      },
+      {
+        "word": "juice",
+        "phonetic": "/dʒuːs/",
+        "translation": "果汁"
+      },
+      {
+        "word": "cruise",
+        "phonetic": "/kruːz/",
+        "translation": "巡游"
+      },
+      {
+        "word": "through",
+        "phonetic": "/θruː/",
+        "translation": "穿过"
+      },
+      {
+        "word": "soup",
+        "phonetic": "/suːp/",
+        "translation": "汤"
+      },
+      {
+        "word": "group",
+        "phonetic": "/ɡruːp/",
+        "translation": "群体"
+      },
+      {
+        "word": "canoe",
+        "phonetic": "/kəˈnuː/",
+        "translation": "独木舟"
+      },
+      {
+        "word": "shoe",
+        "phonetic": "/ʃuː/",
+        "translation": "鞋子"
+      }
+    ],
+    "color": "#8b5cf6",
+    "audio": "/audio/set-b/u-long.mp3"
+  },
+  {
+    "id": "i",
+    "symbol": "ɪ",
+    "category": "vowel-short",
+    "categoryLabel": "短元音",
+    "description": "短促的\"衣\"音，嘴角略微向两侧拉伸",
+    "mouthShape": "嘴角向两侧拉，开口较小",
+    "tips": "比汉语\"衣\"更短促，舌头位置偏高偏前",
+    "examples": [
+      {
+        "word": "little",
+        "phonetic": "/lɪtl/",
+        "translation": "很少的"
+      },
+      {
+        "word": "sit",
+        "phonetic": "/sɪt/",
+        "translation": "坐"
+      },
+      {
+        "word": "fish",
+        "phonetic": "/fɪʃ/",
+        "translation": "鱼"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "king",
+        "phonetic": "/kɪŋ/",
+        "translation": "国王"
+      },
+      {
+        "word": "win",
+        "phonetic": "/wɪn/",
+        "translation": "赢"
+      },
+      {
+        "word": "live",
+        "phonetic": "/lɪv/",
+        "translation": "居住"
+      },
+      {
+        "word": "hit",
+        "phonetic": "/hɪt/",
+        "translation": "打击"
+      },
+      {
+        "word": "bit",
+        "phonetic": "/bɪt/",
+        "translation": "一点"
+      },
+      {
+        "word": "kiss",
+        "phonetic": "/kɪs/",
+        "translation": "亲吻"
+      },
+      {
+        "word": "list",
+        "phonetic": "/lɪst/",
+        "translation": "列表"
+      },
+      {
+        "word": "ship",
+        "phonetic": "/ʃɪp/",
+        "translation": "船"
+      },
+      {
+        "word": "kick",
+        "phonetic": "/kɪk/",
+        "translation": "踢"
+      },
+      {
+        "word": "fill",
+        "phonetic": "/fɪl/",
+        "translation": "填满"
+      },
+      {
+        "word": "mirror",
+        "phonetic": "/ˈmɪrə/",
+        "translation": "镜子"
+      },
+      {
+        "word": "chicken",
+        "phonetic": "/ˈtʃɪkɪn/",
+        "translation": "鸡"
+      },
+      {
+        "word": "pity",
+        "phonetic": "/ˈpɪti/",
+        "translation": "遗憾"
+      },
+      {
+        "word": "wish",
+        "phonetic": "/wɪʃ/",
+        "translation": "希望"
+      },
+      {
+        "word": "office",
+        "phonetic": "/ˈɒfɪs/",
+        "translation": "办公室"
+      },
+      {
+        "word": "lily",
+        "phonetic": "/ˈlɪli/",
+        "translation": "百合"
+      },
+      {
+        "word": "rhythm",
+        "phonetic": "/ˈrɪðəm/",
+        "translation": "节奏"
+      },
+      {
+        "word": "bicycle",
+        "phonetic": "/ˈbaɪsɪkl/",
+        "translation": "自行车"
+      },
+      {
+        "word": "family",
+        "phonetic": "/ˈfæmɪli/",
+        "translation": "家庭"
+      },
+      {
+        "word": "slowly",
+        "phonetic": "/ˈsləʊli/",
+        "translation": "缓慢地"
+      },
+      {
+        "word": "remain",
+        "phonetic": "/rɪˈmeɪn/",
+        "translation": "保持"
+      },
+      {
+        "word": "ticket",
+        "phonetic": "/ˈtɪkɪt/",
+        "translation": "票"
+      },
+      {
+        "word": "delay",
+        "phonetic": "/dɪˈleɪ/",
+        "translation": "延迟"
+      },
+      {
+        "word": "economy",
+        "phonetic": "/ɪˈkɒnəmi/",
+        "translation": "经济"
+      },
+      {
+        "word": "escape",
+        "phonetic": "/ɪˈskeɪp/",
+        "translation": "逃跑"
+      },
+      {
+        "word": "example",
+        "phonetic": "/ɪɡˈzɑːmpl/",
+        "translation": "例子"
+      },
+      {
+        "word": "women",
+        "phonetic": "/ˈwɪmɪn/",
+        "translation": "女人们"
+      }
+    ],
+    "color": "#3b82f6",
+    "audio": "/audio/set-b/i-short.mp3"
+  },
+  {
+    "id": "e",
+    "symbol": "e",
+    "category": "vowel-short",
+    "categoryLabel": "短元音",
+    "description": "短促的\"诶\"音，嘴巴半开",
+    "mouthShape": "嘴巴半开，舌头位置居中偏前",
+    "tips": "类似汉语\"诶\"但更短促，嘴巴开度适中",
+    "examples": [
+      {
+        "word": "bed",
+        "phonetic": "/bed/",
+        "translation": "床"
+      },
+      {
+        "word": "red",
+        "phonetic": "/red/",
+        "translation": "红色"
+      },
+      {
+        "word": "egg",
+        "phonetic": "/eg/",
+        "translation": "蛋"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "pen",
+        "phonetic": "/pen/",
+        "translation": "钢笔"
+      },
+      {
+        "word": "bend",
+        "phonetic": "/bend/",
+        "translation": "弯曲"
+      },
+      {
+        "word": "dress",
+        "phonetic": "/dres/",
+        "translation": "连衣裙"
+      },
+      {
+        "word": "check",
+        "phonetic": "/tʃek/",
+        "translation": "检查"
+      },
+      {
+        "word": "net",
+        "phonetic": "/net/",
+        "translation": "网"
+      },
+      {
+        "word": "ten",
+        "phonetic": "/ten/",
+        "translation": "十"
+      },
+      {
+        "word": "friend",
+        "phonetic": "/frend/",
+        "translation": "朋友"
+      },
+      {
+        "word": "send",
+        "phonetic": "/send/",
+        "translation": "发送"
+      },
+      {
+        "word": "guess",
+        "phonetic": "/ɡes/",
+        "translation": "猜测"
+      },
+      {
+        "word": "electric",
+        "phonetic": "/ɪˈlektrɪk/",
+        "translation": "电的"
+      },
+      {
+        "word": "fresh",
+        "phonetic": "/freʃ/",
+        "translation": "新鲜的"
+      },
+      {
+        "word": "dead",
+        "phonetic": "/ded/",
+        "translation": "死的"
+      },
+      {
+        "word": "heaven",
+        "phonetic": "/ˈhevn/",
+        "translation": "天堂"
+      },
+      {
+        "word": "health",
+        "phonetic": "/helθ/",
+        "translation": "健康"
+      },
+      {
+        "word": "bread",
+        "phonetic": "/bred/",
+        "translation": "面包"
+      },
+      {
+        "word": "heavy",
+        "phonetic": "/ˈhevi/",
+        "translation": "重的"
+      },
+      {
+        "word": "head",
+        "phonetic": "/hed/",
+        "translation": "头"
+      }
+    ],
+    "color": "#3b82f6",
+    "audio": "/audio/set-b/e.mp3"
+  },
+  {
+    "id": "æ",
+    "symbol": "æ",
+    "category": "vowel-short",
+    "categoryLabel": "短元音",
+    "description": "嘴巴大开，发\"啊\"和\"诶\"之间的音",
+    "mouthShape": "嘴巴大开，下颌下压，舌头平放",
+    "tips": "嘴巴要张大，比 /e/ 开口更大，舌头尽量平放",
+    "examples": [
+      {
+        "word": "cat",
+        "phonetic": "/kæt/",
+        "translation": "猫"
+      },
+      {
+        "word": "bag",
+        "phonetic": "/bæɡ/",
+        "translation": "包"
+      },
+      {
+        "word": "man",
+        "phonetic": "/mæn/",
+        "translation": "男人"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "lamb",
+        "phonetic": "/læm/",
+        "translation": "羔羊"
+      },
+      {
+        "word": "tan",
+        "phonetic": "/tæn/",
+        "translation": "棕褐色"
+      },
+      {
+        "word": "ant",
+        "phonetic": "/ænt/",
+        "translation": "蚂蚁"
+      },
+      {
+        "word": "pan",
+        "phonetic": "/pæn/",
+        "translation": "平底锅"
+      },
+      {
+        "word": "band",
+        "phonetic": "/bænd/",
+        "translation": "乐队"
+      },
+      {
+        "word": "mass",
+        "phonetic": "/mæs/",
+        "translation": "大量"
+      },
+      {
+        "word": "mad",
+        "phonetic": "/mæd/",
+        "translation": "疯狂的"
+      },
+      {
+        "word": "cash",
+        "phonetic": "/kæʃ/",
+        "translation": "现金"
+      },
+      {
+        "word": "apple",
+        "phonetic": "/ˈæpl/",
+        "translation": "苹果"
+      },
+      {
+        "word": "family",
+        "phonetic": "/ˈfæmɪli/",
+        "translation": "家庭"
+      },
+      {
+        "word": "rabbit",
+        "phonetic": "/ˈræbɪt/",
+        "translation": "兔子"
+      },
+      {
+        "word": "happy",
+        "phonetic": "/ˈhæpi/",
+        "translation": "快乐的"
+      },
+      {
+        "word": "hat",
+        "phonetic": "/hæt/",
+        "translation": "帽子"
+      },
+      {
+        "word": "pack",
+        "phonetic": "/pæk/",
+        "translation": "包装"
+      },
+      {
+        "word": "dad",
+        "phonetic": "/dæd/",
+        "translation": "爸爸"
+      },
+      {
+        "word": "black",
+        "phonetic": "/blæk/",
+        "translation": "黑色"
+      },
+      {
+        "word": "hand",
+        "phonetic": "/hænd/",
+        "translation": "手"
+      },
+      {
+        "word": "jacket",
+        "phonetic": "/ˈdʒækɪt/",
+        "translation": "夹克"
+      }
+    ],
+    "color": "#3b82f6",
+    "audio": "/audio/set-b/ae.mp3"
+  },
+  {
+    "id": "ə",
+    "symbol": "ə",
+    "category": "vowel-short",
+    "categoryLabel": "短元音",
+    "description": "中性元音，最常见的英语音素，发音模糊",
+    "mouthShape": "嘴巴自然放松，舌头居中",
+    "tips": "英语中最常见的音，出现在非重读音节，发音轻而短",
+    "examples": [
+      {
+        "word": "center",
+        "phonetic": "/ˈsentə/",
+        "translation": "中心"
+      },
+      {
+        "word": "panda",
+        "phonetic": "/ˈpændə/",
+        "translation": "熊猫"
+      },
+      {
+        "word": "actor",
+        "phonetic": "/ˈæktə/",
+        "translation": "男演员"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "about",
+        "phonetic": "/əˈbaʊt/",
+        "translation": "关于"
+      },
+      {
+        "word": "above",
+        "phonetic": "/əˈbʌv/",
+        "translation": "在上面"
+      },
+      {
+        "word": "ago",
+        "phonetic": "/əˈɡəʊ/",
+        "translation": "以前"
+      },
+      {
+        "word": "again",
+        "phonetic": "/əˈɡen/",
+        "translation": "再次"
+      },
+      {
+        "word": "along",
+        "phonetic": "/əˈlɒŋ/",
+        "translation": "沿着"
+      },
+      {
+        "word": "arrive",
+        "phonetic": "/əˈraɪv/",
+        "translation": "到达"
+      },
+      {
+        "word": "banana",
+        "phonetic": "/bəˈnɑːnə/",
+        "translation": "香蕉"
+      },
+      {
+        "word": "today",
+        "phonetic": "/təˈdeɪ/",
+        "translation": "今天"
+      },
+      {
+        "word": "support",
+        "phonetic": "/səˈpɔːt/",
+        "translation": "支持"
+      },
+      {
+        "word": "suggest",
+        "phonetic": "/səˈdʒest/",
+        "translation": "建议"
+      },
+      {
+        "word": "second",
+        "phonetic": "/ˈsekənd/",
+        "translation": "第二"
+      },
+      {
+        "word": "autumn",
+        "phonetic": "/ˈɔːtəm/",
+        "translation": "秋天"
+      },
+      {
+        "word": "album",
+        "phonetic": "/ˈælbəm/",
+        "translation": "相册"
+      },
+      {
+        "word": "factor",
+        "phonetic": "/ˈfæktə/",
+        "translation": "因素"
+      },
+      {
+        "word": "driver",
+        "phonetic": "/ˈdraɪvə/",
+        "translation": "司机"
+      },
+      {
+        "word": "speaker",
+        "phonetic": "/ˈspiːkə/",
+        "translation": "演讲者"
+      },
+      {
+        "word": "visitor",
+        "phonetic": "/ˈvɪzɪtə/",
+        "translation": "访客"
+      },
+      {
+        "word": "president",
+        "phonetic": "/ˈprezɪdənt/",
+        "translation": "总统"
+      },
+      {
+        "word": "industry",
+        "phonetic": "/ˈɪndəstri/",
+        "translation": "工业"
+      },
+      {
+        "word": "open",
+        "phonetic": "/ˈəʊpən/",
+        "translation": "打开"
+      },
+      {
+        "word": "upon",
+        "phonetic": "/əˈpɒn/",
+        "translation": "在上面"
+      },
+      {
+        "word": "sofa",
+        "phonetic": "/ˈsəʊfə/",
+        "translation": "沙发"
+      }
+    ],
+    "color": "#3b82f6",
+    "audio": "/audio/set-b/schwa.mp3"
+  },
+  {
+    "id": "ʌ",
+    "symbol": "ʌ",
+    "category": "vowel-short",
+    "categoryLabel": "短元音",
+    "description": "短促的\"啊\"音，嘴巴半开，舌头居中",
+    "mouthShape": "嘴巴半开，舌头居中，下颌略下压",
+    "tips": "类似汉语\"啊\"但更短促，嘴巴开度比 /ɑː/ 小",
+    "examples": [
+      {
+        "word": "cup",
+        "phonetic": "/kʌp/",
+        "translation": "杯子"
+      },
+      {
+        "word": "bus",
+        "phonetic": "/bʌs/",
+        "translation": "公共汽车"
+      },
+      {
+        "word": "sun",
+        "phonetic": "/sʌn/",
+        "translation": "太阳"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "run",
+        "phonetic": "/rʌn/",
+        "translation": "跑"
+      },
+      {
+        "word": "fun",
+        "phonetic": "/fʌn/",
+        "translation": "乐趣"
+      },
+      {
+        "word": "gun",
+        "phonetic": "/ɡʌn/",
+        "translation": "枪"
+      },
+      {
+        "word": "bun",
+        "phonetic": "/bʌn/",
+        "translation": "小圆面包"
+      },
+      {
+        "word": "mud",
+        "phonetic": "/mʌd/",
+        "translation": "泥"
+      },
+      {
+        "word": "bug",
+        "phonetic": "/bʌɡ/",
+        "translation": "虫子"
+      },
+      {
+        "word": "hug",
+        "phonetic": "/hʌɡ/",
+        "translation": "拥抱"
+      },
+      {
+        "word": "rug",
+        "phonetic": "/rʌɡ/",
+        "translation": "地毯"
+      },
+      {
+        "word": "tub",
+        "phonetic": "/tʌb/",
+        "translation": "浴缸"
+      },
+      {
+        "word": "rub",
+        "phonetic": "/rʌb/",
+        "translation": "摩擦"
+      },
+      {
+        "word": "cut",
+        "phonetic": "/kʌt/",
+        "translation": "切"
+      },
+      {
+        "word": "but",
+        "phonetic": "/bʌt/",
+        "translation": "但是"
+      },
+      {
+        "word": "nut",
+        "phonetic": "/nʌt/",
+        "translation": "坚果"
+      },
+      {
+        "word": "hut",
+        "phonetic": "/hʌt/",
+        "translation": "小屋"
+      },
+      {
+        "word": "love",
+        "phonetic": "/lʌv/",
+        "translation": "爱"
+      },
+      {
+        "word": "dove",
+        "phonetic": "/dʌv/",
+        "translation": "鸽子"
+      },
+      {
+        "word": "some",
+        "phonetic": "/sʌm/",
+        "translation": "一些"
+      },
+      {
+        "word": "come",
+        "phonetic": "/kʌm/",
+        "translation": "来"
+      },
+      {
+        "word": "done",
+        "phonetic": "/dʌn/",
+        "translation": "完成"
+      },
+      {
+        "word": "none",
+        "phonetic": "/nʌn/",
+        "translation": "没有"
+      },
+      {
+        "word": "son",
+        "phonetic": "/sʌn/",
+        "translation": "儿子"
+      },
+      {
+        "word": "won",
+        "phonetic": "/wʌn/",
+        "translation": "赢了"
+      },
+      {
+        "word": "blood",
+        "phonetic": "/blʌd/",
+        "translation": "血"
+      },
+      {
+        "word": "flood",
+        "phonetic": "/flʌd/",
+        "translation": "洪水"
+      },
+      {
+        "word": "touch",
+        "phonetic": "/tʌtʃ/",
+        "translation": "触摸"
+      },
+      {
+        "word": "much",
+        "phonetic": "/mʌtʃ/",
+        "translation": "很多"
+      },
+      {
+        "word": "such",
+        "phonetic": "/sʌtʃ/",
+        "translation": "如此"
+      },
+      {
+        "word": "enough",
+        "phonetic": "/ɪˈnʌf/",
+        "translation": "足够"
+      },
+      {
+        "word": "young",
+        "phonetic": "/jʌŋ/",
+        "translation": "年轻的"
+      },
+      {
+        "word": "month",
+        "phonetic": "/mʌnθ/",
+        "translation": "月份"
+      }
+    ],
+    "color": "#3b82f6",
+    "audio": "/audio/set-b/wedge.mp3"
+  },
+  {
+    "id": "ɒ",
+    "symbol": "ɒ",
+    "category": "vowel-short",
+    "categoryLabel": "短元音",
+    "description": "短促的\"哦\"音，嘴唇圆形，舌头后缩",
+    "mouthShape": "嘴唇略圆，开口较大，舌头后缩",
+    "tips": "英式英语特有，嘴唇圆形但不突出，类似\"哦\"",
+    "examples": [
+      {
+        "word": "dog",
+        "phonetic": "/dɒg/",
+        "translation": "狗"
+      },
+      {
+        "word": "box",
+        "phonetic": "/bɒks/",
+        "translation": "箱"
+      },
+      {
+        "word": "stop",
+        "phonetic": "/stɒp/",
+        "translation": "停止"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "watch",
+        "phonetic": "/wɒtʃ/",
+        "translation": "手表"
+      },
+      {
+        "word": "job",
+        "phonetic": "/dʒɒb/",
+        "translation": "工作"
+      },
+      {
+        "word": "god",
+        "phonetic": "/ɡɒd/",
+        "translation": "神"
+      },
+      {
+        "word": "hot",
+        "phonetic": "/hɒt/",
+        "translation": "热的"
+      },
+      {
+        "word": "dot",
+        "phonetic": "/dɒt/",
+        "translation": "点"
+      },
+      {
+        "word": "nod",
+        "phonetic": "/nɒd/",
+        "translation": "点头"
+      },
+      {
+        "word": "clock",
+        "phonetic": "/klɒk/",
+        "translation": "时钟"
+      },
+      {
+        "word": "fox",
+        "phonetic": "/fɒks/",
+        "translation": "狐狸"
+      },
+      {
+        "word": "body",
+        "phonetic": "/ˈbɒdi/",
+        "translation": "身体"
+      },
+      {
+        "word": "want",
+        "phonetic": "/wɒnt/",
+        "translation": "想要"
+      },
+      {
+        "word": "wash",
+        "phonetic": "/wɒʃ/",
+        "translation": "洗"
+      },
+      {
+        "word": "what",
+        "phonetic": "/wɒt/",
+        "translation": "什么"
+      },
+      {
+        "word": "wad",
+        "phonetic": "/wɒd/",
+        "translation": "一叠"
+      },
+      {
+        "word": "was",
+        "phonetic": "/wɒz/",
+        "translation": "是（过去式）"
+      },
+      {
+        "word": "wallet",
+        "phonetic": "/ˈwɒlɪt/",
+        "translation": "钱包"
+      }
+    ],
+    "color": "#3b82f6",
+    "audio": "/audio/set-b/o-short.mp3"
+  },
+  {
+    "id": "ʊ",
+    "symbol": "ʊ",
+    "category": "vowel-short",
+    "categoryLabel": "短元音",
+    "description": "短促的\"乌\"音，嘴唇略圆",
+    "mouthShape": "嘴唇略圆，开口较小，舌头后缩",
+    "tips": "比 /uː/ 更短促，嘴唇不需要太圆",
+    "examples": [
+      {
+        "word": "book",
+        "phonetic": "/bʊk/",
+        "translation": "书"
+      },
+      {
+        "word": "good",
+        "phonetic": "/ɡʊd/",
+        "translation": "好的"
+      },
+      {
+        "word": "foot",
+        "phonetic": "/fʊt/",
+        "translation": "脚"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "bush",
+        "phonetic": "/bʊʃ/",
+        "translation": "灌木"
+      },
+      {
+        "word": "full",
+        "phonetic": "/fʊl/",
+        "translation": "满的"
+      },
+      {
+        "word": "pull",
+        "phonetic": "/pʊl/",
+        "translation": "拉"
+      },
+      {
+        "word": "sugar",
+        "phonetic": "/ˈʃʊɡə/",
+        "translation": "糖"
+      },
+      {
+        "word": "cook",
+        "phonetic": "/kʊk/",
+        "translation": "厨师"
+      },
+      {
+        "word": "took",
+        "phonetic": "/tʊk/",
+        "translation": "拿走"
+      },
+      {
+        "word": "look",
+        "phonetic": "/lʊk/",
+        "translation": "看"
+      },
+      {
+        "word": "brook",
+        "phonetic": "/brʊk/",
+        "translation": "小溪"
+      },
+      {
+        "word": "shook",
+        "phonetic": "/ʃʊk/",
+        "translation": "摇动"
+      },
+      {
+        "word": "hook",
+        "phonetic": "/hʊk/",
+        "translation": "钩子"
+      },
+      {
+        "word": "should",
+        "phonetic": "/ʃʊd/",
+        "translation": "应该"
+      },
+      {
+        "word": "would",
+        "phonetic": "/wʊd/",
+        "translation": "将会"
+      },
+      {
+        "word": "could",
+        "phonetic": "/kʊd/",
+        "translation": "能够"
+      },
+      {
+        "word": "put",
+        "phonetic": "/pʊt/",
+        "translation": "放置"
+      },
+      {
+        "word": "bull",
+        "phonetic": "/bʊl/",
+        "translation": "公牛"
+      },
+      {
+        "word": "push",
+        "phonetic": "/pʊʃ/",
+        "translation": "推"
+      },
+      {
+        "word": "butcher",
+        "phonetic": "/ˈbʊtʃə/",
+        "translation": "屠夫"
+      }
+    ],
+    "color": "#3b82f6",
+    "audio": "/audio/set-b/u-short.mp3"
+  },
+  {
+    "id": "eɪ",
+    "symbol": "eɪ",
+    "category": "vowel-diphthong",
+    "categoryLabel": "双元音",
+    "description": "从\"诶\"滑向\"衣\"的双元音",
+    "mouthShape": "从半开嘴型滑向嘴角拉伸",
+    "tips": "先发 /e/ 再滑向 /ɪ/，重音在前",
+    "examples": [
+      {
+        "word": "wait",
+        "phonetic": "/weɪt/",
+        "translation": "等候"
+      },
+      {
+        "word": "late",
+        "phonetic": "/leɪt/",
+        "translation": "晚的"
+      },
+      {
+        "word": "hate",
+        "phonetic": "/heɪt/",
+        "translation": "憎恨"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "waste",
+        "phonetic": "/weɪst/",
+        "translation": "浪费"
+      },
+      {
+        "word": "shake",
+        "phonetic": "/ʃeɪk/",
+        "translation": "摇动"
+      },
+      {
+        "word": "snail",
+        "phonetic": "/sneɪl/",
+        "translation": "蜗牛"
+      },
+      {
+        "word": "fate",
+        "phonetic": "/feɪt/",
+        "translation": "命运"
+      },
+      {
+        "word": "same",
+        "phonetic": "/seɪm/",
+        "translation": "相同的"
+      },
+      {
+        "word": "famous",
+        "phonetic": "/ˈfeɪməs/",
+        "translation": "著名的"
+      },
+      {
+        "word": "face",
+        "phonetic": "/feɪs/",
+        "translation": "脸"
+      },
+      {
+        "word": "cake",
+        "phonetic": "/keɪk/",
+        "translation": "蛋糕"
+      },
+      {
+        "word": "plate",
+        "phonetic": "/pleɪt/",
+        "translation": "盘子"
+      },
+      {
+        "word": "laid",
+        "phonetic": "/leɪd/",
+        "translation": "放置"
+      },
+      {
+        "word": "main",
+        "phonetic": "/meɪn/",
+        "translation": "主要的"
+      },
+      {
+        "word": "rain",
+        "phonetic": "/reɪn/",
+        "translation": "雨"
+      },
+      {
+        "word": "pay",
+        "phonetic": "/peɪ/",
+        "translation": "支付"
+      },
+      {
+        "word": "day",
+        "phonetic": "/deɪ/",
+        "translation": "天"
+      },
+      {
+        "word": "may",
+        "phonetic": "/meɪ/",
+        "translation": "可能"
+      },
+      {
+        "word": "neighbor",
+        "phonetic": "/ˈneɪbə/",
+        "translation": "邻居"
+      },
+      {
+        "word": "weight",
+        "phonetic": "/weɪt/",
+        "translation": "重量"
+      },
+      {
+        "word": "eight",
+        "phonetic": "/eɪt/",
+        "translation": "八"
+      }
+    ],
+    "color": "#ec4899",
+    "audio": "/audio/set-b/ei.mp3"
+  },
+  {
+    "id": "aɪ",
+    "symbol": "aɪ",
+    "category": "vowel-diphthong",
+    "categoryLabel": "双元音",
+    "description": "从\"啊\"滑向\"衣\"的双元音",
+    "mouthShape": "从大开嘴型滑向嘴角拉伸",
+    "tips": "先发 /a/ 再滑向 /ɪ/，重音在前",
+    "examples": [
+      {
+        "word": "my",
+        "phonetic": "/maɪ/",
+        "translation": "我的"
+      },
+      {
+        "word": "why",
+        "phonetic": "/waɪ/",
+        "translation": "为什么"
+      },
+      {
+        "word": "write",
+        "phonetic": "/raɪt/",
+        "translation": "写"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "fight",
+        "phonetic": "/faɪt/",
+        "translation": "战斗"
+      },
+      {
+        "word": "satisfy",
+        "phonetic": "/ˈsætɪsfaɪ/",
+        "translation": "满足"
+      },
+      {
+        "word": "lion",
+        "phonetic": "/ˈlaɪən/",
+        "translation": "狮子"
+      },
+      {
+        "word": "time",
+        "phonetic": "/taɪm/",
+        "translation": "时间"
+      },
+      {
+        "word": "rice",
+        "phonetic": "/raɪs/",
+        "translation": "米饭"
+      },
+      {
+        "word": "tiger",
+        "phonetic": "/ˈtaɪɡə/",
+        "translation": "老虎"
+      },
+      {
+        "word": "fly",
+        "phonetic": "/flaɪ/",
+        "translation": "飞"
+      },
+      {
+        "word": "cry",
+        "phonetic": "/kraɪ/",
+        "translation": "哭"
+      },
+      {
+        "word": "shy",
+        "phonetic": "/ʃaɪ/",
+        "translation": "害羞的"
+      },
+      {
+        "word": "light",
+        "phonetic": "/laɪt/",
+        "translation": "光"
+      },
+      {
+        "word": "aisle",
+        "phonetic": "/aɪl/",
+        "translation": "走廊"
+      },
+      {
+        "word": "dye",
+        "phonetic": "/daɪ/",
+        "translation": "染色"
+      }
+    ],
+    "color": "#ec4899",
+    "audio": "/audio/set-b/ai.mp3"
+  },
+  {
+    "id": "ɔɪ",
+    "symbol": "ɔɪ",
+    "category": "vowel-diphthong",
+    "categoryLabel": "双元音",
+    "description": "从\"哦\"滑向\"衣\"的双元音",
+    "mouthShape": "从圆唇嘴型滑向嘴角拉伸",
+    "tips": "先发 /ɔː/ 再滑向 /ɪ/，重音在前",
+    "examples": [
+      {
+        "word": "noise",
+        "phonetic": "/nɔɪz/",
+        "translation": "噪音"
+      },
+      {
+        "word": "point",
+        "phonetic": "/pɔɪnt/",
+        "translation": "得分"
+      },
+      {
+        "word": "oil",
+        "phonetic": "/ɔɪl/",
+        "translation": "油"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "oyster",
+        "phonetic": "/ˈɔɪstə/",
+        "translation": "牡蛎"
+      },
+      {
+        "word": "choice",
+        "phonetic": "/tʃɔɪs/",
+        "translation": "选择"
+      },
+      {
+        "word": "annoy",
+        "phonetic": "/əˈnɔɪ/",
+        "translation": "烦恼"
+      },
+      {
+        "word": "toy",
+        "phonetic": "/tɔɪ/",
+        "translation": "玩具"
+      },
+      {
+        "word": "joy",
+        "phonetic": "/dʒɔɪ/",
+        "translation": "喜悦"
+      },
+      {
+        "word": "boy",
+        "phonetic": "/bɔɪ/",
+        "translation": "男孩"
+      },
+      {
+        "word": "voice",
+        "phonetic": "/vɔɪs/",
+        "translation": "声音"
+      },
+      {
+        "word": "coin",
+        "phonetic": "/kɔɪn/",
+        "translation": "硬币"
+      },
+      {
+        "word": "join",
+        "phonetic": "/dʒɔɪn/",
+        "translation": "加入"
+      },
+      {
+        "word": "soil",
+        "phonetic": "/sɔɪl/",
+        "translation": "土壤"
+      },
+      {
+        "word": "toilet",
+        "phonetic": "/ˈtɔɪlɪt/",
+        "translation": "厕所"
+      }
+    ],
+    "color": "#ec4899",
+    "audio": "/audio/set-b/oi.mp3"
+  },
+  {
+    "id": "aʊ",
+    "symbol": "aʊ",
+    "category": "vowel-diphthong",
+    "categoryLabel": "双元音",
+    "description": "从\"啊\"滑向\"乌\"的双元音",
+    "mouthShape": "从大开嘴型滑向圆唇嘴型",
+    "tips": "先发 /a/ 再滑向 /ʊ/，重音在前",
+    "examples": [
+      {
+        "word": "now",
+        "phonetic": "/naʊ/",
+        "translation": "现在"
+      },
+      {
+        "word": "out",
+        "phonetic": "/aʊt/",
+        "translation": "出去"
+      },
+      {
+        "word": "house",
+        "phonetic": "/haʊs/",
+        "translation": "房子"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "mouse",
+        "phonetic": "/maʊs/",
+        "translation": "老鼠"
+      },
+      {
+        "word": "cloud",
+        "phonetic": "/klaʊd/",
+        "translation": "云"
+      },
+      {
+        "word": "town",
+        "phonetic": "/taʊn/",
+        "translation": "城镇"
+      },
+      {
+        "word": "south",
+        "phonetic": "/saʊθ/",
+        "translation": "南方"
+      },
+      {
+        "word": "pound",
+        "phonetic": "/paʊnd/",
+        "translation": "英镑"
+      },
+      {
+        "word": "drought",
+        "phonetic": "/draʊt/",
+        "translation": "干旱"
+      },
+      {
+        "word": "counter",
+        "phonetic": "/ˈkaʊntə/",
+        "translation": "柜台"
+      },
+      {
+        "word": "ground",
+        "phonetic": "/ɡraʊnd/",
+        "translation": "地面"
+      },
+      {
+        "word": "crowd",
+        "phonetic": "/kraʊd/",
+        "translation": "人群"
+      },
+      {
+        "word": "cow",
+        "phonetic": "/kaʊ/",
+        "translation": "奶牛"
+      },
+      {
+        "word": "how",
+        "phonetic": "/haʊ/",
+        "translation": "怎么"
+      },
+      {
+        "word": "aloud",
+        "phonetic": "/əˈlaʊd/",
+        "translation": "大声地"
+      },
+      {
+        "word": "mouth",
+        "phonetic": "/maʊθ/",
+        "translation": "嘴巴"
+      },
+      {
+        "word": "blouse",
+        "phonetic": "/blaʊz/",
+        "translation": "女衬衫"
+      },
+      {
+        "word": "owl",
+        "phonetic": "/aʊl/",
+        "translation": "猫头鹰"
+      },
+      {
+        "word": "plough",
+        "phonetic": "/plaʊ/",
+        "translation": "犁"
+      }
+    ],
+    "color": "#ec4899",
+    "audio": "/audio/set-b/au.mp3"
+  },
+  {
+    "id": "əʊ",
+    "symbol": "əʊ",
+    "category": "vowel-diphthong",
+    "categoryLabel": "双元音",
+    "description": "从中性元音滑向\"乌\"的双元音",
+    "mouthShape": "从自然嘴型滑向圆唇嘴型",
+    "tips": "先发 /ə/ 再滑向 /ʊ/，重音在前",
+    "examples": [
+      {
+        "word": "pose",
+        "phonetic": "/pəʊz/",
+        "translation": "姿势"
+      },
+      {
+        "word": "mode",
+        "phonetic": "/məʊd/",
+        "translation": "模式"
+      },
+      {
+        "word": "know",
+        "phonetic": "/nəʊ/",
+        "translation": "知道"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "goat",
+        "phonetic": "/ɡəʊt/",
+        "translation": "山羊"
+      },
+      {
+        "word": "arrow",
+        "phonetic": "/ˈærəʊ/",
+        "translation": "箭"
+      },
+      {
+        "word": "bowl",
+        "phonetic": "/bəʊl/",
+        "translation": "碗"
+      },
+      {
+        "word": "smoke",
+        "phonetic": "/sməʊk/",
+        "translation": "烟"
+      },
+      {
+        "word": "so",
+        "phonetic": "/səʊ/",
+        "translation": "所以"
+      },
+      {
+        "word": "code",
+        "phonetic": "/kəʊd/",
+        "translation": "代码"
+      },
+      {
+        "word": "open",
+        "phonetic": "/ˈəʊpən/",
+        "translation": "打开"
+      },
+      {
+        "word": "nose",
+        "phonetic": "/nəʊz/",
+        "translation": "鼻子"
+      },
+      {
+        "word": "snow",
+        "phonetic": "/snəʊ/",
+        "translation": "雪"
+      },
+      {
+        "word": "boat",
+        "phonetic": "/bəʊt/",
+        "translation": "船"
+      },
+      {
+        "word": "coat",
+        "phonetic": "/kəʊt/",
+        "translation": "外套"
+      },
+      {
+        "word": "woe",
+        "phonetic": "/wəʊ/",
+        "translation": "悲哀"
+      },
+      {
+        "word": "toe",
+        "phonetic": "/təʊ/",
+        "translation": "脚趾"
+      },
+      {
+        "word": "hoe",
+        "phonetic": "/həʊ/",
+        "translation": "锄头"
+      },
+      {
+        "word": "yellow",
+        "phonetic": "/ˈjeləʊ/",
+        "translation": "黄色"
+      },
+      {
+        "word": "grow",
+        "phonetic": "/ɡrəʊ/",
+        "translation": "生长"
+      }
+    ],
+    "color": "#ec4899",
+    "audio": "/audio/set-b/eu.mp3"
+  },
+  {
+    "id": "ɪə",
+    "symbol": "ɪə",
+    "category": "vowel-diphthong",
+    "categoryLabel": "双元音",
+    "description": "从\"衣\"滑向中性元音的双元音",
+    "mouthShape": "从嘴角拉伸滑向自然嘴型",
+    "tips": "先发 /ɪ/ 再滑向 /ə/，重音在前",
+    "examples": [
+      {
+        "word": "beer",
+        "phonetic": "/bɪə/",
+        "translation": "啤酒"
+      },
+      {
+        "word": "mere",
+        "phonetic": "/mɪə/",
+        "translation": "小湖"
+      },
+      {
+        "word": "deer",
+        "phonetic": "/dɪə/",
+        "translation": "鹿"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "shear",
+        "phonetic": "/ʃɪə/",
+        "translation": "剪切"
+      },
+      {
+        "word": "smear",
+        "phonetic": "/smɪə/",
+        "translation": "涂抹"
+      },
+      {
+        "word": "tear",
+        "phonetic": "/tɪə/",
+        "translation": "眼泪"
+      },
+      {
+        "word": "rear",
+        "phonetic": "/rɪə/",
+        "translation": "后面"
+      },
+      {
+        "word": "near",
+        "phonetic": "/nɪə/",
+        "translation": "近的"
+      },
+      {
+        "word": "clear",
+        "phonetic": "/klɪə/",
+        "translation": "清晰的"
+      },
+      {
+        "word": "here",
+        "phonetic": "/hɪə/",
+        "translation": "这里"
+      },
+      {
+        "word": "sincere",
+        "phonetic": "/sɪnˈsɪə/",
+        "translation": "真诚的"
+      },
+      {
+        "word": "atmosphere",
+        "phonetic": "/ˈætməsfɪə/",
+        "translation": "大气层"
+      },
+      {
+        "word": "area",
+        "phonetic": "/ˈeərɪə/",
+        "translation": "区域"
+      },
+      {
+        "word": "really",
+        "phonetic": "/ˈrɪəli/",
+        "translation": "真正地"
+      },
+      {
+        "word": "idea",
+        "phonetic": "/aɪˈdɪə/",
+        "translation": "想法"
+      },
+      {
+        "word": "sneer",
+        "phonetic": "/snɪə/",
+        "translation": "嘲笑"
+      },
+      {
+        "word": "cheer",
+        "phonetic": "/tʃɪə/",
+        "translation": "欢呼"
+      }
+    ],
+    "color": "#ec4899",
+    "audio": "/audio/set-b/ir.mp3"
+  },
+  {
+    "id": "eə",
+    "symbol": "eə",
+    "category": "vowel-diphthong",
+    "categoryLabel": "双元音",
+    "description": "从\"诶\"滑向中性元音的双元音",
+    "mouthShape": "从半开嘴型滑向自然嘴型",
+    "tips": "先发 /e/ 再滑向 /ə/，重音在前",
+    "examples": [
+      {
+        "word": "bear",
+        "phonetic": "/beə/",
+        "translation": "熊"
+      },
+      {
+        "word": "wear",
+        "phonetic": "/weə/",
+        "translation": "衣物"
+      },
+      {
+        "word": "fare",
+        "phonetic": "/feə/",
+        "translation": "票价"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "square",
+        "phonetic": "/skweə/",
+        "translation": "广场"
+      },
+      {
+        "word": "spare",
+        "phonetic": "/speə/",
+        "translation": "备用的"
+      },
+      {
+        "word": "unfair",
+        "phonetic": "/ʌnˈfeə/",
+        "translation": "不公平的"
+      },
+      {
+        "word": "share",
+        "phonetic": "/ʃeə/",
+        "translation": "分享"
+      },
+      {
+        "word": "dare",
+        "phonetic": "/deə/",
+        "translation": "敢于"
+      },
+      {
+        "word": "care",
+        "phonetic": "/keə/",
+        "translation": "关心"
+      },
+      {
+        "word": "repair",
+        "phonetic": "/rɪˈpeə/",
+        "translation": "修理"
+      },
+      {
+        "word": "air",
+        "phonetic": "/eə/",
+        "translation": "空气"
+      },
+      {
+        "word": "hair",
+        "phonetic": "/heə/",
+        "translation": "头发"
+      },
+      {
+        "word": "pear",
+        "phonetic": "/peə/",
+        "translation": "梨"
+      },
+      {
+        "word": "where",
+        "phonetic": "/weə/",
+        "translation": "哪里"
+      },
+      {
+        "word": "there",
+        "phonetic": "/ðeə/",
+        "translation": "那里"
+      }
+    ],
+    "color": "#ec4899",
+    "audio": "/audio/set-b/ear.mp3"
+  },
+  {
+    "id": "ʊə",
+    "symbol": "ʊə",
+    "category": "vowel-diphthong",
+    "categoryLabel": "双元音",
+    "description": "从\"乌\"滑向中性元音的双元音",
+    "mouthShape": "从圆唇嘴型滑向自然嘴型",
+    "tips": "先发 /ʊ/ 再滑向 /ə/，重音在前",
+    "examples": [
+      {
+        "word": "tour",
+        "phonetic": "/tʊə/",
+        "translation": "旅游"
+      },
+      {
+        "word": "pure",
+        "phonetic": "/pjʊə/",
+        "translation": "纯净的"
+      },
+      {
+        "word": "cure",
+        "phonetic": "/kjʊə/",
+        "translation": "治愈"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "poor",
+        "phonetic": "/pʊə/",
+        "translation": "贫穷的"
+      },
+      {
+        "word": "cruel",
+        "phonetic": "/ˈkrʊəl/",
+        "translation": "残忍的"
+      },
+      {
+        "word": "moor",
+        "phonetic": "/mʊə/",
+        "translation": "荒野"
+      },
+      {
+        "word": "fury",
+        "phonetic": "/ˈfjʊəri/",
+        "translation": "愤怒"
+      },
+      {
+        "word": "Europe",
+        "phonetic": "/ˈjʊərəp/",
+        "translation": "欧洲"
+      },
+      {
+        "word": "detour",
+        "phonetic": "/ˈdiːtʊə/",
+        "translation": "绕道"
+      },
+      {
+        "word": "curious",
+        "phonetic": "/ˈkjʊərɪəs/",
+        "translation": "好奇的"
+      },
+      {
+        "word": "ensure",
+        "phonetic": "/ɪnˈʃʊə/",
+        "translation": "确保"
+      }
+    ],
+    "color": "#ec4899",
+    "audio": "/audio/set-b/uer.mp3"
+  },
+  {
+    "id": "p",
+    "symbol": "p",
+    "category": "consonant-unvoiced",
+    "categoryLabel": "清辅音",
+    "description": "双唇爆破音，不振动声带",
+    "mouthShape": "双唇紧闭，然后突然打开",
+    "tips": "发音时声带不振动，气流突然爆破而出",
+    "examples": [
+      {
+        "word": "sip",
+        "phonetic": "/sɪp/",
+        "translation": "小口喝"
+      },
+      {
+        "word": "put",
+        "phonetic": "/pʊt/",
+        "translation": "放"
+      },
+      {
+        "word": "cup",
+        "phonetic": "/kʌp/",
+        "translation": "杯子"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "pay",
+        "phonetic": "/peɪ/",
+        "translation": "支付"
+      },
+      {
+        "word": "open",
+        "phonetic": "/ˈəʊpən/",
+        "translation": "打开"
+      },
+      {
+        "word": "panda",
+        "phonetic": "/ˈpændə/",
+        "translation": "熊猫"
+      },
+      {
+        "word": "pig",
+        "phonetic": "/pɪɡ/",
+        "translation": "猪"
+      },
+      {
+        "word": "pie",
+        "phonetic": "/paɪ/",
+        "translation": "馅饼"
+      },
+      {
+        "word": "pipe",
+        "phonetic": "/paɪp/",
+        "translation": "管道"
+      },
+      {
+        "word": "pick",
+        "phonetic": "/pɪk/",
+        "translation": "挑选"
+      },
+      {
+        "word": "poor",
+        "phonetic": "/pʊə/",
+        "translation": "贫穷的"
+      },
+      {
+        "word": "pear",
+        "phonetic": "/peə/",
+        "translation": "梨"
+      },
+      {
+        "word": "rap",
+        "phonetic": "/ræp/",
+        "translation": "说唱"
+      },
+      {
+        "word": "lip",
+        "phonetic": "/lɪp/",
+        "translation": "嘴唇"
+      },
+      {
+        "word": "map",
+        "phonetic": "/mæp/",
+        "translation": "地图"
+      },
+      {
+        "word": "keep",
+        "phonetic": "/kiːp/",
+        "translation": "保持"
+      },
+      {
+        "word": "stop",
+        "phonetic": "/stɒp/",
+        "translation": "停止"
+      },
+      {
+        "word": "apple",
+        "phonetic": "/ˈæpl/",
+        "translation": "苹果"
+      },
+      {
+        "word": "happen",
+        "phonetic": "/ˈhæpən/",
+        "translation": "发生"
+      },
+      {
+        "word": "supper",
+        "phonetic": "/ˈsʌpə/",
+        "translation": "晚餐"
+      },
+      {
+        "word": "copper",
+        "phonetic": "/ˈkɒpə/",
+        "translation": "铜"
+      },
+      {
+        "word": "apply",
+        "phonetic": "/əˈplaɪ/",
+        "translation": "申请"
+      },
+      {
+        "word": "upper",
+        "phonetic": "/ˈʌpə/",
+        "translation": "上面的"
+      }
+    ],
+    "color": "#f97316",
+    "audio": "/audio/set-b/p.mp3"
+  },
+  {
+    "id": "t",
+    "symbol": "t",
+    "category": "consonant-unvoiced",
+    "categoryLabel": "清辅音",
+    "description": "齿龈爆破音，不振动声带",
+    "mouthShape": "舌尖抵上齿龈，然后突然离开",
+    "tips": "舌尖抵住上齿龈后方，气流突然爆破",
+    "examples": [
+      {
+        "word": "tomorrow",
+        "phonetic": "/təˈmɒrəʊ/",
+        "translation": "明天"
+      },
+      {
+        "word": "today",
+        "phonetic": "/təˈdeɪ/",
+        "translation": "今天"
+      },
+      {
+        "word": "top",
+        "phonetic": "/tɒp/",
+        "translation": "顶部"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "talk",
+        "phonetic": "/tɔːk/",
+        "translation": "谈话"
+      },
+      {
+        "word": "taxi",
+        "phonetic": "/ˈtæksi/",
+        "translation": "出租车"
+      },
+      {
+        "word": "tell",
+        "phonetic": "/tel/",
+        "translation": "告诉"
+      },
+      {
+        "word": "kitty",
+        "phonetic": "/ˈkɪti/",
+        "translation": "小猫"
+      },
+      {
+        "word": "night",
+        "phonetic": "/naɪt/",
+        "translation": "夜晚"
+      },
+      {
+        "word": "ticket",
+        "phonetic": "/ˈtɪkɪt/",
+        "translation": "票"
+      },
+      {
+        "word": "better",
+        "phonetic": "/ˈbetə/",
+        "translation": "更好的"
+      },
+      {
+        "word": "tea",
+        "phonetic": "/tiː/",
+        "translation": "茶"
+      },
+      {
+        "word": "test",
+        "phonetic": "/test/",
+        "translation": "测试"
+      },
+      {
+        "word": "tennis",
+        "phonetic": "/ˈtenɪs/",
+        "translation": "网球"
+      },
+      {
+        "word": "tree",
+        "phonetic": "/triː/",
+        "translation": "树"
+      },
+      {
+        "word": "teach",
+        "phonetic": "/tiːtʃ/",
+        "translation": "教"
+      },
+      {
+        "word": "toast",
+        "phonetic": "/təʊst/",
+        "translation": "吐司"
+      },
+      {
+        "word": "tie",
+        "phonetic": "/taɪ/",
+        "translation": "领带"
+      },
+      {
+        "word": "time",
+        "phonetic": "/taɪm/",
+        "translation": "时间"
+      },
+      {
+        "word": "tomato",
+        "phonetic": "/təˈmɑːtəʊ/",
+        "translation": "番茄"
+      },
+      {
+        "word": "terrible",
+        "phonetic": "/ˈterɪbl/",
+        "translation": "可怕的"
+      },
+      {
+        "word": "telephone",
+        "phonetic": "/ˈtelɪfəʊn/",
+        "translation": "电话"
+      },
+      {
+        "word": "sit",
+        "phonetic": "/sɪt/",
+        "translation": "坐"
+      },
+      {
+        "word": "plate",
+        "phonetic": "/pleɪt/",
+        "translation": "盘子"
+      },
+      {
+        "word": "tooth",
+        "phonetic": "/tuːθ/",
+        "translation": "牙齿"
+      },
+      {
+        "word": "heart",
+        "phonetic": "/hɑːt/",
+        "translation": "心脏"
+      },
+      {
+        "word": "cat",
+        "phonetic": "/kæt/",
+        "translation": "猫"
+      },
+      {
+        "word": "insect",
+        "phonetic": "/ˈɪnsekt/",
+        "translation": "昆虫"
+      },
+      {
+        "word": "little",
+        "phonetic": "/ˈlɪtl/",
+        "translation": "小的"
+      },
+      {
+        "word": "cotton",
+        "phonetic": "/ˈkɒtn/",
+        "translation": "棉花"
+      },
+      {
+        "word": "butter",
+        "phonetic": "/ˈbʌtə/",
+        "translation": "黄油"
+      }
+    ],
+    "color": "#f97316",
+    "audio": "/audio/set-b/t.mp3"
+  },
+  {
+    "id": "k",
+    "symbol": "k",
+    "category": "consonant-unvoiced",
+    "categoryLabel": "清辅音",
+    "description": "软腭爆破音，不振动声带",
+    "mouthShape": "舌根抵软腭，然后突然离开",
+    "tips": "舌根抵住软腭，气流突然爆破，声带不振动",
+    "examples": [
+      {
+        "word": "cat",
+        "phonetic": "/kæt/",
+        "translation": "猫"
+      },
+      {
+        "word": "cup",
+        "phonetic": "/kʌp/",
+        "translation": "杯子"
+      },
+      {
+        "word": "card",
+        "phonetic": "/kɑːd/",
+        "translation": "卡片"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "key",
+        "phonetic": "/kiː/",
+        "translation": "钥匙"
+      },
+      {
+        "word": "cold",
+        "phonetic": "/kəʊld/",
+        "translation": "冷的"
+      },
+      {
+        "word": "desk",
+        "phonetic": "/desk/",
+        "translation": "书桌"
+      },
+      {
+        "word": "cafe",
+        "phonetic": "/ˈkæfeɪ/",
+        "translation": "咖啡馆"
+      },
+      {
+        "word": "cake",
+        "phonetic": "/keɪk/",
+        "translation": "蛋糕"
+      },
+      {
+        "word": "camel",
+        "phonetic": "/ˈkæml/",
+        "translation": "骆驼"
+      },
+      {
+        "word": "case",
+        "phonetic": "/keɪs/",
+        "translation": "案例"
+      },
+      {
+        "word": "care",
+        "phonetic": "/keə/",
+        "translation": "关心"
+      },
+      {
+        "word": "kangaroo",
+        "phonetic": "/ˌkæŋɡəˈruː/",
+        "translation": "袋鼠"
+      },
+      {
+        "word": "keep",
+        "phonetic": "/kiːp/",
+        "translation": "保持"
+      },
+      {
+        "word": "kick",
+        "phonetic": "/kɪk/",
+        "translation": "踢"
+      },
+      {
+        "word": "kid",
+        "phonetic": "/kɪd/",
+        "translation": "孩子"
+      },
+      {
+        "word": "kill",
+        "phonetic": "/kɪl/",
+        "translation": "杀死"
+      },
+      {
+        "word": "kind",
+        "phonetic": "/kaɪnd/",
+        "translation": "善良的"
+      },
+      {
+        "word": "ache",
+        "phonetic": "/eɪk/",
+        "translation": "疼痛"
+      },
+      {
+        "word": "anchor",
+        "phonetic": "/ˈæŋkə/",
+        "translation": "锚"
+      },
+      {
+        "word": "character",
+        "phonetic": "/ˈkærɪktə/",
+        "translation": "性格"
+      },
+      {
+        "word": "lock",
+        "phonetic": "/lɒk/",
+        "translation": "锁"
+      },
+      {
+        "word": "cock",
+        "phonetic": "/kɒk/",
+        "translation": "公鸡"
+      },
+      {
+        "word": "mock",
+        "phonetic": "/mɒk/",
+        "translation": "嘲笑"
+      },
+      {
+        "word": "check",
+        "phonetic": "/tʃek/",
+        "translation": "检查"
+      },
+      {
+        "word": "luck",
+        "phonetic": "/lʌk/",
+        "translation": "运气"
+      },
+      {
+        "word": "clock",
+        "phonetic": "/klɒk/",
+        "translation": "时钟"
+      },
+      {
+        "word": "quiet",
+        "phonetic": "/ˈkwaɪət/",
+        "translation": "安静的"
+      },
+      {
+        "word": "quick",
+        "phonetic": "/kwɪk/",
+        "translation": "快速的"
+      },
+      {
+        "word": "square",
+        "phonetic": "/skweə/",
+        "translation": "广场"
+      },
+      {
+        "word": "queen",
+        "phonetic": "/kwiːn/",
+        "translation": "女王"
+      },
+      {
+        "word": "require",
+        "phonetic": "/rɪˈkwaɪə/",
+        "translation": "需要"
+      },
+      {
+        "word": "quote",
+        "phonetic": "/kwəʊt/",
+        "translation": "引用"
+      },
+      {
+        "word": "bicycle",
+        "phonetic": "/ˈbaɪsɪkl/",
+        "translation": "自行车"
+      },
+      {
+        "word": "tickle",
+        "phonetic": "/ˈtɪkl/",
+        "translation": "挠痒"
+      }
+    ],
+    "color": "#f97316",
+    "audio": "/audio/set-b/k.mp3"
+  },
+  {
+    "id": "f",
+    "symbol": "f",
+    "category": "consonant-unvoiced",
+    "categoryLabel": "清辅音",
+    "description": "唇齿摩擦音，不振动声带",
+    "mouthShape": "上齿轻咬下唇，气流从缝隙中摩擦而出",
+    "tips": "上齿轻触下唇内侧，气流持续摩擦",
+    "examples": [
+      {
+        "word": "fish",
+        "phonetic": "/fɪʃ/",
+        "translation": "鱼"
+      },
+      {
+        "word": "free",
+        "phonetic": "/friː/",
+        "translation": "免费的"
+      },
+      {
+        "word": "floor",
+        "phonetic": "/flɔː/",
+        "translation": "地板"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "finger",
+        "phonetic": "/ˈfɪŋɡə/",
+        "translation": "手指"
+      },
+      {
+        "word": "face",
+        "phonetic": "/feɪs/",
+        "translation": "脸"
+      },
+      {
+        "word": "forget",
+        "phonetic": "/fəˈɡet/",
+        "translation": "忘记"
+      },
+      {
+        "word": "frog",
+        "phonetic": "/frɒɡ/",
+        "translation": "青蛙"
+      },
+      {
+        "word": "life",
+        "phonetic": "/laɪf/",
+        "translation": "生命"
+      },
+      {
+        "word": "five",
+        "phonetic": "/faɪv/",
+        "translation": "五"
+      },
+      {
+        "word": "fat",
+        "phonetic": "/fæt/",
+        "translation": "胖的"
+      },
+      {
+        "word": "off",
+        "phonetic": "/ɒf/",
+        "translation": "关闭"
+      },
+      {
+        "word": "offer",
+        "phonetic": "/ˈɒfə/",
+        "translation": "提供"
+      },
+      {
+        "word": "office",
+        "phonetic": "/ˈɒfɪs/",
+        "translation": "办公室"
+      },
+      {
+        "word": "alpha",
+        "phonetic": "/ˈælfə/",
+        "translation": "阿尔法"
+      },
+      {
+        "word": "photo",
+        "phonetic": "/ˈfəʊtəʊ/",
+        "translation": "照片"
+      },
+      {
+        "word": "phone",
+        "phonetic": "/fəʊn/",
+        "translation": "电话"
+      },
+      {
+        "word": "laugh",
+        "phonetic": "/lɑːf/",
+        "translation": "笑"
+      },
+      {
+        "word": "enough",
+        "phonetic": "/ɪˈnʌf/",
+        "translation": "足够"
+      },
+      {
+        "word": "cough",
+        "phonetic": "/kɒf/",
+        "translation": "咳嗽"
+      },
+      {
+        "word": "fly",
+        "phonetic": "/flaɪ/",
+        "translation": "飞"
+      },
+      {
+        "word": "flush",
+        "phonetic": "/flʌʃ/",
+        "translation": "冲洗"
+      },
+      {
+        "word": "flag",
+        "phonetic": "/flæɡ/",
+        "translation": "旗帜"
+      },
+      {
+        "word": "fruit",
+        "phonetic": "/fruːt/",
+        "translation": "水果"
+      },
+      {
+        "word": "France",
+        "phonetic": "/frɑːns/",
+        "translation": "法国"
+      },
+      {
+        "word": "friend",
+        "phonetic": "/frend/",
+        "translation": "朋友"
+      }
+    ],
+    "color": "#f97316",
+    "audio": "/audio/set-b/f.mp3"
+  },
+  {
+    "id": "s",
+    "symbol": "s",
+    "category": "consonant-unvoiced",
+    "categoryLabel": "清辅音",
+    "description": "齿龈摩擦音，不振动声带",
+    "mouthShape": "舌尖接近上齿龈，气流从缝隙摩擦而出",
+    "tips": "舌尖接近但不触碰上齿龈，气流摩擦产生嘶嘶声",
+    "examples": [
+      {
+        "word": "nice",
+        "phonetic": "/naɪs/",
+        "translation": "美好的"
+      },
+      {
+        "word": "bus",
+        "phonetic": "/bʌs/",
+        "translation": "公共汽车"
+      },
+      {
+        "word": "sit",
+        "phonetic": "/sɪt/",
+        "translation": "坐下"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "say",
+        "phonetic": "/seɪ/",
+        "translation": "说"
+      },
+      {
+        "word": "sky",
+        "phonetic": "/skaɪ/",
+        "translation": "天空"
+      },
+      {
+        "word": "face",
+        "phonetic": "/feɪs/",
+        "translation": "脸"
+      },
+      {
+        "word": "sea",
+        "phonetic": "/siː/",
+        "translation": "大海"
+      },
+      {
+        "word": "smile",
+        "phonetic": "/smaɪl/",
+        "translation": "微笑"
+      },
+      {
+        "word": "pass",
+        "phonetic": "/pɑːs/",
+        "translation": "通过"
+      },
+      {
+        "word": "mass",
+        "phonetic": "/mæs/",
+        "translation": "大量"
+      },
+      {
+        "word": "lesson",
+        "phonetic": "/ˈlesn/",
+        "translation": "课程"
+      },
+      {
+        "word": "ice",
+        "phonetic": "/aɪs/",
+        "translation": "冰"
+      },
+      {
+        "word": "city",
+        "phonetic": "/ˈsɪti/",
+        "translation": "城市"
+      },
+      {
+        "word": "scent",
+        "phonetic": "/sent/",
+        "translation": "气味"
+      },
+      {
+        "word": "scene",
+        "phonetic": "/siːn/",
+        "translation": "场景"
+      },
+      {
+        "word": "science",
+        "phonetic": "/ˈsaɪəns/",
+        "translation": "科学"
+      }
+    ],
+    "color": "#f97316",
+    "audio": "/audio/set-b/s.mp3"
+  },
+  {
+    "id": "ʃ",
+    "symbol": "ʃ",
+    "category": "consonant-unvoiced",
+    "categoryLabel": "清辅音",
+    "description": "腭龈摩擦音，不振动声带",
+    "mouthShape": "嘴唇略圆突出，舌头抬高",
+    "tips": "类似\"嘘\"的声音，嘴唇略圆，舌头抬高",
+    "examples": [
+      {
+        "word": "ship",
+        "phonetic": "/ʃɪp/",
+        "translation": "船"
+      },
+      {
+        "word": "fish",
+        "phonetic": "/fɪʃ/",
+        "translation": "鱼"
+      },
+      {
+        "word": "shirt",
+        "phonetic": "/ʃɜːt/",
+        "translation": "衬衫"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "sheep",
+        "phonetic": "/ʃiːp/",
+        "translation": "羊"
+      },
+      {
+        "word": "clash",
+        "phonetic": "/klæʃ/",
+        "translation": "冲突"
+      },
+      {
+        "word": "wash",
+        "phonetic": "/wɒʃ/",
+        "translation": "洗"
+      },
+      {
+        "word": "shut",
+        "phonetic": "/ʃʌt/",
+        "translation": "关闭"
+      },
+      {
+        "word": "wish",
+        "phonetic": "/wɪʃ/",
+        "translation": "希望"
+      },
+      {
+        "word": "shame",
+        "phonetic": "/ʃeɪm/",
+        "translation": "羞耻"
+      },
+      {
+        "word": "sure",
+        "phonetic": "/ʃʊə/",
+        "translation": "确定的"
+      },
+      {
+        "word": "sugar",
+        "phonetic": "/ˈʃʊɡə/",
+        "translation": "糖"
+      },
+      {
+        "word": "surely",
+        "phonetic": "/ˈʃʊəli/",
+        "translation": "当然"
+      },
+      {
+        "word": "assure",
+        "phonetic": "/əˈʃʊə/",
+        "translation": "保证"
+      },
+      {
+        "word": "pressure",
+        "phonetic": "/ˈpreʃə/",
+        "translation": "压力"
+      },
+      {
+        "word": "social",
+        "phonetic": "/ˈsəʊʃl/",
+        "translation": "社会的"
+      },
+      {
+        "word": "special",
+        "phonetic": "/ˈspeʃl/",
+        "translation": "特别的"
+      },
+      {
+        "word": "national",
+        "phonetic": "/ˈnæʃnəl/",
+        "translation": "国家的"
+      },
+      {
+        "word": "station",
+        "phonetic": "/ˈsteɪʃn/",
+        "translation": "车站"
+      },
+      {
+        "word": "efficient",
+        "phonetic": "/ɪˈfɪʃnt/",
+        "translation": "高效的"
+      },
+      {
+        "word": "Russia",
+        "phonetic": "/ˈrʌʃə/",
+        "translation": "俄罗斯"
+      },
+      {
+        "word": "action",
+        "phonetic": "/ˈækʃn/",
+        "translation": "行动"
+      },
+      {
+        "word": "vacation",
+        "phonetic": "/vəˈkeɪʃn/",
+        "translation": "假期"
+      }
+    ],
+    "color": "#f97316",
+    "audio": "/audio/set-b/sh.mp3"
+  },
+  {
+    "id": "θ",
+    "symbol": "θ",
+    "category": "consonant-unvoiced",
+    "categoryLabel": "清辅音",
+    "description": "齿间摩擦音，不振动声带",
+    "mouthShape": "舌尖轻触上齿背，气流从缝隙摩擦而出",
+    "tips": "舌尖放在上下齿之间，气流摩擦，声带不振动",
+    "examples": [
+      {
+        "word": "path",
+        "phonetic": "/pɑːθ/",
+        "translation": "道路"
+      },
+      {
+        "word": "think",
+        "phonetic": "/θɪŋk/",
+        "translation": "想"
+      },
+      {
+        "word": "math",
+        "phonetic": "/mæθ/",
+        "translation": "数学"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "south",
+        "phonetic": "/saʊθ/",
+        "translation": "南方"
+      },
+      {
+        "word": "mouth",
+        "phonetic": "/maʊθ/",
+        "translation": "嘴巴"
+      },
+      {
+        "word": "thing",
+        "phonetic": "/θɪŋ/",
+        "translation": "事物"
+      },
+      {
+        "word": "death",
+        "phonetic": "/deθ/",
+        "translation": "死亡"
+      },
+      {
+        "word": "tooth",
+        "phonetic": "/tuːθ/",
+        "translation": "牙齿"
+      },
+      {
+        "word": "booth",
+        "phonetic": "/buːθ/",
+        "translation": "亭子"
+      },
+      {
+        "word": "cloth",
+        "phonetic": "/klɒθ/",
+        "translation": "布料"
+      },
+      {
+        "word": "thin",
+        "phonetic": "/θɪn/",
+        "translation": "薄的"
+      },
+      {
+        "word": "bathroom",
+        "phonetic": "/ˈbɑːθruːm/",
+        "translation": "浴室"
+      },
+      {
+        "word": "birthday",
+        "phonetic": "/ˈbɜːθdeɪ/",
+        "translation": "生日"
+      },
+      {
+        "word": "health",
+        "phonetic": "/helθ/",
+        "translation": "健康"
+      },
+      {
+        "word": "theater",
+        "phonetic": "/ˈθɪətə/",
+        "translation": "剧院"
+      }
+    ],
+    "color": "#f97316",
+    "audio": "/audio/set-b/th-voiceless.mp3"
+  },
+  {
+    "id": "h",
+    "symbol": "h",
+    "category": "consonant-unvoiced",
+    "categoryLabel": "清辅音",
+    "description": "声门摩擦音，不振动声带",
+    "mouthShape": "嘴巴自然张开，气流从喉咙摩擦而出",
+    "tips": "类似呼气的声音，声带不振动，嘴型随后面元音变化",
+    "examples": [
+      {
+        "word": "hut",
+        "phonetic": "/hʌt/",
+        "translation": "小屋"
+      },
+      {
+        "word": "hello",
+        "phonetic": "/həˈləʊ/",
+        "translation": "喂"
+      },
+      {
+        "word": "home",
+        "phonetic": "/həʊm/",
+        "translation": "家"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "hand",
+        "phonetic": "/hænd/",
+        "translation": "手"
+      },
+      {
+        "word": "hide",
+        "phonetic": "/haɪd/",
+        "translation": "隐藏"
+      },
+      {
+        "word": "happy",
+        "phonetic": "/ˈhæpi/",
+        "translation": "快乐的"
+      },
+      {
+        "word": "hair",
+        "phonetic": "/heə/",
+        "translation": "头发"
+      },
+      {
+        "word": "hate",
+        "phonetic": "/heɪt/",
+        "translation": "憎恨"
+      },
+      {
+        "word": "high",
+        "phonetic": "/haɪ/",
+        "translation": "高的"
+      },
+      {
+        "word": "him",
+        "phonetic": "/hɪm/",
+        "translation": "他（宾格）"
+      },
+      {
+        "word": "hook",
+        "phonetic": "/hʊk/",
+        "translation": "钩子"
+      },
+      {
+        "word": "hill",
+        "phonetic": "/hɪl/",
+        "translation": "山丘"
+      },
+      {
+        "word": "hour",
+        "phonetic": "/aʊə/",
+        "translation": "小时"
+      },
+      {
+        "word": "honest",
+        "phonetic": "/ˈɒnɪst/",
+        "translation": "诚实的"
+      },
+      {
+        "word": "honor",
+        "phonetic": "/ˈɒnə/",
+        "translation": "荣誉"
+      }
+    ],
+    "color": "#f97316",
+    "audio": "/audio/set-b/h.mp3"
+  },
+  {
+    "id": "tʃ",
+    "symbol": "tʃ",
+    "category": "consonant-unvoiced",
+    "categoryLabel": "清辅音",
+    "description": "腭龈塞擦音，不振动声带",
+    "mouthShape": "舌尖抵上齿龈，然后摩擦离开",
+    "tips": "先爆破后摩擦，类似汉语\"吃\"的声母",
+    "examples": [
+      {
+        "word": "chick",
+        "phonetic": "/tʃɪk/",
+        "translation": "小鸡"
+      },
+      {
+        "word": "coach",
+        "phonetic": "/kəʊtʃ/",
+        "translation": "教练"
+      },
+      {
+        "word": "rich",
+        "phonetic": "/rɪtʃ/",
+        "translation": "富有的"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "match",
+        "phonetic": "/mætʃ/",
+        "translation": "比赛"
+      },
+      {
+        "word": "cheer",
+        "phonetic": "/tʃɪə/",
+        "translation": "欢呼"
+      },
+      {
+        "word": "which",
+        "phonetic": "/wɪtʃ/",
+        "translation": "哪个"
+      },
+      {
+        "word": "chair",
+        "phonetic": "/tʃeə/",
+        "translation": "椅子"
+      },
+      {
+        "word": "chain",
+        "phonetic": "/tʃeɪn/",
+        "translation": "链条"
+      },
+      {
+        "word": "cheap",
+        "phonetic": "/tʃiːp/",
+        "translation": "便宜的"
+      },
+      {
+        "word": "catch",
+        "phonetic": "/kætʃ/",
+        "translation": "抓住"
+      },
+      {
+        "word": "kitchen",
+        "phonetic": "/ˈkɪtʃɪn/",
+        "translation": "厨房"
+      },
+      {
+        "word": "watch",
+        "phonetic": "/wɒtʃ/",
+        "translation": "手表"
+      },
+      {
+        "word": "natural",
+        "phonetic": "/ˈnætʃrəl/",
+        "translation": "自然的"
+      },
+      {
+        "word": "future",
+        "phonetic": "/ˈfjuːtʃə/",
+        "translation": "未来"
+      },
+      {
+        "word": "century",
+        "phonetic": "/ˈsentʃəri/",
+        "translation": "世纪"
+      },
+      {
+        "word": "virtual",
+        "phonetic": "/ˈvɜːtʃuəl/",
+        "translation": "虚拟的"
+      }
+    ],
+    "color": "#f97316",
+    "audio": "/audio/set-b/ch.mp3"
+  },
+  {
+    "id": "ts",
+    "symbol": "ts",
+    "category": "consonant-unvoiced",
+    "categoryLabel": "清辅音",
+    "description": "齿龈塞擦音，不振动声带",
+    "mouthShape": "舌尖抵上齿龈，然后摩擦离开",
+    "tips": "类似汉语\"次\"的声母，出现在词尾",
+    "examples": [
+      {
+        "word": "eats",
+        "phonetic": "/iːts/",
+        "translation": "吃（第三人称）"
+      },
+      {
+        "word": "cats",
+        "phonetic": "/kæts/",
+        "translation": "猫（复数）"
+      },
+      {
+        "word": "gifts",
+        "phonetic": "/ɡɪfts/",
+        "translation": "礼物（复数）"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "boats",
+        "phonetic": "/bəʊts/",
+        "translation": "船（复数）"
+      },
+      {
+        "word": "meets",
+        "phonetic": "/miːts/",
+        "translation": "遇见（第三人称）"
+      },
+      {
+        "word": "limits",
+        "phonetic": "/ˈlɪmɪts/",
+        "translation": "限制（复数）"
+      },
+      {
+        "word": "hats",
+        "phonetic": "/hæts/",
+        "translation": "帽子（复数）"
+      },
+      {
+        "word": "starts",
+        "phonetic": "/stɑːts/",
+        "translation": "开始（第三人称）"
+      },
+      {
+        "word": "parts",
+        "phonetic": "/pɑːts/",
+        "translation": "部分（复数）"
+      },
+      {
+        "word": "sweats",
+        "phonetic": "/swets/",
+        "translation": "汗水（复数）"
+      },
+      {
+        "word": "pets",
+        "phonetic": "/pets/",
+        "translation": "宠物（复数）"
+      },
+      {
+        "word": "goats",
+        "phonetic": "/ɡəʊts/",
+        "translation": "山羊（复数）"
+      }
+    ],
+    "color": "#f97316",
+    "audio": "/audio/set-b/ts.mp3"
+  },
+  {
+    "id": "tr",
+    "symbol": "tr",
+    "category": "consonant-unvoiced",
+    "categoryLabel": "清辅音",
+    "description": "齿龈塞擦音组合，不振动声带",
+    "mouthShape": "舌尖抵上齿龈，然后卷舌",
+    "tips": "先发 /t/ 再迅速过渡到 /r/，连读",
+    "examples": [
+      {
+        "word": "track",
+        "phonetic": "/træk/",
+        "translation": "轨道"
+      },
+      {
+        "word": "tree",
+        "phonetic": "/triː/",
+        "translation": "树"
+      },
+      {
+        "word": "trill",
+        "phonetic": "/trɪl/",
+        "translation": "颤音"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "ostrich",
+        "phonetic": "/ˈɒstrɪtʃ/",
+        "translation": "鸵鸟"
+      },
+      {
+        "word": "trade",
+        "phonetic": "/treɪd/",
+        "translation": "贸易"
+      },
+      {
+        "word": "metric",
+        "phonetic": "/ˈmetrɪk/",
+        "translation": "公制的"
+      },
+      {
+        "word": "trim",
+        "phonetic": "/trɪm/",
+        "translation": "修剪"
+      },
+      {
+        "word": "train",
+        "phonetic": "/treɪn/",
+        "translation": "火车"
+      },
+      {
+        "word": "trip",
+        "phonetic": "/trɪp/",
+        "translation": "旅行"
+      },
+      {
+        "word": "traffic",
+        "phonetic": "/ˈtræfɪk/",
+        "translation": "交通"
+      },
+      {
+        "word": "introduce",
+        "phonetic": "/ˌɪntrəˈdjuːs/",
+        "translation": "介绍"
+      }
+    ],
+    "color": "#f97316",
+    "audio": "/audio/set-b/tr.mp3"
+  },
+  {
+    "id": "b",
+    "symbol": "b",
+    "category": "consonant-voiced",
+    "categoryLabel": "浊辅音",
+    "description": "双唇爆破音，振动声带",
+    "mouthShape": "双唇紧闭，然后突然打开",
+    "tips": "发音时声带振动，与 /p/ 的区别在于声带是否振动",
+    "examples": [
+      {
+        "word": "bread",
+        "phonetic": "/bred/",
+        "translation": "面包"
+      },
+      {
+        "word": "club",
+        "phonetic": "/klʌb/",
+        "translation": "俱乐部"
+      },
+      {
+        "word": "lab",
+        "phonetic": "/læb/",
+        "translation": "实验室"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "tube",
+        "phonetic": "/tjuːb/",
+        "translation": "管子"
+      },
+      {
+        "word": "rabbit",
+        "phonetic": "/ˈræbɪt/",
+        "translation": "兔子"
+      },
+      {
+        "word": "garbage",
+        "phonetic": "/ˈɡɑːbɪdʒ/",
+        "translation": "垃圾"
+      },
+      {
+        "word": "bath",
+        "phonetic": "/bɑːθ/",
+        "translation": "浴缸"
+      },
+      {
+        "word": "bride",
+        "phonetic": "/braɪd/",
+        "translation": "新娘"
+      },
+      {
+        "word": "bright",
+        "phonetic": "/braɪt/",
+        "translation": "明亮的"
+      },
+      {
+        "word": "cab",
+        "phonetic": "/kæb/",
+        "translation": "出租车"
+      },
+      {
+        "word": "herb",
+        "phonetic": "/hɜːb/",
+        "translation": "草药"
+      },
+      {
+        "word": "cabbage",
+        "phonetic": "/ˈkæbɪdʒ/",
+        "translation": "卷心菜"
+      },
+      {
+        "word": "rubbish",
+        "phonetic": "/ˈrʌbɪʃ/",
+        "translation": "垃圾"
+      },
+      {
+        "word": "hobby",
+        "phonetic": "/ˈhɒbi/",
+        "translation": "爱好"
+      },
+      {
+        "word": "rubber",
+        "phonetic": "/ˈrʌbə/",
+        "translation": "橡皮"
+      }
+    ],
+    "color": "#22c55e",
+    "audio": "/audio/set-b/b.mp3"
+  },
+  {
+    "id": "d",
+    "symbol": "d",
+    "category": "consonant-voiced",
+    "categoryLabel": "浊辅音",
+    "description": "齿龈爆破音，振动声带",
+    "mouthShape": "舌尖抵上齿龈，然后突然离开",
+    "tips": "与 /t/ 相同口型，但声带振动",
+    "examples": [
+      {
+        "word": "dog",
+        "phonetic": "/dɒg/",
+        "translation": "狗"
+      },
+      {
+        "word": "card",
+        "phonetic": "/kɑːd/",
+        "translation": "卡片"
+      },
+      {
+        "word": "bed",
+        "phonetic": "/bed/",
+        "translation": "床"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "duck",
+        "phonetic": "/dʌk/",
+        "translation": "鸭子"
+      },
+      {
+        "word": "deep",
+        "phonetic": "/diːp/",
+        "translation": "深的"
+      },
+      {
+        "word": "murder",
+        "phonetic": "/ˈmɜːdə/",
+        "translation": "谋杀"
+      },
+      {
+        "word": "day",
+        "phonetic": "/deɪ/",
+        "translation": "天"
+      },
+      {
+        "word": "dear",
+        "phonetic": "/dɪə/",
+        "translation": "亲爱的"
+      },
+      {
+        "word": "mind",
+        "phonetic": "/maɪnd/",
+        "translation": "思想"
+      },
+      {
+        "word": "sudden",
+        "phonetic": "/ˈsʌdn/",
+        "translation": "突然的"
+      },
+      {
+        "word": "middle",
+        "phonetic": "/ˈmɪdl/",
+        "translation": "中间"
+      },
+      {
+        "word": "odd",
+        "phonetic": "/ɒd/",
+        "translation": "奇怪的"
+      },
+      {
+        "word": "desk",
+        "phonetic": "/desk/",
+        "translation": "书桌"
+      },
+      {
+        "word": "dance",
+        "phonetic": "/dɑːns/",
+        "translation": "跳舞"
+      },
+      {
+        "word": "doctor",
+        "phonetic": "/ˈdɒktə/",
+        "translation": "医生"
+      },
+      {
+        "word": "lived",
+        "phonetic": "/lɪvd/",
+        "translation": "居住（过去式）"
+      },
+      {
+        "word": "joined",
+        "phonetic": "/dʒɔɪnd/",
+        "translation": "加入（过去式）"
+      },
+      {
+        "word": "changed",
+        "phonetic": "/tʃeɪndʒd/",
+        "translation": "改变（过去式）"
+      }
+    ],
+    "color": "#22c55e",
+    "audio": "/audio/set-b/d.mp3"
+  },
+  {
+    "id": "g",
+    "symbol": "g",
+    "category": "consonant-voiced",
+    "categoryLabel": "浊辅音",
+    "description": "软腭爆破音，振动声带",
+    "mouthShape": "舌根抵软腭，然后突然离开",
+    "tips": "与 /k/ 相同口型，但声带振动",
+    "examples": [
+      {
+        "word": "egg",
+        "phonetic": "/eg/",
+        "translation": "蛋"
+      },
+      {
+        "word": "dig",
+        "phonetic": "/dɪg/",
+        "translation": "挖"
+      },
+      {
+        "word": "gate",
+        "phonetic": "/geɪt/",
+        "translation": "大门"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "eagle",
+        "phonetic": "/ˈiːɡl/",
+        "translation": "鹰"
+      },
+      {
+        "word": "lag",
+        "phonetic": "/læɡ/",
+        "translation": "落后"
+      },
+      {
+        "word": "glass",
+        "phonetic": "/ɡlɑːs/",
+        "translation": "玻璃杯"
+      },
+      {
+        "word": "game",
+        "phonetic": "/ɡeɪm/",
+        "translation": "游戏"
+      },
+      {
+        "word": "glade",
+        "phonetic": "/ɡleɪd/",
+        "translation": "林间空地"
+      },
+      {
+        "word": "girl",
+        "phonetic": "/ɡɜːl/",
+        "translation": "女孩"
+      },
+      {
+        "word": "luggage",
+        "phonetic": "/ˈlʌɡɪdʒ/",
+        "translation": "行李"
+      },
+      {
+        "word": "beggar",
+        "phonetic": "/ˈbeɡə/",
+        "translation": "乞丐"
+      },
+      {
+        "word": "golf",
+        "phonetic": "/ɡɒlf/",
+        "translation": "高尔夫"
+      },
+      {
+        "word": "catalogue",
+        "phonetic": "/ˈkætəlɒɡ/",
+        "translation": "目录"
+      },
+      {
+        "word": "rogue",
+        "phonetic": "/rəʊɡ/",
+        "translation": "流氓"
+      },
+      {
+        "word": "ghost",
+        "phonetic": "/ɡəʊst/",
+        "translation": "鬼魂"
+      }
+    ],
+    "color": "#22c55e",
+    "audio": "/audio/set-b/g.mp3"
+  },
+  {
+    "id": "v",
+    "symbol": "v",
+    "category": "consonant-voiced",
+    "categoryLabel": "浊辅音",
+    "description": "唇齿摩擦音，振动声带",
+    "mouthShape": "上齿轻咬下唇，气流从缝隙中摩擦而出",
+    "tips": "与 /f/ 相同口型，但声带振动",
+    "examples": [
+      {
+        "word": "very",
+        "phonetic": "/ˈverɪ/",
+        "translation": "非常"
+      },
+      {
+        "word": "dove",
+        "phonetic": "/dʌv/",
+        "translation": "鸽子"
+      },
+      {
+        "word": "ever",
+        "phonetic": "/ˈevə/",
+        "translation": "曾经"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "leave",
+        "phonetic": "/liːv/",
+        "translation": "离开"
+      },
+      {
+        "word": "invite",
+        "phonetic": "/ɪnˈvaɪt/",
+        "translation": "邀请"
+      },
+      {
+        "word": "heavy",
+        "phonetic": "/ˈhevi/",
+        "translation": "重的"
+      },
+      {
+        "word": "live",
+        "phonetic": "/lɪv/",
+        "translation": "居住"
+      },
+      {
+        "word": "have",
+        "phonetic": "/hæv/",
+        "translation": "有"
+      },
+      {
+        "word": "river",
+        "phonetic": "/ˈrɪvə/",
+        "translation": "河流"
+      },
+      {
+        "word": "victor",
+        "phonetic": "/ˈvɪktə/",
+        "translation": "胜利者"
+      },
+      {
+        "word": "view",
+        "phonetic": "/vjuː/",
+        "translation": "视野"
+      },
+      {
+        "word": "village",
+        "phonetic": "/ˈvɪlɪdʒ/",
+        "translation": "村庄"
+      },
+      {
+        "word": "veil",
+        "phonetic": "/veɪl/",
+        "translation": "面纱"
+      },
+      {
+        "word": "drive",
+        "phonetic": "/draɪv/",
+        "translation": "驾驶"
+      },
+      {
+        "word": "cave",
+        "phonetic": "/keɪv/",
+        "translation": "洞穴"
+      }
+    ],
+    "color": "#22c55e",
+    "audio": "/audio/set-b/v.mp3"
+  },
+  {
+    "id": "z",
+    "symbol": "z",
+    "category": "consonant-voiced",
+    "categoryLabel": "浊辅音",
+    "description": "齿龈摩擦音，振动声带",
+    "mouthShape": "舌尖接近上齿龈，气流从缝隙摩擦而出",
+    "tips": "与 /s/ 相同口型，但声带振动，发出嗡嗡声",
+    "examples": [
+      {
+        "word": "seize",
+        "phonetic": "/siːz/",
+        "translation": "抓住"
+      },
+      {
+        "word": "zero",
+        "phonetic": "/ˈzɪərəʊ/",
+        "translation": "零"
+      },
+      {
+        "word": "size",
+        "phonetic": "/saɪz/",
+        "translation": "大小"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "zebra",
+        "phonetic": "/ˈzebrə/",
+        "translation": "斑马"
+      },
+      {
+        "word": "zoo",
+        "phonetic": "/zuː/",
+        "translation": "动物园"
+      },
+      {
+        "word": "eraser",
+        "phonetic": "/ɪˈreɪzə/",
+        "translation": "橡皮擦"
+      },
+      {
+        "word": "zone",
+        "phonetic": "/zəʊn/",
+        "translation": "区域"
+      },
+      {
+        "word": "zoom",
+        "phonetic": "/zuːm/",
+        "translation": "缩放"
+      },
+      {
+        "word": "zap",
+        "phonetic": "/zæp/",
+        "translation": "电击"
+      },
+      {
+        "word": "doze",
+        "phonetic": "/dəʊz/",
+        "translation": "打盹"
+      },
+      {
+        "word": "gaze",
+        "phonetic": "/ɡeɪz/",
+        "translation": "凝视"
+      },
+      {
+        "word": "puzzle",
+        "phonetic": "/ˈpʌzl/",
+        "translation": "谜题"
+      },
+      {
+        "word": "dizzy",
+        "phonetic": "/ˈdɪzi/",
+        "translation": "头晕的"
+      },
+      {
+        "word": "jazz",
+        "phonetic": "/dʒæz/",
+        "translation": "爵士乐"
+      },
+      {
+        "word": "is",
+        "phonetic": "/ɪz/",
+        "translation": "是"
+      },
+      {
+        "word": "his",
+        "phonetic": "/hɪz/",
+        "translation": "他的"
+      },
+      {
+        "word": "season",
+        "phonetic": "/ˈsiːzn/",
+        "translation": "季节"
+      },
+      {
+        "word": "rise",
+        "phonetic": "/raɪz/",
+        "translation": "上升"
+      },
+      {
+        "word": "rose",
+        "phonetic": "/rəʊz/",
+        "translation": "玫瑰"
+      },
+      {
+        "word": "use",
+        "phonetic": "/juːz/",
+        "translation": "使用"
+      },
+      {
+        "word": "example",
+        "phonetic": "/ɪɡˈzɑːmpl/",
+        "translation": "例子"
+      },
+      {
+        "word": "exist",
+        "phonetic": "/ɪɡˈzɪst/",
+        "translation": "存在"
+      },
+      {
+        "word": "exact",
+        "phonetic": "/ɪɡˈzækt/",
+        "translation": "精确的"
+      }
+    ],
+    "color": "#22c55e",
+    "audio": "/audio/set-b/z.mp3"
+  },
+  {
+    "id": "ʒ",
+    "symbol": "ʒ",
+    "category": "consonant-voiced",
+    "categoryLabel": "浊辅音",
+    "description": "腭龈摩擦音，振动声带",
+    "mouthShape": "嘴唇略圆突出，舌头抬高",
+    "tips": "与 /ʃ/ 相同口型，但声带振动",
+    "examples": [
+      {
+        "word": "decision",
+        "phonetic": "/dɪˈsɪʒn/",
+        "translation": "决定"
+      },
+      {
+        "word": "television",
+        "phonetic": "/ˈtelɪvɪʒn/",
+        "translation": "电视"
+      },
+      {
+        "word": "leisure",
+        "phonetic": "/ˈleʒə/",
+        "translation": "闲暇"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "visual",
+        "phonetic": "/ˈvɪʒuəl/",
+        "translation": "视觉的"
+      },
+      {
+        "word": "version",
+        "phonetic": "/ˈvɜːʒn/",
+        "translation": "版本"
+      },
+      {
+        "word": "vision",
+        "phonetic": "/ˈvɪʒn/",
+        "translation": "视力"
+      },
+      {
+        "word": "collision",
+        "phonetic": "/kəˈlɪʒn/",
+        "translation": "碰撞"
+      },
+      {
+        "word": "confusion",
+        "phonetic": "/kənˈfjuːʒn/",
+        "translation": "混乱"
+      },
+      {
+        "word": "explosion",
+        "phonetic": "/ɪkˈspləʊʒn/",
+        "translation": "爆炸"
+      },
+      {
+        "word": "measure",
+        "phonetic": "/ˈmeʒə/",
+        "translation": "测量"
+      },
+      {
+        "word": "pleasure",
+        "phonetic": "/ˈpleʒə/",
+        "translation": "乐趣"
+      },
+      {
+        "word": "casual",
+        "phonetic": "/ˈkæʒuəl/",
+        "translation": "随意的"
+      },
+      {
+        "word": "rouge",
+        "phonetic": "/ruːʒ/",
+        "translation": "胭脂"
+      },
+      {
+        "word": "garage",
+        "phonetic": "/ˈɡærɑːʒ/",
+        "translation": "车库"
+      },
+      {
+        "word": "massage",
+        "phonetic": "/ˈmæsɑːʒ/",
+        "translation": "按摩"
+      }
+    ],
+    "color": "#22c55e",
+    "audio": "/audio/set-b/zh.mp3"
+  },
+  {
+    "id": "ð",
+    "symbol": "ð",
+    "category": "consonant-voiced",
+    "categoryLabel": "浊辅音",
+    "description": "齿间摩擦音，振动声带",
+    "mouthShape": "舌尖轻触上齿背，气流从缝隙摩擦而出",
+    "tips": "与 /θ/ 相同口型，但声带振动",
+    "examples": [
+      {
+        "word": "they",
+        "phonetic": "/ðeɪ/",
+        "translation": "他们"
+      },
+      {
+        "word": "those",
+        "phonetic": "/ðəʊz/",
+        "translation": "那些的"
+      },
+      {
+        "word": "other",
+        "phonetic": "/ˈʌðə/",
+        "translation": "其他的"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "another",
+        "phonetic": "/əˈnʌðə/",
+        "translation": "另一个"
+      },
+      {
+        "word": "breathe",
+        "phonetic": "/briːð/",
+        "translation": "呼吸"
+      },
+      {
+        "word": "teethe",
+        "phonetic": "/tiːð/",
+        "translation": "长牙"
+      },
+      {
+        "word": "that",
+        "phonetic": "/ð��t/",
+        "translation": "那个"
+      },
+      {
+        "word": "father",
+        "phonetic": "/ˈfɑːðə/",
+        "translation": "父亲"
+      },
+      {
+        "word": "smooth",
+        "phonetic": "/smuːð/",
+        "translation": "光滑的"
+      },
+      {
+        "word": "mother",
+        "phonetic": "/ˈmʌðə/",
+        "translation": "母亲"
+      },
+      {
+        "word": "weather",
+        "phonetic": "/ˈweðə/",
+        "translation": "天气"
+      },
+      {
+        "word": "leather",
+        "phonetic": "/ˈleðə/",
+        "translation": "皮革"
+      },
+      {
+        "word": "feather",
+        "phonetic": "/ˈfeðə/",
+        "translation": "羽毛"
+      },
+      {
+        "word": "together",
+        "phonetic": "/təˈɡeðə/",
+        "translation": "一起"
+      }
+    ],
+    "color": "#22c55e",
+    "audio": "/audio/set-b/th-voiced.mp3"
+  },
+  {
+    "id": "r",
+    "symbol": "r",
+    "category": "consonant-voiced",
+    "categoryLabel": "浊辅音",
+    "description": "齿龈近音，振动声带",
+    "mouthShape": "舌尖卷起，接近但不触碰上齿龈",
+    "tips": "舌尖卷起，不触碰任何部位，嘴唇略圆",
+    "examples": [
+      {
+        "word": "read",
+        "phonetic": "/riːd/",
+        "translation": "阅读"
+      },
+      {
+        "word": "grass",
+        "phonetic": "/ɡrɑːs/",
+        "translation": "草"
+      },
+      {
+        "word": "write",
+        "phonetic": "/raɪt/",
+        "translation": "写"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "rain",
+        "phonetic": "/reɪn/",
+        "translation": "雨"
+      },
+      {
+        "word": "red",
+        "phonetic": "/red/",
+        "translation": "红色"
+      },
+      {
+        "word": "real",
+        "phonetic": "/rɪəl/",
+        "translation": "真实的"
+      },
+      {
+        "word": "rise",
+        "phonetic": "/raɪz/",
+        "translation": "上升"
+      },
+      {
+        "word": "radio",
+        "phonetic": "/ˈreɪdiəʊ/",
+        "translation": "收音机"
+      },
+      {
+        "word": "crowd",
+        "phonetic": "/kraʊd/",
+        "translation": "人群"
+      },
+      {
+        "word": "arrive",
+        "phonetic": "/əˈraɪv/",
+        "translation": "到达"
+      },
+      {
+        "word": "ferry",
+        "phonetic": "/ˈferi/",
+        "translation": "渡船"
+      },
+      {
+        "word": "sorry",
+        "phonetic": "/ˈsɒri/",
+        "translation": "对不起"
+      },
+      {
+        "word": "wrong",
+        "phonetic": "/rɒŋ/",
+        "translation": "错误的"
+      },
+      {
+        "word": "wriggle",
+        "phonetic": "/ˈrɪɡl/",
+        "translation": "扭动"
+      },
+      {
+        "word": "wrinkle",
+        "phonetic": "/ˈrɪŋkl/",
+        "translation": "皱纹"
+      }
+    ],
+    "color": "#22c55e",
+    "audio": "/audio/set-b/r.mp3"
+  },
+  {
+    "id": "dʒ",
+    "symbol": "dʒ",
+    "category": "consonant-voiced",
+    "categoryLabel": "浊辅音",
+    "description": "腭龈塞擦音，振动声带",
+    "mouthShape": "舌尖抵上齿龈，然后摩擦离开",
+    "tips": "与 /tʃ/ 相同口型，但声带振动",
+    "examples": [
+      {
+        "word": "jam",
+        "phonetic": "/dʒæm/",
+        "translation": "果酱"
+      },
+      {
+        "word": "bridge",
+        "phonetic": "/brɪdʒ/",
+        "translation": "桥"
+      },
+      {
+        "word": "July",
+        "phonetic": "/dʒʊˈlaɪ/",
+        "translation": "七月"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "jar",
+        "phonetic": "/dʒɑː/",
+        "translation": "罐子"
+      },
+      {
+        "word": "angel",
+        "phonetic": "/ˈeɪndʒəl/",
+        "translation": "天使"
+      },
+      {
+        "word": "cage",
+        "phonetic": "/keɪdʒ/",
+        "translation": "笼子"
+      },
+      {
+        "word": "page",
+        "phonetic": "/peɪdʒ/",
+        "translation": "页面"
+      },
+      {
+        "word": "large",
+        "phonetic": "/lɑːdʒ/",
+        "translation": "大的"
+      },
+      {
+        "word": "danger",
+        "phonetic": "/ˈdeɪndʒə/",
+        "translation": "危险"
+      },
+      {
+        "word": "judge",
+        "phonetic": "/dʒʌdʒ/",
+        "translation": "法官"
+      },
+      {
+        "word": "edge",
+        "phonetic": "/edʒ/",
+        "translation": "边缘"
+      },
+      {
+        "word": "jack",
+        "phonetic": "/dʒæk/",
+        "translation": "千斤顶"
+      },
+      {
+        "word": "just",
+        "phonetic": "/dʒʌst/",
+        "translation": "只是"
+      },
+      {
+        "word": "job",
+        "phonetic": "/dʒɒb/",
+        "translation": "工作"
+      },
+      {
+        "word": "procedure",
+        "phonetic": "/prəˈsiːdʒə/",
+        "translation": "程序"
+      },
+      {
+        "word": "schedule",
+        "phonetic": "/ˈʃedjuːl/",
+        "translation": "时间表"
+      }
+    ],
+    "color": "#22c55e",
+    "audio": "/audio/set-b/dj.mp3"
+  },
+  {
+    "id": "dz",
+    "symbol": "dz",
+    "category": "consonant-voiced",
+    "categoryLabel": "浊辅音",
+    "description": "齿龈塞擦音，振动声带",
+    "mouthShape": "舌尖抵上齿龈，然后摩擦离开",
+    "tips": "类似汉语\"字\"的声母，出现在词尾",
+    "examples": [
+      {
+        "word": "beds",
+        "phonetic": "/bedz/",
+        "translation": "床（复数）"
+      },
+      {
+        "word": "adds",
+        "phonetic": "/ædz/",
+        "translation": "增加（第三人称）"
+      },
+      {
+        "word": "friends",
+        "phonetic": "/frendz/",
+        "translation": "朋友（复数）"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "cards",
+        "phonetic": "/kɑːdz/",
+        "translation": "卡片（复数）"
+      },
+      {
+        "word": "rides",
+        "phonetic": "/raɪdz/",
+        "translation": "骑行（第三人称）"
+      },
+      {
+        "word": "seconds",
+        "phonetic": "/ˈsekəndz/",
+        "translation": "秒（复数）"
+      },
+      {
+        "word": "reads",
+        "phonetic": "/riːdz/",
+        "translation": "阅读（第三人称）"
+      },
+      {
+        "word": "hands",
+        "phonetic": "/hændz/",
+        "translation": "手（复数）"
+      },
+      {
+        "word": "heads",
+        "phonetic": "/hedz/",
+        "translation": "头（复数）"
+      },
+      {
+        "word": "roads",
+        "phonetic": "/rəʊdz/",
+        "translation": "道路（复数）"
+      },
+      {
+        "word": "pounds",
+        "phonetic": "/paʊndz/",
+        "translation": "英镑（复数）"
+      }
+    ],
+    "color": "#22c55e",
+    "audio": "/audio/set-b/dz.mp3"
+  },
+  {
+    "id": "dr",
+    "symbol": "dr",
+    "category": "consonant-voiced",
+    "categoryLabel": "浊辅音",
+    "description": "齿龈塞擦音组合，振动声带",
+    "mouthShape": "舌尖抵上齿龈，然后卷舌",
+    "tips": "先发 /d/ 再迅速过渡到 /r/，连读",
+    "examples": [
+      {
+        "word": "dress",
+        "phonetic": "/dres/",
+        "translation": "连衣裙"
+      },
+      {
+        "word": "drink",
+        "phonetic": "/drɪŋk/",
+        "translation": "喝"
+      },
+      {
+        "word": "dream",
+        "phonetic": "/driːm/",
+        "translation": "梦想"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "draw",
+        "phonetic": "/drɔː/",
+        "translation": "画"
+      },
+      {
+        "word": "drip",
+        "phonetic": "/drɪp/",
+        "translation": "滴落"
+      },
+      {
+        "word": "drug",
+        "phonetic": "/drʌɡ/",
+        "translation": "药物"
+      },
+      {
+        "word": "drop",
+        "phonetic": "/drɒp/",
+        "translation": "落下"
+      },
+      {
+        "word": "drive",
+        "phonetic": "/draɪv/",
+        "translation": "驾驶"
+      },
+      {
+        "word": "drum",
+        "phonetic": "/drʌm/",
+        "translation": "鼓"
+      },
+      {
+        "word": "dreg",
+        "phonetic": "/dreɡ/",
+        "translation": "渣滓"
+      },
+      {
+        "word": "dree",
+        "phonetic": "/driː/",
+        "translation": "忍受"
+      },
+      {
+        "word": "drift",
+        "phonetic": "/drɪft/",
+        "translation": "漂流"
+      }
+    ],
+    "color": "#22c55e",
+    "audio": "/audio/set-b/dr.mp3"
+  },
+  {
+    "id": "m",
+    "symbol": "m",
+    "category": "consonant-other",
+    "categoryLabel": "其他辅音",
+    "description": "双唇鼻音，振动声带",
+    "mouthShape": "双唇紧闭，气流从鼻腔通过",
+    "tips": "双唇紧闭，声音从鼻腔发出，声带振动",
+    "examples": [
+      {
+        "word": "smart",
+        "phonetic": "/smɑːt/",
+        "translation": "聪明的"
+      },
+      {
+        "word": "move",
+        "phonetic": "/muːv/",
+        "translation": "移动"
+      },
+      {
+        "word": "mud",
+        "phonetic": "/mʌd/",
+        "translation": "泥"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "swim",
+        "phonetic": "/swɪm/",
+        "translation": "游泳"
+      },
+      {
+        "word": "animal",
+        "phonetic": "/ˈænɪml/",
+        "translation": "动物"
+      },
+      {
+        "word": "sample",
+        "phonetic": "/ˈsɑːmpl/",
+        "translation": "样本"
+      },
+      {
+        "word": "mail",
+        "phonetic": "/meɪl/",
+        "translation": "邮件"
+      },
+      {
+        "word": "man",
+        "phonetic": "/mæn/",
+        "translation": "男人"
+      },
+      {
+        "word": "mine",
+        "phonetic": "/maɪn/",
+        "translation": "我的"
+      },
+      {
+        "word": "mile",
+        "phonetic": "/maɪl/",
+        "translation": "英里"
+      },
+      {
+        "word": "magic",
+        "phonetic": "/ˈmædʒɪk/",
+        "translation": "魔法"
+      },
+      {
+        "word": "March",
+        "phonetic": "/mɑːtʃ/",
+        "translation": "三月"
+      },
+      {
+        "word": "common",
+        "phonetic": "/ˈkɒmən/",
+        "translation": "普通的"
+      },
+      {
+        "word": "grammar",
+        "phonetic": "/ˈɡræmə/",
+        "translation": "语法"
+      },
+      {
+        "word": "summer",
+        "phonetic": "/ˈsʌmə/",
+        "translation": "夏天"
+      },
+      {
+        "word": "lamb",
+        "phonetic": "/læm/",
+        "translation": "羔羊"
+      },
+      {
+        "word": "climb",
+        "phonetic": "/klaɪm/",
+        "translation": "攀爬"
+      },
+      {
+        "word": "bomb",
+        "phonetic": "/bɒm/",
+        "translation": "炸弹"
+      }
+    ],
+    "color": "#14b8a6",
+    "audio": "/audio/set-b/m.mp3"
+  },
+  {
+    "id": "n",
+    "symbol": "n",
+    "category": "consonant-other",
+    "categoryLabel": "其他辅音",
+    "description": "齿龈鼻音，振动声带",
+    "mouthShape": "舌尖抵上齿龈，气流从鼻腔通过",
+    "tips": "舌尖抵住上齿龈，声音从鼻腔发出",
+    "examples": [
+      {
+        "word": "no",
+        "phonetic": "/nəʊ/",
+        "translation": "不"
+      },
+      {
+        "word": "hunt",
+        "phonetic": "/hʌnt/",
+        "translation": "打猎"
+      },
+      {
+        "word": "find",
+        "phonetic": "/faɪnd/",
+        "translation": "查找"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "winner",
+        "phonetic": "/ˈwɪnə/",
+        "translation": "获胜者"
+      },
+      {
+        "word": "ant",
+        "phonetic": "/ænt/",
+        "translation": "蚂蚁"
+      },
+      {
+        "word": "brain",
+        "phonetic": "/breɪn/",
+        "translation": "大脑"
+      },
+      {
+        "word": "nine",
+        "phonetic": "/naɪn/",
+        "translation": "九"
+      },
+      {
+        "word": "line",
+        "phonetic": "/laɪn/",
+        "translation": "线"
+      },
+      {
+        "word": "mine",
+        "phonetic": "/maɪn/",
+        "translation": "我的"
+      },
+      {
+        "word": "dinner",
+        "phonetic": "/ˈdɪnə/",
+        "translation": "晚餐"
+      },
+      {
+        "word": "funny",
+        "phonetic": "/ˈfʌni/",
+        "translation": "有趣的"
+      },
+      {
+        "word": "sunny",
+        "phonetic": "/ˈsʌni/",
+        "translation": "阳光明媚的"
+      },
+      {
+        "word": "sign",
+        "phonetic": "/saɪn/",
+        "translation": "标志"
+      },
+      {
+        "word": "design",
+        "phonetic": "/dɪˈzaɪn/",
+        "translation": "设计"
+      },
+      {
+        "word": "foreign",
+        "phonetic": "/ˈfɒrɪn/",
+        "translation": "外国的"
+      }
+    ],
+    "color": "#14b8a6",
+    "audio": "/audio/set-b/n.mp3"
+  },
+  {
+    "id": "ŋ",
+    "symbol": "ŋ",
+    "category": "consonant-other",
+    "categoryLabel": "其他辅音",
+    "description": "软腭鼻音，振动声带",
+    "mouthShape": "舌根抵软腭，气流从鼻腔通过",
+    "tips": "舌根抵住软腭，声音从鼻腔发出，类似\"嗯\"",
+    "examples": [
+      {
+        "word": "spring",
+        "phonetic": "/sprɪŋ/",
+        "translation": "春天"
+      },
+      {
+        "word": "sing",
+        "phonetic": "/sɪŋ/",
+        "translation": "唱歌"
+      },
+      {
+        "word": "ink",
+        "phonetic": "/ɪŋk/",
+        "translation": "墨水"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "bank",
+        "phonetic": "/bæŋk/",
+        "translation": "银行"
+      },
+      {
+        "word": "bang",
+        "phonetic": "/bæŋ/",
+        "translation": "砰"
+      },
+      {
+        "word": "pink",
+        "phonetic": "/pɪŋk/",
+        "translation": "粉红色"
+      },
+      {
+        "word": "wing",
+        "phonetic": "/wɪŋ/",
+        "translation": "翅膀"
+      },
+      {
+        "word": "ring",
+        "phonetic": "/rɪŋ/",
+        "translation": "戒指"
+      },
+      {
+        "word": "think",
+        "phonetic": "/θɪŋk/",
+        "translation": "想"
+      },
+      {
+        "word": "anger",
+        "phonetic": "/ˈæŋɡə/",
+        "translation": "愤怒"
+      },
+      {
+        "word": "long",
+        "phonetic": "/lɒŋ/",
+        "translation": "长的"
+      },
+      {
+        "word": "among",
+        "phonetic": "/əˈmʌŋ/",
+        "translation": "在...之中"
+      },
+      {
+        "word": "singer",
+        "phonetic": "/ˈsɪŋə/",
+        "translation": "歌手"
+      },
+      {
+        "word": "blanket",
+        "phonetic": "/ˈblæŋkɪt/",
+        "translation": "毯子"
+      },
+      {
+        "word": "monkey",
+        "phonetic": "/ˈmʌŋki/",
+        "translation": "猴子"
+      },
+      {
+        "word": "donkey",
+        "phonetic": "/ˈdɒŋki/",
+        "translation": "驴子"
+      },
+      {
+        "word": "hungry",
+        "phonetic": "/ˈhʌŋɡri/",
+        "translation": "饥饿的"
+      }
+    ],
+    "color": "#14b8a6",
+    "audio": "/audio/set-b/ng.mp3"
+  },
+  {
+    "id": "l",
+    "symbol": "l",
+    "category": "consonant-other",
+    "categoryLabel": "其他辅音",
+    "description": "齿龈边音，振动声带",
+    "mouthShape": "舌尖抵上齿龈，气流从舌头两侧通过",
+    "tips": "舌尖抵住上齿龈，气流从舌头两侧流出",
+    "examples": [
+      {
+        "word": "line",
+        "phonetic": "/laɪn/",
+        "translation": "路线"
+      },
+      {
+        "word": "pool",
+        "phonetic": "/puːl/",
+        "translation": "联营"
+      },
+      {
+        "word": "alive",
+        "phonetic": "/əˈlaɪv/",
+        "translation": "活着的"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "like",
+        "phonetic": "/laɪk/",
+        "translation": "喜欢"
+      },
+      {
+        "word": "meal",
+        "phonetic": "/miːl/",
+        "translation": "餐食"
+      },
+      {
+        "word": "all",
+        "phonetic": "/ɔːl/",
+        "translation": "所有"
+      },
+      {
+        "word": "look",
+        "phonetic": "/lʊk/",
+        "translation": "看"
+      },
+      {
+        "word": "light",
+        "phonetic": "/laɪt/",
+        "translation": "光"
+      },
+      {
+        "word": "letter",
+        "phonetic": "/ˈletə/",
+        "translation": "信件"
+      },
+      {
+        "word": "lion",
+        "phonetic": "/ˈlaɪən/",
+        "translation": "狮子"
+      },
+      {
+        "word": "library",
+        "phonetic": "/ˈlaɪbrəri/",
+        "translation": "图书馆"
+      },
+      {
+        "word": "allow",
+        "phonetic": "/əˈlaʊ/",
+        "translation": "允许"
+      },
+      {
+        "word": "holly",
+        "phonetic": "/ˈhɒli/",
+        "translation": "冬青"
+      },
+      {
+        "word": "hello",
+        "phonetic": "/həˈləʊ/",
+        "translation": "你好"
+      },
+      {
+        "word": "wheel",
+        "phonetic": "/wiːl/",
+        "translation": "轮子"
+      },
+      {
+        "word": "apple",
+        "phonetic": "/ˈæpl/",
+        "translation": "苹果"
+      },
+      {
+        "word": "world",
+        "phonetic": "/wɜːld/",
+        "translation": "世界"
+      },
+      {
+        "word": "milk",
+        "phonetic": "/mɪlk/",
+        "translation": "牛奶"
+      },
+      {
+        "word": "fall",
+        "phonetic": "/fɔːl/",
+        "translation": "秋天"
+      },
+      {
+        "word": "wall",
+        "phonetic": "/wɔːl/",
+        "translation": "墙"
+      },
+      {
+        "word": "hill",
+        "phonetic": "/hɪl/",
+        "translation": "山丘"
+      },
+      {
+        "word": "tall",
+        "phonetic": "/tɔːl/",
+        "translation": "高的"
+      },
+      {
+        "word": "well",
+        "phonetic": "/wel/",
+        "translation": "好"
+      },
+      {
+        "word": "play",
+        "phonetic": "/pleɪ/",
+        "translation": "玩"
+      },
+      {
+        "word": "black",
+        "phonetic": "/blæk/",
+        "translation": "黑色"
+      },
+      {
+        "word": "gentle",
+        "phonetic": "/ˈdʒentl/",
+        "translation": "温柔的"
+      },
+      {
+        "word": "middle",
+        "phonetic": "/ˈmɪdl/",
+        "translation": "中间"
+      },
+      {
+        "word": "global",
+        "phonetic": "/ˈɡləʊbl/",
+        "translation": "全球的"
+      },
+      {
+        "word": "floor",
+        "phonetic": "/flɔː/",
+        "translation": "地板"
+      }
+    ],
+    "color": "#14b8a6",
+    "audio": "/audio/set-b/l.mp3"
+  },
+  {
+    "id": "w",
+    "symbol": "w",
+    "category": "consonant-other",
+    "categoryLabel": "其他辅音",
+    "description": "双唇近音，振动声带",
+    "mouthShape": "嘴唇圆形突出，然后迅速移向下一个元音",
+    "tips": "嘴唇先圆形突出，类似\"乌\"，然后迅速过渡",
+    "examples": [
+      {
+        "word": "work",
+        "phonetic": "/wɜːk/",
+        "translation": "工作"
+      },
+      {
+        "word": "wood",
+        "phonetic": "/wʊd/",
+        "translation": "木材"
+      },
+      {
+        "word": "what",
+        "phonetic": "/wɒt/",
+        "translation": "什么"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "swan",
+        "phonetic": "/swɒn/",
+        "translation": "天鹅"
+      },
+      {
+        "word": "with",
+        "phonetic": "/wɪð/",
+        "translation": "和"
+      },
+      {
+        "word": "white",
+        "phonetic": "/waɪt/",
+        "translation": "白色"
+      },
+      {
+        "word": "win",
+        "phonetic": "/wɪn/",
+        "translation": "赢"
+      },
+      {
+        "word": "war",
+        "phonetic": "/wɔː/",
+        "translation": "战争"
+      },
+      {
+        "word": "word",
+        "phonetic": "/wɜːd/",
+        "translation": "单词"
+      },
+      {
+        "word": "wine",
+        "phonetic": "/waɪn/",
+        "translation": "葡萄酒"
+      },
+      {
+        "word": "wall",
+        "phonetic": "/wɔːl/",
+        "translation": "墙"
+      },
+      {
+        "word": "window",
+        "phonetic": "/ˈwɪndəʊ/",
+        "translation": "窗户"
+      },
+      {
+        "word": "sweet",
+        "phonetic": "/swiːt/",
+        "translation": "甜的"
+      },
+      {
+        "word": "flower",
+        "phonetic": "/ˈflaʊə/",
+        "translation": "花"
+      },
+      {
+        "word": "which",
+        "phonetic": "/wɪtʃ/",
+        "translation": "哪个"
+      },
+      {
+        "word": "where",
+        "phonetic": "/weə/",
+        "translation": "哪里"
+      },
+      {
+        "word": "when",
+        "phonetic": "/wen/",
+        "translation": "什么时候"
+      },
+      {
+        "word": "while",
+        "phonetic": "/waɪl/",
+        "translation": "当...时"
+      },
+      {
+        "word": "quite",
+        "phonetic": "/kwaɪt/",
+        "translation": "相当"
+      },
+      {
+        "word": "queen",
+        "phonetic": "/kwiːn/",
+        "translation": "女王"
+      },
+      {
+        "word": "quick",
+        "phonetic": "/kwɪk/",
+        "translation": "快速的"
+      },
+      {
+        "word": "quiet",
+        "phonetic": "/ˈkwaɪət/",
+        "translation": "安静的"
+      },
+      {
+        "word": "one",
+        "phonetic": "/wʌn/",
+        "translation": "一"
+      },
+      {
+        "word": "once",
+        "phonetic": "/wʌns/",
+        "translation": "一次"
+      }
+    ],
+    "color": "#14b8a6",
+    "audio": "/audio/set-b/w.mp3"
+  },
+  {
+    "id": "j",
+    "symbol": "j",
+    "category": "consonant-other",
+    "categoryLabel": "其他辅音",
+    "description": "硬腭近音，振动声带",
+    "mouthShape": "舌面抬高接近硬腭，嘴角向两侧拉",
+    "tips": "类似汉语\"衣\"的声母，舌面抬高",
+    "examples": [
+      {
+        "word": "yell",
+        "phonetic": "/jel/",
+        "translation": "大叫"
+      },
+      {
+        "word": "yak",
+        "phonetic": "/jæk/",
+        "translation": "牦牛"
+      },
+      {
+        "word": "youth",
+        "phonetic": "/juːθ/",
+        "translation": "青年"
+      }
+    ],
+    "extraWords": [
+      {
+        "word": "billion",
+        "phonetic": "/ˈbɪljən/",
+        "translation": "十亿"
+      },
+      {
+        "word": "million",
+        "phonetic": "/ˈmɪljən/",
+        "translation": "百万"
+      },
+      {
+        "word": "unit",
+        "phonetic": "/ˈjuːnɪt/",
+        "translation": "单位"
+      },
+      {
+        "word": "you",
+        "phonetic": "/juː/",
+        "translation": "你"
+      },
+      {
+        "word": "yes",
+        "phonetic": "/jes/",
+        "translation": "是的"
+      },
+      {
+        "word": "yet",
+        "phonetic": "/jet/",
+        "translation": "还"
+      },
+      {
+        "word": "yawn",
+        "phonetic": "/jɔːn/",
+        "translation": "打哈欠"
+      },
+      {
+        "word": "yoga",
+        "phonetic": "/ˈjəʊɡə/",
+        "translation": "瑜伽"
+      },
+      {
+        "word": "yolk",
+        "phonetic": "/jəʊk/",
+        "translation": "蛋黄"
+      },
+      {
+        "word": "trillion",
+        "phonetic": "/ˈtrɪljən/",
+        "translation": "万亿"
+      },
+      {
+        "word": "stallion",
+        "phonetic": "/ˈstæljən/",
+        "translation": "种马"
+      },
+      {
+        "word": "rebellion",
+        "phonetic": "/rɪˈbeljən/",
+        "translation": "叛乱"
+      },
+      {
+        "word": "use",
+        "phonetic": "/juːz/",
+        "translation": "使用"
+      },
+      {
+        "word": "student",
+        "phonetic": "/ˈstjuːdnt/",
+        "translation": "学生"
+      },
+      {
+        "word": "attitude",
+        "phonetic": "/ˈætɪtjuːd/",
+        "translation": "态度"
+      },
+      {
+        "word": "university",
+        "phonetic": "/ˌjuːnɪˈvɜːsɪti/",
+        "translation": "大学"
+      }
+    ],
+    "color": "#14b8a6",
+    "audio": "/audio/set-b/j.mp3"
+  }
+]

@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>英语时光 · 界面预览（日/夜双主题）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* ================= 主题令牌 ================= */
+:root{
+  --bg:#0F0F23; --bg-elev:#15152B;
+  --card:#1B1B30; --card-2:#23233E;
+  --line:rgba(99,102,241,.20); --line-strong:rgba(99,102,241,.40);
+  --txt:#F8FAFC; --txt-2:#A6B0C3; --txt-3:#6B7590;
+  --accent:#F97316; --accent-text:#FB923C; --accent-soft:rgba(249,115,22,.14);
+  --on-accent:#160B02;
+  --indigo:#818CF8; --indigo-soft:rgba(129,140,248,.14);
+  --glow:0 8px 32px rgba(249,115,22,.28);
+  --sheen:rgba(255,255,255,.06);
+  --scrim:rgba(10,10,25,.55);
+  --sans:'Inter','Noto Sans SC',system-ui,-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;
+  --serif:'Playfair Display','Noto Serif SC',Georgia,serif;
+  --mono:'JetBrains Mono','SFMono-Regular',Consolas,monospace;
+}
+body.light{
+  --bg:#F6F4EE; --bg-elev:#FDFCF8;
+  --card:#FFFFFF; --card-2:#F0EBE0;
+  --line:rgba(67,56,202,.15); --line-strong:rgba(67,56,202,.34);
+  --txt:#25231F; --txt-2:#5D5A50; --txt-3:#928E80;
+  --accent:#C2410C; --accent-text:#C2410C; --accent-soft:rgba(194,65,12,.10);
+  --on-accent:#FFFFFF;
+  --indigo:#4F46E5; --indigo-soft:rgba(79,70,229,.09);
+  --glow:0 8px 26px rgba(194,65,12,.22);
+  --sheen:rgba(43,42,40,.04);
+  --scrim:rgba(43,42,40,.35);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family:var(--sans);
+  background:radial-gradient(1200px 800px at 50% 0%,#1A1A33 0%,#0C0C18 60%,#07070E 100%);
+  color:#EDEDF2; overflow:hidden; -webkit-font-smoothing:antialiased;
+  transition:background .4s ease;
+}
+body.light{background:radial-gradient(1200px 800px at 50% 0%,#E8E4DA 0%,#D6D1C4 60%,#C9C3B4 100%)}
+button{font-family:inherit;border:none;background:none;color:inherit;cursor:pointer}
+button:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--indigo);outline-offset:2px;border-radius:8px}
+svg{display:block}
+
+/* ================= 舞台 ================= */
+.stage{display:flex;align-items:center;justify-content:center;height:100vh;padding:20px}
+/* 主题切换悬浮按钮 */
+.theme-fab{
+  position:fixed;top:18px;right:22px;z-index:99;width:46px;height:46px;border-radius:50%;
+  background:#1B1B30;border:1px solid rgba(99,102,241,.35);color:#F8FAFC;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.4);transition:all .25s ease;
+}
+body.light .theme-fab{background:#FFFFFF;border-color:rgba(67,56,202,.3);color:#25231F;box-shadow:0 10px 26px rgba(60,50,20,.18)}
+.theme-fab:hover{transform:translateY(-2px)}
+.theme-fab .sun{display:none}
+body.light .theme-fab .sun{display:block}
+body.light .theme-fab .moon{display:none}
+.hint{position:fixed;left:20px;bottom:14px;font-family:var(--mono);font-size:9.5px;letter-spacing:1.5px;color:rgba(200,200,220,.4);z-index:99}
+body.light .hint{color:rgba(60,55,40,.45)}
+
+/* ================= 手机壳 ================= */
+.phone-wrap{flex-shrink:0}
+.phone{
+  width:400px;height:860px;background:#101016;border-radius:52px;padding:11px;position:relative;
+  box-shadow:0 0 0 2px #2E2E3A,0 30px 80px rgba(0,0,0,.65),inset 0 0 4px rgba(255,255,255,.06);
+}
+.phone .punch{position:absolute;top:22px;left:50%;transform:translateX(-50%);width:15px;height:15px;border-radius:50%;background:#000;box-shadow:inset 0 0 3px #1c1c28;z-index:60}
+.screen{width:100%;height:100%;border-radius:42px;overflow:hidden;position:relative;background:var(--bg);transition:background .35s ease}
+.statusbar{height:44px;display:flex;align-items:center;justify-content:space-between;padding:0 26px 0 30px;font-family:var(--mono);font-size:12.5px;font-weight:500;color:var(--txt);position:absolute;top:0;left:0;right:0;z-index:55;pointer-events:none}
+.statusbar .icons{display:flex;gap:6px;align-items:center}
+
+/* ================= 应用 ================= */
+.app{position:absolute;inset:0;padding-top:44px;color:var(--txt)}
+.view{position:absolute;inset:44px 0 0 0;overflow-y:auto;overflow-x:hidden;padding-bottom:150px;scrollbar-width:none;opacity:0;transform:translateX(14px);pointer-events:none;transition:opacity .28s ease,transform .28s ease;background:var(--bg);transition:opacity .28s ease,transform .28s ease,background .35s ease}
+.view::-webkit-scrollbar{display:none}
+.view.active{opacity:1;transform:none;pointer-events:auto}
+.view.exit-l{transform:translateX(-14px)}
+#view-player,#view-reader,#view-article{padding-bottom:56px}
+
+/* 品牌栏 */
+.brandbar{display:flex;align-items:center;gap:10px;padding:18px 22px 6px;position:sticky;top:0;background:linear-gradient(var(--bg) 68%,transparent);z-index:10;transition:background .35s}
+.brandbar .logo{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,#F97316,#D9480F);display:flex;align-items:center;justify-content:center;box-shadow:var(--glow);flex-shrink:0}
+.brandbar .t{font-weight:700;font-size:17px;letter-spacing:3px;color:var(--txt)}
+.brandbar .en{font-family:var(--mono);font-size:8.5px;letter-spacing:2.5px;color:var(--txt-3);margin-top:2px}
+.brandbar .spacer{flex:1}
+.iconbtn{width:42px;height:42px;border-radius:13px;display:flex;align-items:center;justify-content:center;color:var(--txt-2);transition:all .18s ease;flex-shrink:0}
+.iconbtn:hover{background:var(--card);color:var(--txt)}
+.iconbtn:active{transform:scale(.92)}
+
+/* Hero */
+.hero{padding:20px 22px 6px}
+.hero .eyebrow{font-family:var(--mono);font-size:9.5px;letter-spacing:3px;color:var(--accent-text);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.hero .eyebrow::before{content:'';width:22px;height:1px;background:var(--accent)}
+.hero h2{font-family:var(--serif);font-style:italic;font-size:33px;line-height:1.22;font-weight:600;letter-spacing:.3px;color:var(--txt)}
+.hero h2 em{color:var(--indigo);font-style:italic}
+.hero .zh{color:var(--txt-2);font-size:13.5px;margin-top:12px;letter-spacing:.5px}
+
+/* 正在播放胶囊 */
+.nowplaying{margin:20px 22px 0;background:var(--card);border:1px solid var(--line-strong);border-radius:18px;padding:12px 14px;display:flex;align-items:center;gap:12px;box-shadow:0 10px 30px var(--scrim);cursor:pointer}
+body.light .nowplaying{box-shadow:0 8px 22px rgba(60,50,20,.08)}
+.nowplaying .art{width:44px;height:44px;border-radius:11px;flex-shrink:0;position:relative;overflow:hidden}
+.nowplaying .meta{flex:1;min-width:0}
+.nowplaying .meta .t1{font-size:13.5px;font-weight:600;color:var(--txt);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nowplaying .meta .t2{font-family:var(--mono);font-size:9.5px;color:var(--txt-3);letter-spacing:1px;margin-top:3px}
+.eq{display:flex;align-items:flex-end;gap:2.5px;height:16px;margin-right:2px}
+.eq i{width:3px;border-radius:2px;background:var(--accent);height:30%;animation:eq 1s ease-in-out infinite}
+.eq i:nth-child(2){animation-delay:.18s}.eq i:nth-child(3){animation-delay:.36s}.eq i:nth-child(4){animation-delay:.54s}
+@keyframes eq{0%,100%{height:26%}50%{height:100%}}
+.paused .eq i{animation-play-state:paused;height:30%}
+.pbtn{width:46px;height:46px;border-radius:50%;background:var(--accent);color:var(--on-accent);display:flex;align-items:center;justify-content:center;box-shadow:var(--glow);transition:transform .15s ease;flex-shrink:0}
+.pbtn:active{transform:scale(.9)}
+
+/* 分区 */
+.section{margin-top:30px}
+.sechead{display:flex;align-items:baseline;padding:0 22px;margin-bottom:14px}
+.sechead .zh{font-size:16.5px;font-weight:700;letter-spacing:1px;color:var(--txt)}
+.sechead .en{font-family:var(--mono);font-size:9px;letter-spacing:2.5px;color:var(--txt-3);margin-left:10px}
+.sechead .more{margin-left:auto;font-family:var(--mono);font-size:10.5px;color:var(--indigo);letter-spacing:1px}
+.rail{display:flex;gap:14px;overflow-x:auto;padding:2px 22px 6px;scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+
+/* 封面 */
+.cover{border-radius:12px;position:relative;overflow:hidden;flex-shrink:0;border:1px solid var(--sheen)}
+.cover .g{position:absolute;inset:0}
+.cover .ltr{position:absolute;left:10px;bottom:6px;font-family:var(--serif);font-style:italic;font-weight:600;color:rgba(255,255,255,.92);line-height:1}
+.cover .tag{position:absolute;top:8px;left:10px;font-family:var(--mono);font-size:7.5px;letter-spacing:1.5px;color:rgba(255,255,255,.75);border:1px solid rgba(255,255,255,.3);padding:2px 6px;border-radius:20px}
+.cardtitle{font-size:12.5px;font-weight:600;margin-top:9px;line-height:1.45;color:var(--txt);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.cardsub{font-family:var(--mono);font-size:9px;color:var(--txt-3);letter-spacing:1.2px;margin-top:4px}
+
+/* 列表行 */
+.rows{padding:0 22px}
+.row{display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:1px solid var(--line);cursor:pointer}
+.row:last-child{border-bottom:none}
+.row .art{width:54px;height:54px;border-radius:12px;flex-shrink:0;position:relative;overflow:hidden}
+.row .meta{flex:1;min-width:0}
+.row .t1{font-size:14px;font-weight:600;color:var(--txt);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .t2{font-size:11px;color:var(--txt-2);margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .dur{font-family:var(--mono);font-size:10px;color:var(--txt-3);flex-shrink:0}
+.playmini{width:36px;height:36px;border-radius:50%;border:1px solid var(--line-strong);color:var(--indigo);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .18s ease}
+.playmini:hover{background:var(--indigo-soft)}
+.progress-thin{height:3px;border-radius:3px;background:var(--card-2);margin-top:8px;overflow:hidden}
+.progress-thin i{display:block;height:100%;background:var(--accent);border-radius:3px}
+
+/* 底部导航 + MiniPlayer */
+.dock{position:absolute;left:0;right:0;bottom:0;z-index:50;pointer-events:none}
+.dock.hidden{display:none}
+.mini{pointer-events:auto;margin:0 14px 10px;background:var(--bg-elev);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:none;align-items:center;gap:11px;padding:9px 12px;position:relative;cursor:pointer;box-shadow:0 12px 34px var(--scrim)}
+body.light .mini{box-shadow:0 10px 26px rgba(60,50,20,.12)}
+.mini.show{display:flex}
+.mini .art{width:40px;height:40px;border-radius:10px;flex-shrink:0;position:relative;overflow:hidden}
+.mini .m{flex:1;min-width:0}
+.mini .t1{font-size:12.5px;font-weight:600;color:var(--txt);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mini .t2{font-family:var(--mono);font-size:8.5px;color:var(--txt-3);letter-spacing:1px;margin-top:2px}
+.mini .prog{position:absolute;top:0;left:0;height:2px;background:var(--accent);width:34%}
+.navbar{pointer-events:auto;margin:0 18px 16px;height:64px;border-radius:22px;background:var(--bg-elev);border:1px solid var(--line);display:flex;align-items:stretch;padding:0 6px;box-shadow:0 14px 40px var(--scrim)}
+body.light .navbar{box-shadow:0 12px 30px rgba(60,50,20,.12)}
+.tab{flex:1;border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;color:var(--txt-3);transition:color .2s ease;position:relative}
+.tab span{font-size:10px;letter-spacing:1px}
+.tab .dot{position:absolute;top:7px;width:4px;height:4px;border-radius:50%;background:var(--accent);opacity:0;transition:opacity .2s}
+.tab.on{color:var(--txt)}
+.tab.on .dot{opacity:1}
+.tab.on svg{color:var(--accent-text)}
+.gesturebar{width:130px;height:4px;border-radius:4px;background:var(--txt-3);opacity:.5;margin:0 auto 8px}
+
+/* ================= 播放器 ================= */
+#view-player{background:linear-gradient(180deg,var(--bg-elev) 0%,var(--bg) 42%)}
+.pl-head{display:flex;align-items:center;justify-content:space-between;padding:8px 16px}
+.pl-art{margin:14px auto 0;width:280px;height:280px;border-radius:26px;position:relative;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.45),0 0 0 1px var(--sheen)}
+.pl-title{padding:0 30px;text-align:center;margin-top:24px;font-size:19px;font-weight:700;line-height:1.4;color:var(--txt)}
+.pl-sub{font-family:var(--mono);font-size:10px;color:var(--txt-3);text-align:center;letter-spacing:1.6px;margin-top:8px}
+.wave{display:flex;align-items:center;gap:3px;height:34px;justify-content:center;margin:20px 30px 0}
+.wave i{width:3.5px;border-radius:3px;background:linear-gradient(180deg,var(--accent),#B45309);opacity:.9;transition:transform .2s}
+.wave i.dim{background:var(--card-2);opacity:1}
+.pl-times{display:flex;justify-content:space-between;padding:0 32px;font-family:var(--mono);font-size:10px;color:var(--txt-3);margin-top:10px}
+.pl-ctrl{display:flex;align-items:center;justify-content:center;gap:22px;margin-top:16px}
+.pl-ctrl .side{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--txt-2);transition:all .18s}
+.pl-ctrl .side:hover{background:var(--card);color:var(--txt)}
+.pl-ctrl .big{width:74px;height:74px;border-radius:50%;background:var(--accent);color:var(--on-accent);display:flex;align-items:center;justify-content:center;box-shadow:var(--glow);transition:transform .15s}
+.pl-ctrl .big:active{transform:scale(.92)}
+.pl-opts{display:flex;justify-content:center;gap:12px;margin-top:18px}
+.chip{font-family:var(--mono);font-size:10.5px;letter-spacing:1px;color:var(--txt-2);border:1px solid var(--line);border-radius:20px;padding:7px 14px;transition:all .18s}
+.chip.on{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-text)}
+.pl-trans{margin:26px 22px 0;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.pl-trans .h{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:9.5px;letter-spacing:2px;color:var(--txt-3);margin-bottom:12px}
+.pl-trans .en{font-family:var(--serif);font-style:italic;font-size:15.5px;line-height:1.65;color:var(--txt)}
+.pl-trans .zh{font-size:12.5px;color:var(--txt-2);line-height:1.8;margin-top:10px;padding-top:10px;border-top:1px dashed var(--line-strong)}
+
+/* ================= 通用头部 ================= */
+.bighead{padding:16px 22px 0;display:flex;align-items:center;gap:12px}
+.bighead .back{width:40px;height:40px;border-radius:13px;background:var(--card);display:flex;align-items:center;justify-content:center;color:var(--txt);flex-shrink:0}
+.bighead h2{font-size:20px;font-weight:700;letter-spacing:1px;color:var(--txt)}
+.bighead .tagr{font-family:var(--mono);font-size:9px;color:var(--txt-3);letter-spacing:2px}
+.searchbar{margin:14px 22px 0;display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;color:var(--txt-3);font-size:13px}
+.pillrow{display:flex;gap:8px;padding:14px 22px 2px;overflow-x:auto;scrollbar-width:none}
+.pillrow::-webkit-scrollbar{display:none}
+.pill{font-size:11.5px;color:var(--txt-2);border:1px solid var(--line);border-radius:20px;padding:7px 14px;white-space:nowrap;transition:all .18s}
+.pill.on{background:var(--indigo-soft);border-color:var(--indigo);color:var(--indigo);font-weight:600}
+
+/* 节目页 */
+.ch-hero{display:flex;gap:18px;padding:18px 22px 0}
+.ch-hero .cover{width:110px;height:110px;border-radius:16px}
+.ch-hero h3{font-family:var(--serif);font-size:21px;font-style:italic;line-height:1.3;color:var(--txt)}
+.ch-hero .m{font-family:var(--mono);font-size:9px;color:var(--txt-3);letter-spacing:1.6px;margin-top:6px}
+.ch-hero .d{font-size:12px;color:var(--txt-2);margin-top:8px;line-height:1.6}
+.ch-actions{display:flex;gap:10px;padding:16px 22px 0}
+.btn{flex:1;height:44px;border-radius:14px;font-size:13.5px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .18s}
+.btn.primary{background:var(--accent);color:var(--on-accent);box-shadow:var(--glow)}
+.btn.ghost{background:var(--card);border:1px solid var(--line);color:var(--txt)}
+.btn:active{transform:scale(.97)}
+
+/* 我的 */
+.me-card{margin:18px 22px 0;background:var(--card);border:1px solid var(--line-strong);border-radius:20px;padding:20px;display:flex;gap:16px;align-items:center}
+.avatar{width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,#818CF8,#4338CA);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-style:italic;font-size:24px;color:#fff;flex-shrink:0}
+.me-card .n{font-size:17px;font-weight:700;color:var(--txt)}
+.me-card .d{font-family:var(--mono);font-size:9.5px;color:var(--txt-2);letter-spacing:1.4px;margin-top:5px}
+.stats{display:flex;gap:12px;margin:14px 22px 0}
+.stat{flex:1;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;text-align:center}
+.stat .v{font-family:var(--serif);font-style:italic;font-size:24px;color:var(--accent-text)}
+.stat .k{font-size:11px;color:var(--txt-2);margin-top:4px;letter-spacing:1px}
+.menu{margin:16px 22px 0;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.mi{display:flex;align-items:center;gap:14px;padding:15px 16px;border-bottom:1px solid var(--line);width:100%;text-align:left;transition:background .18s}
+.mi:last-child{border-bottom:none}
+.mi:hover{background:var(--indigo-soft)}
+.mi .ic{width:36px;height:36px;border-radius:11px;background:var(--indigo-soft);color:var(--indigo);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.mi .t{flex:1;font-size:14px;font-weight:500;color:var(--txt)}
+.mi .chev{color:var(--txt-3);font-size:16px}
+/* 开关 */
+.switch{width:46px;height:26px;border-radius:20px;background:var(--card-2);border:1px solid var(--line);position:relative;transition:all .25s;flex-shrink:0}
+.switch::after{content:'';position:absolute;top:2px;left:2px;width:20px;height:20px;border-radius:50%;background:var(--txt-3);transition:all .25s}
+.switch.on{background:var(--accent-soft);border-color:var(--accent)}
+.switch.on::after{left:22px;background:var(--accent)}
+
+/* 设置 */
+.set-group{margin:16px 22px 0;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.set-group .gt{font-family:var(--mono);font-size:9px;letter-spacing:2px;color:var(--txt-3);padding:14px 16px 4px}
+.mi .sub{font-size:11px;color:var(--txt-3);margin-top:3px}
+.seg{display:flex;background:var(--card-2);border-radius:12px;padding:3px;gap:3px}
+.seg button{font-size:11.5px;padding:6px 12px;border-radius:9px;color:var(--txt-2)}
+.seg button.on{background:var(--card);color:var(--txt);font-weight:600;box-shadow:0 2px 6px var(--scrim)}
+
+/* 阅读页（章节/文章） */
+.reader-body{padding:10px 26px 40px}
+.reader-body .rt{font-family:var(--serif);font-size:22px;font-style:italic;line-height:1.35;color:var(--txt);margin-top:8px}
+.reader-body .rm{font-family:var(--mono);font-size:9px;color:var(--txt-3);letter-spacing:2px;margin-top:8px}
+.para-en{font-family:var(--serif);font-size:16.5px;line-height:1.85;color:var(--txt);margin-top:20px}
+.para-zh{font-size:13px;line-height:1.9;color:var(--txt-2);margin-top:7px;padding-left:12px;border-left:2px solid var(--line-strong)}
+.para-en .w{color:var(--accent-text);border-bottom:1px dashed var(--accent);cursor:pointer}
+.reader-tools{display:flex;gap:8px;padding:12px 22px 0;align-items:center}
+.reader-tools .seg{margin-left:auto}
+.vocab{margin:26px 22px 0;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px}
+.vocab .h{font-family:var(--mono);font-size:9.5px;letter-spacing:2px;color:var(--txt-3);margin-bottom:10px}
+.vocab .w1{font-size:15px;font-weight:700;color:var(--txt)}
+.vocab .p{font-family:var(--mono);font-size:10.5px;color:var(--indigo);margin-left:8px}
+.vocab .d{font-size:12.5px;color:var(--txt-2);margin-top:4px;line-height:1.7}
+
+/* 搜索 */
+.hotwords{display:flex;flex-wrap:wrap;gap:8px;padding:4px 22px}
+.result-empty{text-align:center;color:var(--txt-3);font-size:12.5px;padding:40px 0}
+
+/* 文本页 */
+.doc{margin:18px 22px 0;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;font-size:12.5px;color:var(--txt-2);line-height:1.9}
+.doc b{color:var(--txt)}
+.doc h4{color:var(--txt);font-size:13.5px;margin:14px 0 6px}
+.about-logo{display:flex;flex-direction:column;align-items:center;gap:12px;padding:36px 0 8px}
+.about-logo .lg{width:76px;height:76px;border-radius:22px;background:linear-gradient(135deg,#F97316,#D9480F);display:flex;align-items:center;justify-content:center;box-shadow:var(--glow)}
+.about-logo .n{font-size:19px;font-weight:700;letter-spacing:3px;color:var(--txt)}
+.about-logo .v{font-family:var(--mono);font-size:9.5px;color:var(--txt-3);letter-spacing:2px}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+
+<button class="theme-fab" aria-label="切换日间/夜间模式" onclick="toggleTheme()" title="日间 / 夜间">
+  <svg class="moon" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+  <svg class="sun" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+</button>
+<div class="hint">ENGLISH TIME · UI PREVIEW — 日/夜切换在右上角 · 所有页面可点击</div>
+
+<div class="stage">
+  <div class="phone-wrap">
+    <div class="phone" id="phone">
+      <div class="punch"></div>
+      <div class="screen">
+        <div class="statusbar">
+          <span>12:30</span>
+          <div class="icons">
+            <svg width="15" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M2 22h20V2z" opacity=".35"/><path d="M7 22h10V9L7 19z"/></svg>
+            <svg width="15" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5.5 5.5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1.3" fill="currentColor" stroke="none"/></svg>
+            <svg width="22" height="12" viewBox="0 0 28 14"><rect x="1" y="2" width="22" height="10" rx="3" fill="none" stroke="currentColor" opacity=".4"/><rect x="3" y="4" width="14" height="6" rx="1.5" fill="currentColor"/><rect x="24.5" y="5" width="2.5" height="4" rx="1" fill="currentColor" opacity=".4"/></svg>
+          </div>
+        </div>
+
+        <div class="app">
+
+        <!-- ============ 1. 首页 ============ -->
+        <section class="view active" id="view-home">
+          <div class="brandbar">
+            <div class="logo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M3 12h2l2-6 3 12 3-16 3 14 2-4h3"/></svg></div>
+            <div><div class="t">英语时光</div><div class="en">ENGLISH TIME</div></div>
+            <div class="spacer"></div>
+            <button class="iconbtn" aria-label="搜索" onclick="go('search')"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7.5"/><path d="m21 21-4.8-4.8"/></svg></button>
+          </div>
+          <div class="hero">
+            <div class="eyebrow">TODAY · 11月7日</div>
+            <h2>A quiet place<br>to hear <em>English.</em></h2>
+            <p class="zh">在声音里，慢慢学会一门语言。</p>
+          </div>
+          <div class="nowplaying" role="button" tabindex="0" onclick="go('player')">
+            <div class="art cover"><div class="g" style="background:linear-gradient(135deg,#F97316,#9A3412)"></div><div class="ltr" style="font-size:19px">Ep</div></div>
+            <div class="meta"><div class="t1">Small talk, big difference</div><div class="t2">ALL EARS ENGLISH · 12:40</div></div>
+            <div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <button class="pbtn" aria-label="播放/暂停" onclick="event.stopPropagation();togglePlay()"><svg class="i-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M7 4.5v15l13-7.5z"/></svg><svg class="i-pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="5.5" y="4" width="4.5" height="16" rx="1.4"/><rect x="14" y="4" width="4.5" height="16" rx="1.4"/></svg></button>
+          </div>
+          <div class="section">
+            <div class="sechead"><span class="zh">最新上线</span><span class="en">LATEST</span><button class="more" onclick="go('channel')">全部 →</button></div>
+            <div class="rows">
+              <div class="row" role="button" tabindex="0" onclick="go('channel')">
+                <div class="art cover"><div class="g" style="background:linear-gradient(135deg,#312E81,#0F0F23)"></div><div class="ltr" style="font-size:24px">D</div></div>
+                <div class="meta"><div class="t1">The Daily</div><div class="t2">纽约时报 · 每日 20 分钟新闻英语</div></div>
+                <span class="dur">24:10</span>
+                <button class="playmini" aria-label="播放" onclick="event.stopPropagation();go('player')"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></button>
+              </div>
+              <div class="row" role="button" tabindex="0" onclick="go('channel')">
+                <div class="art cover"><div class="g" style="background:linear-gradient(135deg,#7C2D12,#F97316)"></div><div class="ltr" style="font-size:24px">6</div></div>
+                <div class="meta"><div class="t1">6 Minute English</div><div class="t2">BBC Learning English · 短篇精听</div></div>
+                <span class="dur">06:20</span>
+                <button class="playmini" aria-label="播放" onclick="event.stopPropagation();go('player')"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></button>
+              </div>
+              <div class="row" role="button" tabindex="0" onclick="go('channel')">
+                <div class="art cover"><div class="g" style="background:linear-gradient(135deg,#134E4A,#0F766E)"></div><div class="ltr" style="font-size:24px">L</div></div>
+                <div class="meta"><div class="t1">Luke's English Podcast</div><div class="t2">英式脱口秀 · 日常话题磨耳朵</div></div>
+                <span class="dur">58:41</span>
+                <button class="playmini" aria-label="播放" onclick="event.stopPropagation();go('player')"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></button>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="sechead"><span class="zh">人气节目</span><span class="en">POPULAR</span><button class="more">全部 →</button></div>
+            <div class="rail">
+              <div style="width:128px" role="button" tabindex="0" onclick="go('channel')">
+                <div class="cover" style="height:128px"><div class="g" style="background:linear-gradient(160deg,#4C1D95,#1B1B30)"></div><span class="tag">AEE</span><div class="ltr" style="font-size:40px">Ae</div></div>
+                <div class="cardtitle">All Ears English</div><div class="cardsub">_connection_</div>
+              </div>
+              <div style="width:128px" role="button" tabindex="0" onclick="go('channel')">
+                <div class="cover" style="height:128px"><div class="g" style="background:linear-gradient(160deg,#9A3412,#F97316)"></div><span class="tag">BBC</span><div class="ltr" style="font-size:40px">Te</div></div>
+                <div class="cardtitle">The English We Speak</div><div class="cardsub">BBC · WEEKLY</div>
+              </div>
+              <div style="width:128px" role="button" tabindex="0" onclick="go('channel')">
+                <div class="cover" style="height:128px"><div class="g" style="background:linear-gradient(160deg,#0E7490,#164E63)"></div><span class="tag">BUS</span><div class="ltr" style="font-size:40px">Bu</div></div>
+                <div class="cardtitle">Business English Pod</div><div class="cardsub">CAREER</div>
+              </div>
+              <div style="width:128px" role="button" tabindex="0" onclick="go('channel')">
+                <div class="cover" style="height:128px"><div class="g" style="background:linear-gradient(160deg,#334155,#0F172A)"></div><span class="tag">NPR</span><div class="ltr" style="font-size:40px">Up</div></div>
+                <div class="cardtitle">Up First</div><div class="cardsub">MORNING NEWS</div>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="sechead"><span class="zh">英语播客</span><span class="en">ENGLISHMEASURE</span><button class="more" onclick="go('em')">全部 →</button></div>
+            <div class="rail">
+              <div style="width:118px" role="button" tabindex="0" onclick="go('player')">
+                <div class="cover" style="height:118px"><div class="g" style="background:linear-gradient(160deg,#312E81,#818CF8)"></div><div class="ltr" style="font-size:34px">Sp</div></div>
+                <div class="cardtitle">Small talk, big difference</div><div class="cardsub">DIALOGUE · 12:40</div>
+              </div>
+              <div style="width:118px" role="button" tabindex="0" onclick="go('player')">
+                <div class="cover" style="height:118px"><div class="g" style="background:linear-gradient(160deg,#7C2D12,#FDBA74)"></div><div class="ltr" style="font-size:34px">Jo</div></div>
+                <div class="cardtitle">Job interview stories</div><div class="cardsub">DIALOGUE · 15:02</div>
+              </div>
+              <div style="width:118px" role="button" tabindex="0" onclick="go('player')">
+                <div class="cover" style="height:118px"><div class="g" style="background:linear-gradient(160deg,#134E4A,#5EEAD4)"></div><div class="ltr" style="font-size:34px">Tr</div></div>
+                <div class="cardtitle">Travel small secrets</div><div class="cardsub">DIALOGUE · 11:26</div>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="sechead"><span class="zh">小宇宙精选</span><span class="en">XIAOYUZHOU</span><button class="more" onclick="go('xy')">全部 →</button></div>
+            <div class="rail">
+              <div style="width:118px" role="button" tabindex="0" onclick="go('player')">
+                <div class="cover" style="height:118px"><div class="g" style="background:linear-gradient(160deg,#1E1B4B,#4338CA)"></div><span class="tag">FREE</span><div class="ltr" style="font-size:34px">晨</div></div>
+                <div class="cardtitle">晨间英语新闻 · 第 214 期</div><div class="cardsub">新闻精讲 · 18:05</div>
+              </div>
+              <div style="width:118px" role="button" tabindex="0" onclick="go('player')">
+                <div class="cover" style="height:118px"><div class="g" style="background:linear-gradient(160deg,#3F0F12,#BE123C)"></div><span class="tag">FREE</span><div class="ltr" style="font-size:34px">词</div></div>
+                <div class="cardtitle">一词一世界：say 的十种用法</div><div class="cardsub">词汇 · 14:32</div>
+              </div>
+              <div style="width:118px" role="button" tabindex="0" onclick="go('player')">
+                <div class="cover" style="height:118px"><div class="g" style="background:linear-gradient(160deg,#052E16,#16A34A)"></div><span class="tag">FREE</span><div class="ltr" style="font-size:34px">影</div></div>
+                <div class="cardtitle">跟着美剧学口语 S03</div><div class="cardsub">影视英语 · 25:47</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 2. 搜索 ============ -->
+        <section class="view" id="view-search">
+          <div class="bighead">
+            <button class="back" aria-label="返回" onclick="go('home')"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+            <div class="searchbar" style="margin:0;flex:1;color:var(--txt-2)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7.5"/><path d="m21 21-4.8-4.8"/></svg>
+              搜索播客、文章、书籍…
+            </div>
+          </div>
+          <div class="section">
+            <div class="sechead"><span class="zh">最近搜索</span><span class="en">RECENT</span></div>
+            <div class="hotwords"><button class="pill">daily</button><button class="pill">the little prince</button><button class="pill">glamour</button><button class="pill">音标</button></div>
+          </div>
+          <div class="section">
+            <div class="sechead"><span class="zh">热门搜索</span><span class="en">HOT</span></div>
+            <div class="hotwords"><button class="pill">Shadowing 练习</button><button class="pill">On Purpose</button><button class="pill">TED Radio Hour</button><button class="pill">美剧口语</button><button class="pill">The Conversation</button></div>
+          </div>
+          <div class="section">
+            <div class="sechead"><span class="zh">猜你想听</span><span class="en">SUGGESTED</span></div>
+            <div class="rows">
+              <div class="row" onclick="go('channel')"><div class="art cover"><div class="g" style="background:linear-gradient(135deg,#4C1D95,#1B1B30)"></div><div class="ltr" style="font-size:22px">O</div></div><div class="meta"><div class="t1">On Purpose with Jay Shetty</div><div class="t2">访谈 · 慢速清晰</div></div><span class="dur">45:18</span><button class="playmini" aria-label="播放" onclick="event.stopPropagation();go('player')"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></button></div>
+              <div class="row" onclick="go('article')"><div class="art cover"><div class="g" style="background:linear-gradient(135deg,#7C2D12,#F97316)"></div><div class="ltr" style="font-size:22px">T</div></div><div class="meta"><div class="t1">The Conversation 科技专栏</div><div class="t2">外刊 · 每周三更</div></div><span class="dur">6 MIN</span></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 3. 节目详情 ============ -->
+        <section class="view" id="view-channel">
+          <div class="bighead">
+            <button class="back" aria-label="返回" onclick="go('home')"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+            <h2>节目详情</h2>
+          </div>
+          <div class="ch-hero">
+            <div class="cover"><div class="g" style="background:linear-gradient(160deg,#312E81,#0F0F23)"></div><span class="tag">NYT</span><div class="ltr" style="font-size:44px">D</div></div>
+            <div>
+              <h3>The Daily</h3>
+              <div class="m">THE NEW YORK TIMES · 412 EPISODES</div>
+              <div class="d">二十分钟，听懂当天世界大事。新闻英语的最佳磨耳朵材料。</div>
+            </div>
+          </div>
+          <div class="ch-actions">
+            <button class="btn primary" onclick="go('player')"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg>播放最新</button>
+            <button class="btn ghost"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.6 3-3.4 3-5.5A4.5 4.5 0 0 0 17.5 4c-1.8 0-3.4 1-4.5 2.5C11.9 5 10.3 4 8.5 4A4.5 4.5 0 0 0 4 8.5c0 2.1 1.5 3.9 3 5.5l5 5z"/></svg>收藏</button>
+          </div>
+          <div class="section">
+            <div class="sechead"><span class="zh">全部单集</span><span class="en">EPISODES</span></div>
+            <div class="rows">
+              <div class="row" onclick="go('player')"><div class="meta"><div class="t1">The war over water in the West</div><div class="t2">11月6日 · 24:10 · 已播 40%</div><div class="progress-thin"><i style="width:40%"></i></div></div><button class="playmini" aria-label="播放"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></button></div>
+              <div class="row" onclick="go('player')"><div class="meta"><div class="t1">How cities are rethinking safety</div><div class="t2">11月5日 · 22:48</div></div><button class="playmini" aria-label="播放"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></button></div>
+              <div class="row" onclick="go('player')"><div class="meta"><div class="t1">The new space race, explained</div><div class="t2">11月4日 · 26:03</div></div><button class="playmini" aria-label="播放"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></button></div>
+              <div class="row" onclick="go('player')"><div class="meta"><div class="t1">A small town's big bet on remote work</div><div class="t2">11月3日 · 21:37</div></div><button class="playmini" aria-label="播放"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></button></div>
+              <div class="row" onclick="go('player')"><div class="meta"><div class="t1">Why everyone is tired all the time</div><div class="t2">11月2日 · 23:12</div></div><button class="playmini" aria-label="播放"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></button></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 4. 播放器 ============ -->
+        <section class="view" id="view-player">
+          <div class="pl-head">
+            <button class="iconbtn" aria-label="收起" onclick="go('home')"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
+            <div style="font-family:var(--mono);font-size:9.5px;letter-spacing:2px;color:var(--txt-3)">NOW PLAYING</div>
+            <button class="iconbtn" aria-label="更多"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="1.7"/><circle cx="12" cy="12" r="1.7"/><circle cx="19" cy="12" r="1.7"/></svg></button>
+          </div>
+          <div class="pl-art"><div class="cover" style="border-radius:0;border:none"><div class="g" style="background:linear-gradient(135deg,#F97316,#9A3412)"></div><span class="tag">EM · DIALOGUE</span><div class="ltr" style="font-size:74px">Ep</div></div></div>
+          <div class="pl-title">Small talk, big difference</div>
+          <div class="pl-sub">ENGLISHMEASURE · SEASON 2</div>
+          <div class="wave" id="wave" aria-hidden="true"></div>
+          <div class="pl-times"><span>05:12</span><span>-12:40</span></div>
+          <div class="pl-ctrl">
+            <button class="side" aria-label="后退15秒"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3.4-7"/><path d="M3 4v5h5"/><text x="12" y="15.5" font-size="7" fill="currentColor" stroke="none" text-anchor="middle" font-family="JetBrains Mono">15</text></svg></button>
+            <button class="big" aria-label="播放/暂停" onclick="togglePlay()"><svg class="i-play" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M7 4.5v15l13-7.5z"/></svg><svg class="i-pause" width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><rect x="5.5" y="4" width="4.5" height="16" rx="1.4"/><rect x="14" y="4" width="4.5" height="16" rx="1.4"/></svg></button>
+            <button class="side" aria-label="前进15秒"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3.4-7"/><path d="M21 4v5h-5"/><text x="12" y="15.5" font-size="7" fill="currentColor" stroke="none" text-anchor="middle" font-family="JetBrains Mono">15</text></svg></button>
+          </div>
+          <div class="pl-opts">
+            <button class="chip on" id="speedChip" onclick="cycleSpeed()">1.0×</button>
+            <button class="chip">文稿</button>
+            <button class="chip">定时关闭</button>
+          </div>
+          <div class="pl-trans">
+            <div class="h"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>TRANSCRIPT · 逐句精听</div>
+            <div class="en">"Small talk seems trivial, but it's the glue of everyday conversation."</div>
+            <div class="zh">闲聊看似琐碎，却是日常对话的黏合剂。</div>
+          </div>
+        </section>
+
+        <!-- ============ 5. 小说书单 ============ -->
+        <section class="view" id="view-novels">
+          <div class="bighead"><h2>双语小说</h2><span class="tagr">NOVELS</span></div>
+          <div class="searchbar" onclick="go('search')">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7.5"/><path d="m21 21-4.8-4.8"/></svg>
+            搜索书名或作者…
+          </div>
+          <div class="pillrow">
+            <button class="pill on">推荐</button><button class="pill">经典</button><button class="pill">悬疑</button><button class="pill">成长</button><button class="pill">短篇</button>
+          </div>
+          <div class="section">
+            <div class="sechead"><span class="zh">本周热门</span><span class="en">TRENDING</span></div>
+            <div class="rail">
+              <div style="width:132px" onclick="go('book')" role="button" tabindex="0">
+                <div class="cover" style="height:186px"><div class="g" style="background:linear-gradient(160deg,#1E3A8A,#0F0F23)"></div><span class="tag">CLASSIC</span><div class="ltr" style="font-size:24px;line-height:1.15">Pride<br>&amp;<br>Prejudice</div></div>
+                <div class="cardtitle">傲慢与偏见</div><div class="cardsub">JANE AUSTEN · 61 章</div>
+              </div>
+              <div style="width:132px" onclick="go('book')" role="button" tabindex="0">
+                <div class="cover" style="height:186px"><div class="g" style="background:linear-gradient(160deg,#B45309,#F97316)"></div><span class="tag">FABLE</span><div class="ltr" style="font-size:24px;line-height:1.15">The<br>Little<br>Prince</div></div>
+                <div class="cardtitle">小王子</div><div class="cardsub">A. DE SAINT-EXUPÉRY · 27 章</div>
+              </div>
+              <div style="width:132px" onclick="go('book')" role="button" tabindex="0">
+                <div class="cover" style="height:186px"><div class="g" style="background:linear-gradient(160deg,#3F3F46,#18181B)"></div><span class="tag">DISTOPIA</span><div class="ltr" style="font-size:24px;line-height:1.15">Animal<br>Farm</div></div>
+                <div class="cardtitle">动物农场</div><div class="cardsub">GEORGE ORWELL · 10 章</div>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="sechead"><span class="zh">继续阅读</span><span class="en">CONTINUE</span><button class="more">全部 →</button></div>
+            <div class="rows">
+              <div class="row" onclick="go('reader')">
+                <div class="art cover" style="border-radius:10px"><div class="g" style="background:linear-gradient(135deg,#134E4A,#5EEAD4)"></div><div class="ltr" style="font-size:20px">W</div></div>
+                <div class="meta"><div class="t1">Wonder · 奇迹男孩</div><div class="t2">第 8 章 · 42%</div><div class="progress-thin"><i style="width:42%"></i></div></div>
+                <span class="dur">42%</span>
+              </div>
+              <div class="row" onclick="go('reader')">
+                <div class="art cover" style="border-radius:10px"><div class="g" style="background:linear-gradient(135deg,#4C1D95,#C4B5FD)"></div><div class="ltr" style="font-size:20px">H</div></div>
+                <div class="meta"><div class="t1">Harry Potter · Philosopher's Stone</div><div class="t2">第 3 章 · 11%</div><div class="progress-thin"><i style="width:11%"></i></div></div>
+                <span class="dur">11%</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 6. 书籍详情 ============ -->
+        <section class="view" id="view-book">
+          <div class="bighead">
+            <button class="back" aria-label="返回" onclick="go('novels')"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+            <h2>书籍详情</h2>
+          </div>
+          <div class="ch-hero">
+            <div class="cover" style="height:150px"><div class="g" style="background:linear-gradient(160deg,#B45309,#F97316)"></div><span class="tag">FABLE</span><div class="ltr" style="font-size:30px;line-height:1.15">The<br>Little<br>Prince</div></div>
+            <div>
+              <h3>The Little Prince</h3>
+              <div class="m">ANTOINE DE SAINT-EXUPÉRY · 27 CHAPTERS</div>
+              <div class="d">献给大人的童话。语言简单干净，是双语精读的完美起点。</div>
+            </div>
+          </div>
+          <div class="ch-actions">
+            <button class="btn primary" onclick="go('reader')"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>继续阅读 · 第 5 章</button>
+            <button class="btn ghost">收藏</button>
+          </div>
+          <div class="section">
+            <div class="sechead"><span class="zh">章节目录</span><span class="en">CHAPTERS</span></div>
+            <div class="rows">
+              <div class="row" onclick="go('reader')"><div class="meta"><div class="t1">Chapter 1 · The Drawing</div><div class="t2">画和不画 · 已读完</div></div><span class="dur">3 MIN</span></div>
+              <div class="row" onclick="go('reader')"><div class="meta"><div class="t1">Chapter 2 · The Desert Meeting</div><div class="t2">沙漠相遇 · 已读完</div></div><span class="dur">4 MIN</span></div>
+              <div class="row" onclick="go('reader')"><div class="meta"><div class="t1">Chapter 3 · The Sheep</div><div class="t2">小羊从哪里来 · 阅读中</div></div><span class="dur">4 MIN</span></div>
+              <div class="row" onclick="go('reader')"><div class="meta"><div class="t1">Chapter 4 · The Asteroid B-612</div><div class="t2">B-612 小行星</div></div><span class="dur">5 MIN</span></div>
+              <div class="row" onclick="go('reader')"><div class="meta"><div class="t1">Chapter 5 · The Baobabs</div><div class="t2">猴面包树的危险</div></div><span class="dur">4 MIN</span></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 7. 双语阅读 ============ -->
+        <section class="view" id="view-reader">
+          <div class="pl-head">
+            <button class="iconbtn" aria-label="返回" onclick="go('book')"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+            <div style="font-family:var(--mono);font-size:9.5px;letter-spacing:2px;color:var(--txt-3)">CHAPTER 3 · THE SHEEP</div>
+            <button class="iconbtn" aria-label="书签"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></button>
+          </div>
+          <div class="reader-tools">
+            <div class="seg"><button class="on">对照</button><button>英文</button><button>中文</button></div>
+          </div>
+          <div class="reader-body">
+            <div class="rt">The Sheep</div>
+            <div class="rm">ANTOINE DE SAINT-EXUPÉRY · 双语对照 · 约 4 分钟</div>
+            <p class="para-en">It was from the man thrown <span class="w">amidst</span> the sands a thousand miles from any inhabited region that the little prince made the acquaintance of a sheep.</p>
+            <p class="para-zh">小王子就是在这个千里之外、无人烟的沙漠里，遇见了那只小羊。</p>
+            <p class="para-en">"Please—draw me a sheep," he said, with a gesture of utmost <span class="w">gravity</span>.</p>
+            <p class="para-zh">"请你——给我画一只羊，"他说，神情无比认真。</p>
+            <p class="para-en">I looked around. There was nothing but sand, and a sky full of stars at <span class="w">dusk</span>.</p>
+            <p class="para-zh">我环顾四周，只有沙子和黄昏时满是星星的天空。</p>
+          </div>
+          <div class="vocab">
+            <div class="h">TAP A WORD · 点击生词加入词卡</div>
+            <div style="display:flex;align-items:baseline"><span class="w1">gravity</span><span class="p">/ˈɡrævəti/</span></div>
+            <div class="d">n. 严肃，庄重；重力 — "with a gesture of utmost gravity"（神情无比认真）</div>
+          </div>
+          <div style="display:flex;gap:10px;padding:16px 22px 0">
+            <button class="btn ghost" style="flex:0 0 110px">上一章</button>
+            <button class="btn primary">下一章 · B-612</button>
+          </div>
+        </section>
+
+        <!-- ============ 8. 外刊文章 ============ -->
+        <section class="view" id="view-articles">
+          <div class="bighead"><h2>外刊文章</h2><span class="tagr">READING</span></div>
+          <div class="pillrow">
+            <button class="pill on">编辑精选</button><button class="pill">科学</button><button class="pill">文化</button><button class="pill">观点</button>
+          </div>
+          <div class="rows" style="margin-top:10px">
+            <div class="row" style="align-items:flex-start;flex-direction:column;gap:8px" onclick="go('article')">
+              <div style="display:flex;gap:8px"><span class="cardsub" style="margin:0;color:var(--accent-text)">THE CONVERSATION</span><span class="cardsub" style="margin:0">· 8 MIN READ</span></div>
+              <div style="font-family:var(--serif);font-style:italic;font-size:20px;line-height:1.4;color:var(--txt)">Why your brain needs boredom to do its best thinking</div>
+              <div style="font-size:12.5px;color:var(--txt-2);line-height:1.7">无所事事不是效率的敌人，而是深度思考的前置条件……</div>
+              <div style="display:flex;align-items:center;gap:14px"><span class="cardsub" style="margin:0">11月5日</span><span class="cardsub" style="margin:0">B2 · 中级</span></div>
+            </div>
+            <div class="row" style="align-items:flex-start;flex-direction:column;gap:8px" onclick="go('article')">
+              <div style="display:flex;gap:8px"><span class="cardsub" style="margin:0;color:var(--indigo)">ENGNEWS</span><span class="cardsub" style="margin:0">· 5 MIN READ</span></div>
+              <div style="font-family:var(--serif);font-style:italic;font-size:20px;line-height:1.4;color:var(--txt)">The quiet comeback of the neighborhood bookshop</div>
+              <div style="font-size:12.5px;color:var(--txt-2);line-height:1.7">当一切都可以在网上买到，为什么街区书店反而活了下来……</div>
+              <div style="display:flex;align-items:center;gap:14px"><span class="cardsub" style="margin:0">11月4日</span><span class="cardsub" style="margin:0">B1 · 初级</span></div>
+            </div>
+            <div class="row" style="align-items:flex-start;flex-direction:column;gap:8px" onclick="go('article')">
+              <div style="display:flex;gap:8px"><span class="cardsub" style="margin:0;color:var(--accent-text)">THE CONVERSATION</span><span class="cardsub" style="margin:0">· 6 MIN READ</span></div>
+              <div style="font-family:var(--serif);font-style:italic;font-size:20px;line-height:1.4;color:var(--txt)">How languages borrow words from each other</div>
+              <div style="font-size:12.5px;color:var(--txt-2);line-height:1.7">语言的 borrowing 从未停止：coffee、tea 和 ketchup 的旅行史……</div>
+              <div style="display:flex;align-items:center;gap:14px"><span class="cardsub" style="margin:0">11月3日</span><span class="cardsub" style="margin:0">B2 · 中级</span></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 9. 文章阅读 ============ -->
+        <section class="view" id="view-article">
+          <div class="pl-head">
+            <button class="iconbtn" aria-label="返回" onclick="go('articles')"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+            <div style="font-family:var(--mono);font-size:9.5px;letter-spacing:2px;color:var(--txt-3)">THE CONVERSATION · B2</div>
+            <button class="iconbtn" aria-label="收藏"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.6 3-3.4 3-5.5A4.5 4.5 0 0 0 17.5 4c-1.8 0-3.4 1-4.5 2.5C11.9 5 10.3 4 8.5 4A4.5 4.5 0 0 0 4 8.5c0 2.1 1.5 3.9 3 5.5l5 5z"/></svg></button>
+          </div>
+          <div class="reader-body">
+            <div class="rt">Why your brain needs boredom to do its best thinking</div>
+            <div class="rm">BY CLARA HUGHES · 11月5日 · 8 MIN · 已读 2/8 MIN</div>
+            <p class="para-en">We treat <span class="w">boredom</span> like a bug in the system — something to be swiped away the moment it appears.</p>
+            <p class="para-zh">我们把无聊当作系统漏洞——一出现就想立刻划掉它。</p>
+            <p class="para-en">But neuroscience suggests the idle brain is anything but idle. In the quiet moments, a network called the default mode <span class="w">switches on</span> and begins its slow, creative work.</p>
+            <p class="para-zh">但神经科学告诉我们，闲置的大脑绝非真的闲置。在安静的片刻，一个叫"默认模式网络"的系统悄然开启，开始它缓慢而富有创造性的工作。</p>
+            <p class="para-en">The next time you feel bored, try doing nothing at all. Your best ideas may be waiting in the <span class="w">silence</span>.</p>
+            <p class="para-zh">下次觉得无聊时，试着什么都不做。你最好的想法，也许就藏在沉默里。</p>
+          </div>
+          <div class="vocab">
+            <div class="h">WORD CARDS · 本文生词 3/12</div>
+            <div style="display:flex;align-items:baseline"><span class="w1">boredom</span><span class="p">/ˈbɔːrdəm/</span></div>
+            <div class="d">n. 无聊，乏味 — treat boredom like a bug（把无聊当作漏洞）</div>
+          </div>
+        </section>
+
+        <!-- ============ 10. 英语播客列表 ============ -->
+        <section class="view" id="view-em">
+          <div class="bighead">
+            <button class="back" aria-label="返回" onclick="go('home')"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+            <h2>英语播客</h2><span class="tagr">ENGLISHMEASURE</span>
+          </div>
+          <div class="pillrow">
+            <button class="pill on">全部</button><button class="pill">对话</button><button class="pill">职场</button><button class="pill">旅行</button><button class="pill">科技</button>
+          </div>
+          <div class="rows" style="margin-top:8px">
+            <div class="row" onclick="go('player')">
+              <div class="art cover" style="border-radius:10px"><div class="g" style="background:linear-gradient(135deg,#312E81,#818CF8)"></div><div class="ltr" style="font-size:20px">Sp</div></div>
+              <div class="meta"><div class="t1">Small talk, big difference</div><div class="t2">对话 · 12:40 · 有文稿</div></div>
+              <button class="playmini" aria-label="播放" onclick="event.stopPropagation();go('player')"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></button>
+            </div>
+            <div class="row" onclick="go('player')">
+              <div class="art cover" style="border-radius:10px"><div class="g" style="background:linear-gradient(135deg,#7C2D12,#FDBA74)"></div><div class="ltr" style="font-size:20px">Jo</div></div>
+              <div class="meta"><div class="t1">Job interview stories</div><div class="t2">职场 · 15:02 · 有文稿</div></div>
+              <button class="playmini" aria-label="播放" onclick="event.stopPropagation();go('player')"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></button>
+            </div>
+            <div class="row" onclick="go('player')">
+              <div class="art cover" style="border-radius:10px"><div class="g" style="background:linear-gradient(135deg,#134E4A,#5EEAD4)"></div><div class="ltr" style="font-size:20px">Tr</div></div>
+              <div class="meta"><div class="t1">Travel small secrets</div><div class="t2">旅行 · 11:26 · 有文稿</div></div>
+              <button class="playmini" aria-label="播放" onclick="event.stopPropagation();go('player')"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></button>
+            </div>
+            <div class="row" onclick="go('player')">
+              <div class="art cover" style="border-radius:10px"><div class="g" style="background:linear-gradient(135deg,#701A75,#F0ABFC)"></div><div class="ltr" style="font-size:20px">Ai</div></div>
+              <div class="meta"><div class="t1">Will AI change how we talk?</div><div class="t2">科技 · 14:55 · 有文稿</div></div>
+              <button class="playmini" aria-label="播放" onclick="event.stopPropagation();go('player')"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></button>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 11. 小宇宙 ============ -->
+        <section class="view" id="view-xy">
+          <div class="bighead">
+            <button class="back" aria-label="返回" onclick="go('home')"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+            <h2>小宇宙精选</h2><span class="tagr">FREE ONLY</span>
+          </div>
+          <div class="ch-hero">
+            <div class="cover" style="width:84px;height:84px"><div class="g" style="background:linear-gradient(160deg,#1E1B4B,#4338CA)"></div><div class="ltr" style="font-size:34px">晨</div></div>
+            <div>
+              <h3 style="font-size:17px">晨间英语新闻</h3>
+              <div class="m">XIAOYUZHOU · WEEKDAYS · FREE</div>
+              <div class="d">工作日早晨 15 分钟，用新闻打开英语耳朵。仅收录免费单集。</div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="sechead"><span class="zh">最新单集</span><span class="en">EPISODES</span></div>
+            <div class="rows">
+              <div class="row" onclick="go('player')"><div class="meta"><div class="t1">第 214 期 · AI 与就业的五个新变化</div><div class="t2">今天 07:30 · 18:05</div></div><button class="playmini" aria-label="播放"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></button></div>
+              <div class="row" onclick="go('player')"><div class="meta"><div class="t1">第 213 期 · 为什么大家又开始骑车了</div><div class="t2">昨天 07:30 · 16:44</div></div><button class="playmini" aria-label="播放"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></button></div>
+              <div class="row" onclick="go('player')"><div class="meta"><div class="t1">第 212 期 · 一杯咖啡的全球旅行</div><div class="t2">11月4日 · 19:12</div></div><button class="playmini" aria-label="播放"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></button></div>
+              <div class="row" onclick="go('player')"><div class="meta"><div class="t1">第 211 期 · 城市夜跑指南</div><div class="t2">11月3日 · 17:38</div></div><button class="playmini" aria-label="播放"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></button></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 12. 我的 ============ -->
+        <section class="view" id="view-me">
+          <div class="bighead"><h2>我的</h2><span class="tagr">LIBRARY</span></div>
+          <div class="me-card">
+            <div class="avatar">E</div>
+            <div><div class="n">English Learner</div><div class="d">GUEST MODE · 飞岩已登录</div></div>
+          </div>
+          <div class="stats">
+            <div class="stat"><div class="v">27</div><div class="k">收藏</div></div>
+            <div class="stat"><div class="v">126</div><div class="k">已播单集</div></div>
+            <div class="stat"><div class="v">9.5h</div><div class="k">本周收听</div></div>
+          </div>
+          <div class="menu">
+            <button class="mi" onclick="go('favorites')"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.6 3-3.4 3-5.5A4.5 4.5 0 0 0 17.5 4c-1.8 0-3.4 1-4.5 2.5C11.9 5 10.3 4 8.5 4A4.5 4.5 0 0 0 4 8.5c0 2.1 1.5 3.9 3 5.5l5 5z"/></svg></span><span class="t">我的收藏</span><span class="chev">›</span></button>
+            <button class="mi" onclick="go('history')"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span><span class="t">播放历史</span><span class="chev">›</span></button>
+            <button class="mi" onclick="go('settings')"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg></span><span class="t">设置</span><span class="chev">›</span></button>
+            <button class="mi" onclick="go('about')"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg></span><span class="t">关于</span><span class="chev">›</span></button>
+            <button class="mi" onclick="go('disclaimer')"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span><span class="t">免责声明</span><span class="chev">›</span></button>
+          </div>
+        </section>
+
+        <!-- ============ 13. 收藏 ============ -->
+        <section class="view" id="view-favorites">
+          <div class="bighead">
+            <button class="back" aria-label="返回" onclick="go('me')"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+            <h2>我的收藏</h2><span class="tagr">27 ITEMS</span>
+          </div>
+          <div class="pillrow"><button class="pill on">单集</button><button class="pill">书籍</button><button class="pill">文章</button></div>
+          <div class="rows" style="margin-top:8px">
+            <div class="row" onclick="go('player')">
+              <div class="art cover" style="border-radius:10px"><div class="g" style="background:linear-gradient(135deg,#312E81,#818CF8)"></div><div class="ltr" style="font-size:20px">Sp</div></div>
+              <div class="meta"><div class="t1">Small talk, big difference</div><div class="t2">ENGLISHMEASURE · 12:40</div></div>
+              <button class="playmini" aria-label="播放" onclick="event.stopPropagation();go('player')"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></button>
+            </div>
+            <div class="row" onclick="go('player')">
+              <div class="art cover" style="border-radius:10px"><div class="g" style="background:linear-gradient(135deg,#312E81,#0F0F23)"></div><div class="ltr" style="font-size:20px">D</div></div>
+              <div class="meta"><div class="t1">The war over water in the West</div><div class="t2">THE DAILY · 24:10 · 已播 40%</div><div class="progress-thin"><i style="width:40%"></i></div></div>
+              <button class="playmini" aria-label="播放" onclick="event.stopPropagation();go('player')"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></button>
+            </div>
+            <div class="row" onclick="go('player')">
+              <div class="art cover" style="border-radius:10px"><div class="g" style="background:linear-gradient(135deg,#1E1B4B,#4338CA)"></div><div class="ltr" style="font-size:20px">晨</div></div>
+              <div class="meta"><div class="t1">晨间英语新闻 · 第 214 期</div><div class="t2">小宇宙 · 18:05</div></div>
+              <button class="playmini" aria-label="播放" onclick="event.stopPropagation();go('player')"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></button>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 14. 历史 ============ -->
+        <section class="view" id="view-history">
+          <div class="bighead">
+            <button class="back" aria-label="返回" onclick="go('me')"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+            <h2>播放历史</h2><span class="tagr">RECENT</span>
+          </div>
+          <div class="rows" style="margin-top:12px">
+            <div class="row" onclick="go('player')">
+              <div class="art cover" style="border-radius:10px"><div class="g" style="background:linear-gradient(135deg,#F97316,#9A3412)"></div><div class="ltr" style="font-size:20px">Ep</div></div>
+              <div class="meta"><div class="t1">Small talk, big difference</div><div class="t2">今天 08:12 · 播到 05:12 / 17:52</div><div class="progress-thin"><i style="width:29%"></i></div></div>
+            </div>
+            <div class="row" onclick="go('reader')">
+              <div class="art cover" style="border-radius:10px"><div class="g" style="background:linear-gradient(135deg,#134E4A,#5EEAD4)"></div><div class="ltr" style="font-size:20px">W</div></div>
+              <div class="meta"><div class="t1">Wonder · 第 8 章</div><div class="t2">昨晚 22:40 · 阅读到 42%</div><div class="progress-thin"><i style="width:42%"></i></div></div>
+            </div>
+            <div class="row" onclick="go('article')">
+              <div class="art cover" style="border-radius:10px"><div class="g" style="background:linear-gradient(135deg,#334155,#0F172A)"></div><div class="ltr" style="font-size:20px">B</div></div>
+              <div class="meta"><div class="t1">Why your brain needs boredom</div><div class="t2">11月5日 · 读完</div></div>
+              <span class="dur">DONE</span>
+            </div>
+            <div class="row" onclick="go('player')">
+              <div class="art cover" style="border-radius:10px"><div class="g" style="background:linear-gradient(135deg,#312E81,#0F0F23)"></div><div class="ltr" style="font-size:20px">D</div></div>
+              <div class="meta"><div class="t1">The war over water in the West</div><div class="t2">11月5日 · 播到 40%</div><div class="progress-thin"><i style="width:40%"></i></div></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 15. 设置 ============ -->
+        <section class="view" id="view-settings">
+          <div class="bighead">
+            <button class="back" aria-label="返回" onclick="go('me')"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+            <h2>设置</h2>
+          </div>
+          <div class="set-group">
+            <div class="gt">APPEARANCE · 外观</div>
+            <div class="mi"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></span><span class="t">夜间模式<div class="sub">Dark OLED · 深夜收听更护眼</div></span><button class="switch on" id="swDark" role="switch" aria-label="夜间模式" onclick="toggleTheme()"></button></div>
+          </div>
+          <div class="set-group">
+            <div class="gt">PLAYBACK · 播放</div>
+            <div class="mi"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h2l2-6 3 12 3-16 3 14 2-4h3"/></svg></span><span class="t">默认倍速</span><div class="seg"><button>0.75</button><button class="on">1.0×</button><button>1.25</button><button>1.5</button></div></div>
+            <div class="mi"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v5l3.5 2"/></svg></span><span class="t">自动跳过片头</span><button class="switch"></button></div>
+            <div class="mi"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/></svg></span><span class="t">仅 Wi-Fi 下载</span><button class="switch on"></button></div>
+          </div>
+          <div class="set-group">
+            <div class="gt">ACCOUNT · 登录态</div>
+            <div class="mi"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.6 7.6a5.5 5.5 0 1 1-7.8 7.8 5.5 5.5 0 0 1 7.8-7.8zm0 0L15 8m-3.6 3.6L19 4m-4 4 2 2"/></svg></span><span class="t">飞岩播客 Token<div class="sub">已登录 · feiyanpod.com</div></span><span class="chev">›</span></div>
+            <div class="mi"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.6 7.6a5.5 5.5 0 1 1-7.8 7.8 5.5 5.5 0 0 1 7.8-7.8zm0 0L15 8m-3.6 3.6L19 4m-4 4 2 2"/></svg></span><span class="t">BookYell Token<div class="sub">游客模式 · 朗读不可用</div></span><span class="chev">›</span></div>
+          </div>
+          <div class="set-group">
+            <div class="gt">SYSTEM · 系统</div>
+            <div class="mi" onclick="go('update')"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.6-6.3"/><path d="M21 3v6h-6"/></svg></span><span class="t">检查更新<div class="sub">当前 v2.0.0 · 已是最新</div></span><span class="chev">›</span></div>
+          </div>
+        </section>
+
+        <!-- ============ 16. 关于 ============ -->
+        <section class="view" id="view-about">
+          <div class="bighead">
+            <button class="back" aria-label="返回" onclick="go('me')"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+            <h2>关于</h2>
+          </div>
+          <div class="about-logo">
+            <div class="lg"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M3 12h2l2-6 3 12 3-16 3 14 2-4h3"/></svg></div>
+            <div class="n">英语时光</div>
+            <div class="v">ENGLISH TIME · v2.0.0 (BUILD 12)</div>
+          </div>
+          <div class="doc">
+            <p>把分散在各处的英语内容——播客、双语小说、外刊文章——收进一个安静的地方。慢一点，但每天听一点、读一点。</p>
+            <h4>内容来源</h4>
+            <p>飞岩播客 · 小宇宙 · EnglishMeasure · Englio · BookYell · 英语小说网。所有内容版权归原作者与原平台所有。</p>
+            <h4>开发者</h4>
+            <p>Feiyan English Team · Made with Compose &amp; OkHttp</p>
+          </div>
+          <div class="menu" style="margin-top:14px">
+            <button class="mi" onclick="go('disclaimer')"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span><span class="t">免责声明</span><span class="chev">›</span></button>
+            <button class="mi" onclick="go('update')"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.6-6.3"/><path d="M21 3v6h-6"/></svg></span><span class="t">检查更新</span><span class="chev">›</span></button>
+          </div>
+        </section>
+
+        <!-- ============ 17. 免责声明 ============ -->
+        <section class="view" id="view-disclaimer">
+          <div class="bighead">
+            <button class="back" aria-label="返回" onclick="go('me')"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+            <h2>免责声明</h2>
+          </div>
+          <div class="doc">
+            <p><b>1. 内容归属</b> — 本应用展示的音频、文字与封面均来自各公开平台（飞岩播客、小宇宙、EnglishMeasure、Englio、BookYell、英语小说网等），版权归原作者与原平台所有。</p>
+            <p><b>2. 用途</b> — 本应用仅用于个人英语学习，不以任何形式存储、分发或售卖上述内容。</p>
+            <p><b>3. 移除</b> — 如权利人要求移除相关内容，请联系我们，我们将在确认后第一时间处理。</p>
+            <p><b>4. 免责</b> — 使用本应用产生的任何直接或间接损失，开发者不承担责任。请支持正版，尊重创作。</p>
+          </div>
+        </section>
+
+        <!-- ============ 18. 检查更新 ============ -->
+        <section class="view" id="view-update">
+          <div class="bighead">
+            <button class="back" aria-label="返回" onclick="go('settings')"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+            <h2>检查更新</h2>
+          </div>
+          <div class="me-card" style="flex-direction:column;align-items:flex-start;gap:10px">
+            <div style="display:flex;align-items:center;gap:12px">
+              <div class="avatar" style="width:44px;height:44px;font-size:18px;background:linear-gradient(135deg,#22C55E,#15803D)">✓</div>
+              <div><div class="n" style="font-size:15px">v2.0.0 已是最新版本</div><div class="d">RELEASED · 11月7日</div></div>
+            </div>
+            <div style="font-size:12.5px;color:var(--txt-2);line-height:1.8">
+              • 全新 Midnight Studio 双主题界面<br>
+              • 播放器支持逐句精听文稿<br>
+              • 修复部分设备后台播放中断的问题
+            </div>
+          </div>
+          <div class="ch-actions" style="padding-top:14px">
+            <button class="btn ghost">重新检查</button>
+            <button class="btn primary" onclick="go('about')">查看关于</button>
+          </div>
+        </section>
+
+        </div><!-- /app -->
+
+        <!-- MiniPlayer + 底部导航 -->
+        <div class="dock" id="dock">
+          <div class="mini show" id="mini" role="button" tabindex="0" onclick="go('player')">
+            <div class="prog"></div>
+            <div class="art cover"><div class="g" style="background:linear-gradient(135deg,#F97316,#9A3412)"></div><div class="ltr" style="font-size:16px">Ep</div></div>
+            <div class="m"><div class="t1">Small talk, big difference</div><div class="t2">ENGLISHMEASURE · 05:12</div></div>
+            <button class="pbtn" style="width:40px;height:40px" aria-label="播放/暂停" onclick="event.stopPropagation();togglePlay()">
+              <svg class="i-play" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M7 4.5v15l13-7.5z"/></svg>
+              <svg class="i-pause" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><rect x="5.5" y="4" width="4.5" height="16" rx="1.4"/><rect x="14" y="4" width="4.5" height="16" rx="1.4"/></svg>
+            </button>
+          </div>
+          <nav class="navbar" id="navbar" aria-label="底部导航">
+            <button class="tab on" data-view="home" onclick="go('home')"><span class="dot"></span>
+              <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></svg>
+              <span>播客</span>
+            </button>
+            <button class="tab" data-view="novels" onclick="go('novels')"><span class="dot"></span>
+              <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              <span>小说</span>
+            </button>
+            <button class="tab" data-view="articles" onclick="go('articles')"><span class="dot"></span>
+              <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8M16 17H8"/></svg>
+              <span>文章</span>
+            </button>
+            <button class="tab" data-view="me" onclick="go('me')"><span class="dot"></span>
+              <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <span>我的</span>
+            </button>
+          </nav>
+          <div class="gesturebar"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ---------- 主题 ----------
+let light=false;
+function applyTheme(){
+  document.body.classList.toggle('light',light);
+  document.querySelectorAll('#swDark').forEach(s=>s.classList.toggle('on',!light));
+}
+function toggleTheme(){light=!light;applyTheme();}
+applyTheme();
+
+// ---------- 波形 ----------
+const wave=document.getElementById('wave');
+[8,14,10,20,16,26,12,22,30,18,12,24,16,28,10,18,22,14,26,12,20,30,16,10,22,14,24,18,12,20,26,16,10,18,24,12].forEach(h=>{
+  const i=document.createElement('i');i.style.height=h+'px';
+  if(Math.random()<0.55)i.classList.add('dim');
+  wave.appendChild(i);
+});
+let playing=true;
+requestAnimationFrame(function animate(t){
+  if(playing && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+    [...wave.children].forEach((b,i)=>{
+      if(!b.classList.contains('dim')) b.style.transform=`scaleY(${0.7+0.3*Math.abs(Math.sin(t/500+i*0.7))})`;
+    });
+  }
+  requestAnimationFrame(animate);
+});
+function syncPlayIcons(){
+  document.querySelectorAll('.pbtn').forEach(b=>{
+    b.querySelector('.i-play').style.display=playing?'none':'block';
+    b.querySelector('.i-pause').style.display=playing?'block':'none';
+  });
+}
+function togglePlay(){
+  playing=!playing;
+  document.querySelectorAll('.pbtn .i-play').forEach(x=>x.style.display=playing?'none':'block');
+  document.querySelectorAll('.pbtn .i-pause').forEach(x=>x.style.display=playing?'block':'none');
+  document.querySelectorAll('.eq').forEach(e=>e.parentElement.classList.toggle('paused',!playing));
+}
+syncPlayIcons();
+
+// ---------- 倍速 ----------
+const speeds=[1.0,1.25,1.5,0.75];let si=0;
+function cycleSpeed(){si=(si+1)%speeds.length;document.getElementById('speedChip').textContent=(speeds[si]+'').replace(/\.0$/,'')+'×';}
+
+// ---------- 页面切换 ----------
+let current='home';
+function go(name){
+  if(name===current)return;
+  document.querySelectorAll('.view').forEach(v=>{v.classList.remove('active','exit-l');});
+  document.getElementById('view-'+current).classList.add('exit-l');
+  document.getElementById('view-'+name).classList.add('active');
+  current=name;
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.dataset.view===name));
+  // 沉浸页隐藏底栏；其余显示
+  const immersive=['player','reader','article'];
+  document.getElementById('dock').classList.toggle('hidden',immersive.includes(name));
+  // MiniPlayer 只在有播放语境的页面出现
+  document.getElementById('mini').classList.toggle('show',['home','channel','em','xy','favorites'].includes(name));
+  document.getElementById('view-'+name).scrollTop=0;
+}
+
+// ---------- 手机缩放适配 ----------
+function fit(){
+  const ph=document.getElementById('phone');
+  const wrap=ph.parentElement;
+  const avail=innerHeight-40, availW=innerWidth-24;
+  const s=Math.min(avail/882, availW/422, 1);
+  ph.style.transform=`scale(${s})`;
+  wrap.style.width=(422*s)+'px';wrap.style.height=(882*s)+'px';wrap.style.overflow='visible';
+}
+addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

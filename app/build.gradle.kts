@@ -35,7 +35,7 @@ android {
         minSdk = 26
         targetSdk = 37
         versionCode = (System.getenv("VERSION_CODE") ?: "1").toInt()
-        versionName = System.getenv("VERSION_NAME") ?: "1.0.0"
+        versionName = System.getenv("VERSION_NAME") ?: "1.0.2"
         vectorDrawables.useSupportLibrary = true
         buildConfigField("String", "FEIYAN_TOKEN", "\"$feiyanToken\"")
         buildConfigField("String", "BOOKYELL_TOKEN", "\"$bookyellToken\"")
@@ -67,7 +67,6 @@ android {
     buildTypes {
         debug {
             applicationIdSuffix = ".debug"
-            versionNameSuffix = "-debug"
         }
         release {
             isMinifyEnabled = true
@@ -132,6 +131,7 @@ dependencies {
     implementation("dev.chrisbanes.haze:haze-blur-materials:2.0.1")
 
     implementation("com.squareup.okhttp3:okhttp:5.5.1")
+    implementation("org.jsoup:jsoup:1.18.3")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.12.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.11.0")
 

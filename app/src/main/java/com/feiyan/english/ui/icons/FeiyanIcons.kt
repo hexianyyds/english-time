@@ -252,4 +252,121 @@ object FeiyanIcons {
             }
         }
     }
+
+    val Sun: ImageVector by lazy {
+        outlined("Sun") {
+            circle(12f, 12f, 4f)
+            stroke {
+                moveTo(12f, 2.8f)
+                lineTo(12f, 5f)
+                moveTo(12f, 19f)
+                lineTo(12f, 21.2f)
+                moveTo(2.8f, 12f)
+                lineTo(5f, 12f)
+                moveTo(19f, 12f)
+                lineTo(21.2f, 12f)
+                moveTo(5.5f, 5.5f)
+                lineTo(7.1f, 7.1f)
+                moveTo(16.9f, 16.9f)
+                lineTo(18.5f, 18.5f)
+                moveTo(18.5f, 5.5f)
+                lineTo(16.9f, 7.1f)
+                moveTo(7.1f, 16.9f)
+                lineTo(5.5f, 18.5f)
+            }
+        }
+    }
+
+    val Moon: ImageVector by lazy {
+        outlined("Moon") {
+            stroke {
+                moveTo(20.1f, 14.7f)
+                curveToRelative(-1.1f, 0.5f, -2.3f, 0.8f, -3.6f, 0.8f)
+                curveToRelative(-4.6f, 0f, -8.3f, -3.7f, -8.3f, -8.3f)
+                curveToRelative(0f, -1.3f, 0.3f, -2.5f, 0.8f, -3.6f)
+                curveToRelative(-3.2f, 1.1f, -5.5f, 4.2f, -5.5f, 7.8f)
+                curveToRelative(0f, 4.6f, 3.7f, 8.3f, 8.3f, 8.3f)
+                curveToRelative(3.5f, 0f, 6.5f, -2.2f, 7.7f, -5.4f)
+                close()
+            }
+        }
+    }
+
+    private fun ImageVector.Builder.circle(cx: Float, cy: Float, r: Float) {
+        stroke {
+            moveTo(cx + r, cy)
+            curveTo(cx + r, cy + r * 0.55f, cx + r * 0.55f, cy + r, cx, cy + r)
+            curveTo(cx - r * 0.55f, cy + r, cx - r, cy + r * 0.55f, cx - r, cy)
+            curveTo(cx - r, cy - r * 0.55f, cx - r * 0.55f, cy - r, cx, cy - r)
+            curveTo(cx + r * 0.55f, cy - r, cx + r, cy - r * 0.55f, cx + r, cy)
+            close()
+        }
+    }
+
+    val Gear: ImageVector by lazy {
+        outlined("Gear") {
+            circle(12f, 12f, 3.2f)
+            stroke {
+                moveTo(12f, 2.6f)
+                lineTo(12f, 5f)
+                moveTo(12f, 19f)
+                lineTo(12f, 21.4f)
+                moveTo(2.6f, 12f)
+                lineTo(5f, 12f)
+                moveTo(19f, 12f)
+                lineTo(21.4f, 12f)
+                moveTo(5.4f, 5.4f)
+                lineTo(7.1f, 7.1f)
+                moveTo(16.9f, 16.9f)
+                lineTo(18.6f, 18.6f)
+                moveTo(18.6f, 5.4f)
+                lineTo(16.9f, 7.1f)
+                moveTo(7.1f, 16.9f)
+                lineTo(5.4f, 18.6f)
+            }
+        }
+    }
+
+    val Info: ImageVector by lazy {
+        outlined("Info") {
+            circle(12f, 12f, 9f)
+            stroke {
+                moveTo(12f, 8f)
+                lineTo(12f, 8.02f)
+                moveTo(12f, 11.4f)
+                lineTo(12f, 16f)
+            }
+        }
+    }
+
+    val AlertTriangle: ImageVector by lazy {
+        outlined("AlertTriangle") {
+            stroke {
+                moveTo(10.3f, 3.9f)
+                lineTo(1.8f, 18f)
+                curveToRelative(0f, 1.1f, 0.8f, 2f, 1.7f, 2f)
+                lineTo(20.5f, 20f)
+                curveToRelative(0.9f, 0f, 1.7f, -0.9f, 1.7f, -2f)
+                lineTo(13.7f, 3.9f)
+                curveToRelative(-0.8f, -1.2f, -2.6f, -1.2f, -3.4f, 0f)
+                close()
+                moveTo(12f, 9f)
+                lineTo(12f, 13f)
+                moveTo(12f, 16.8f)
+                lineTo(12f, 16.82f)
+            }
+        }
+    }
+
+    val Refresh: ImageVector by lazy {
+        outlined("Refresh") {
+            stroke {
+                moveTo(21f, 12f)
+                arcTo(9f, 9f, 0f, true, true, 18.4f, 5.7f)
+                moveTo(21f, 3f)
+                lineTo(21f, 9f)
+                lineTo(15f, 9f)
+            }
+        }
+    }
 }

@@ -1,6 +1,8 @@
 package com.feiyan.english.ui.channel
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.ui.draw.clip
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -142,7 +144,7 @@ private fun ChannelContent(
         item(key = "header", contentType = "header") {
             Column(Modifier.padding(horizontal = 24.dp).padding(top = 10.dp)) {
                 Row(verticalAlignment = Alignment.Top) {
-                    Cover(channel.cover, size = 104.dp, corner = 3.dp)
+                    Cover(channel.cover, size = 104.dp, corner = 14.dp)
                     Spacer(Modifier.width(18.dp))
                     Column(Modifier.weight(1f)) {
                         Text(
@@ -192,14 +194,15 @@ private fun ChannelContent(
                     Modifier
                         .fillMaxWidth()
                         .height(46.dp)
+                        .clip(androidx.compose.foundation.shape.RoundedCornerShape(14.dp))
                         .clickable(enabled = !preparing && episodes.isNotEmpty(), onClick = onPlayLatest)
-                        .background(KakiSoft),
+                        .background(Kaki),
                     verticalAlignment = Alignment.CenterVertically,
                     horizontalArrangement = Arrangement.Center,
                 ) {
                     if (preparing) {
                         CircularProgressIndicator(
-                            color = Kaki,
+                            color = MaterialTheme.colorScheme.onPrimary,
                             strokeWidth = 1.4.dp,
                             modifier = Modifier.size(16.dp),
                         )
@@ -207,7 +210,7 @@ private fun ChannelContent(
                         Icon(
                             imageVector = FeiyanIcons.Play,
                             contentDescription = null,
-                            tint = Kaki,
+                            tint = MaterialTheme.colorScheme.onPrimary,
                             modifier = Modifier.size(12.dp),
                         )
                     }
@@ -215,7 +218,7 @@ private fun ChannelContent(
                     Text(
                         text = "播放最新一集",
                         style = MaterialTheme.typography.bodyMedium.copy(letterSpacing = 1.sp),
-                        color = Kaki,
+                        color = MaterialTheme.colorScheme.onPrimary,
                     )
                 }
                 Spacer(Modifier.height(8.dp))
