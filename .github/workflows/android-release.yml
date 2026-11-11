@@ -33,6 +33,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # 浅克隆拿不到 tag 对象，Resolve release notes 里的
+          # git tag --format='%(contents)' 会退化成读 commit message
+          fetch-depth: 0
+          fetch-tags: true
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
