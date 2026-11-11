@@ -18,6 +18,13 @@ val bookyellToken: String = localProperties.getProperty("bookyell.token").orEmpt
 val updateRepo: String = (System.getenv("UPDATE_REPO")
     ?: localProperties.getProperty("update.repo")).orEmpty().trim()
 
+// 版本号单一来源：gradle.properties 的 app.versionName / app.versionCode，
+// CI 发布时仍可用 VERSION_NAME / VERSION_CODE 环境变量覆盖
+val appVersionName: String =
+    (findProperty("app.versionName") as? String)?.trim().orEmpty().ifBlank { "1.0.3" }
+val appVersionCode: Int =
+    (findProperty("app.versionCode") as? String)?.trim()?.toIntOrNull() ?: 1
+
 // 发布签名：优先环境变量（CI），其次 keystore.properties；都没有则回落 debug 签名
 val keystoreProps = Properties().apply {
     val file = rootProject.file("keystore.properties")
@@ -34,8 +41,8 @@ android {
         applicationId = "com.feiyan.english"
         minSdk = 26
         targetSdk = 37
-        versionCode = (System.getenv("VERSION_CODE") ?: "1").toInt()
-        versionName = System.getenv("VERSION_NAME") ?: "1.0.2"
+        versionCode = System.getenv("VERSION_CODE")?.trim()?.toIntOrNull() ?: appVersionCode
+        versionName = System.getenv("VERSION_NAME") ?: appVersionName
         vectorDrawables.useSupportLibrary = true
         buildConfigField("String", "FEIYAN_TOKEN", "\"$feiyanToken\"")
         buildConfigField("String", "BOOKYELL_TOKEN", "\"$bookyellToken\"")

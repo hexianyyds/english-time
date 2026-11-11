@@ -54,8 +54,10 @@ jobs:
             NAME="${GITHUB_REF_NAME#v}"
             CODE="${{ github.run_number }}"
           else
-            # main 分支触发：只产出测试包，版本号刻意低于正式版，避免被自更新误判
-            NAME="0.0.0-main.${GITHUB_RUN_NUMBER}"
+            # main 分支触发：与本地默认版本号保持一致，从 gradle.properties 读取，
+            # app.versionName 是唯一版本来源，避免本地与 CI 出现两个版本号
+            NAME="$(grep -E '^app\.versionName=' gradle.properties | head -n1 | cut -d= -f2 | tr -d '[:space:]')"
+            if [ -z "$NAME" ]; then NAME="1.0.3"; fi
             CODE="${{ github.run_number }}"
           fi
           echo "name=$NAME" >> "$GITHUB_OUTPUT"
