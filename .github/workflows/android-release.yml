@@ -2,6 +2,9 @@ name: Android Release
 
 on:
   push:
+    branches:
+      # 推 main 也会构建，产出可下载的测试 APK（不发布 Release）
+      - main
     tags:
       - 'v*'
   workflow_dispatch:
@@ -46,8 +49,13 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             NAME="${{ github.event.inputs.version_name }}"
             CODE="${{ github.event.inputs.version_code }}"
-          else
+          elif [ "${GITHUB_REF#refs/tags/}" != "${GITHUB_REF}" ]; then
+            # tag 触发：版本号取标签名（v1.0.3 → 1.0.3），并发布 Release
             NAME="${GITHUB_REF_NAME#v}"
+            CODE="${{ github.run_number }}"
+          else
+            # main 分支触发：只产出测试包，版本号刻意低于正式版，避免被自更新误判
+            NAME="0.0.0-main.${GITHUB_RUN_NUMBER}"
             CODE="${{ github.run_number }}"
           fi
           echo "name=$NAME" >> "$GITHUB_OUTPUT"
