@@ -61,6 +61,7 @@ import com.feiyan.english.ui.ipa.IpaDetailScreen
 import com.feiyan.english.ui.ipa.IpaScreen
 import com.feiyan.english.ui.em.EmListScreen
 import com.feiyan.english.ui.episode.EpisodeScreen
+import com.feiyan.english.ui.game.GamePlayScreen
 import com.feiyan.english.data.LibraryStore
 import com.feiyan.english.ui.library.AboutAppScreen
 import com.feiyan.english.ui.library.DisclaimerScreen
@@ -117,6 +118,7 @@ object Routes {
     const val Tts = "tts"
     const val Ipa = "ipa"
     const val IpaDetail = "ipa/detail/{id}"
+    const val GamePlay = "game/{gameId}"
 
     val topLevel = setOf(Study, Library)
 
@@ -140,6 +142,7 @@ object Routes {
     fun bdCourse(key: String) = "beidanci/course/${Uri.encode(key)}"
     fun bdStudy(key: String, unitId: Int) = "beidanci/study/${Uri.encode(key)}/$unitId"
     fun ipaDetail(id: String) = "ipa/detail/${Uri.encode(id)}"
+    fun gamePlay(gameId: String) = "game/$gameId"
 }
 
 @Composable
@@ -167,7 +170,8 @@ fun FeiyanApp() {
         player.hasMedia &&
         route != Routes.Episode &&
         route != Routes.EmEpisode &&
-        route != Routes.XyEpisode
+        route != Routes.XyEpisode &&
+        !route.startsWith("game/")
     val overlayPadding = (if (showTabs) 74.dp else 0.dp) +
         (if (showMini) 56.dp else 0.dp) +
         navBarInset
@@ -203,6 +207,9 @@ fun FeiyanApp() {
                             onEgArticleClick = { navController.navigate(Routes.egArticle(it)) },
                             onByArticleClick = { bookId, chapterId ->
                                 navController.navigate(Routes.byReader(bookId, chapterId))
+                            },
+                            onGamePlayClick = { gameId ->
+                                navController.navigate(Routes.gamePlay(gameId))
                             },
                             onEchoYearClick = { exam, year ->
                                 navController.navigate(Routes.echoYear(exam.key, year))
@@ -475,6 +482,18 @@ fun FeiyanApp() {
                             courseKey = key,
                             unitId = unitId,
                             onBack = { navController.popBackStack() },
+                        )
+                    }
+                }
+                composable(
+                    route = Routes.GamePlay,
+                    arguments = listOf(navArgument("gameId") { type = NavType.StringType }),
+                ) { entry ->
+                    val gameId = entry.arguments?.getString("gameId").orEmpty()
+                    OpaqueDestination {
+                        GamePlayScreen(
+                            gameId = gameId,
+                            onExit = { navController.popBackStack() },
                         )
                     }
                 }

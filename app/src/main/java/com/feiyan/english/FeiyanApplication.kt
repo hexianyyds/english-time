@@ -6,7 +6,10 @@ import coil3.PlatformContext
 import coil3.SingletonImageLoader
 import coil3.request.crossfade
 import com.feiyan.english.data.BdProgressStore
+import com.feiyan.english.data.GameAudioPlayer
+import com.feiyan.english.data.GameProgressStore
 import com.feiyan.english.data.LibraryStore
+import com.feiyan.english.data.SpeechPlayer
 import com.feiyan.english.data.TokenStore
 import com.feiyan.english.player.PlayerController
 
@@ -17,6 +20,9 @@ class FeiyanApplication : Application(), SingletonImageLoader.Factory {
         TokenStore.init(this)
         LibraryStore.init(this)
         BdProgressStore.init(this)
+        GameProgressStore.init(this)
+        SpeechPlayer.init(this)
+        GameAudioPlayer.init(this)
         PlayerController.connect(this)
     }
 

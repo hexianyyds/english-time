@@ -1,0 +1,896 @@
+{
+ "source": "gamestolearnenglish.com/superlatives+comparatives",
+ "items": [
+  {
+   "type": "superlative",
+   "prompt": "Who is the tallest?",
+   "hint": "",
+   "answer": "She is the tallest",
+   "options": [
+    "She is the tallest",
+    "He is the shortest",
+    "They is the longest"
+   ]
+  },
+  {
+   "type": "superlative",
+   "prompt": "Who is the thinnest?",
+   "hint": "",
+   "answer": "He is the thinnest",
+   "options": [
+    "He is the thinnest",
+    "She is the fattest",
+    "They are the tallest"
+   ]
+  },
+  {
+   "type": "superlative",
+   "prompt": "Who is the slowest?",
+   "hint": "",
+   "answer": "The bicycle is the slowest",
+   "options": [
+    "The bicycle is the slowest",
+    "The car is the fastest",
+    "The plane is the biggest"
+   ]
+  },
+  {
+   "type": "superlative",
+   "prompt": "Who is the cleanest?",
+   "hint": "",
+   "answer": "This pig is the cleanest",
+   "options": [
+    "This pig is the cleanest",
+    "This cat is the cleanist",
+    "This horse is the cleanust"
+   ]
+  },
+  {
+   "type": "superlative",
+   "prompt": "Who is the noisiest?",
+   "hint": "",
+   "answer": "He is the noisiest",
+   "options": [
+    "He is the noisiest",
+    "She is the noisy",
+    "They is the noisier"
+   ]
+  },
+  {
+   "type": "superlative",
+   "prompt": "Who is the quietest?",
+   "hint": "",
+   "answer": "The mouse is the quietest",
+   "options": [
+    "The mouse is the quietest",
+    "The monkey is the noisiest",
+    "The horse is the dirtiest"
+   ]
+  },
+  {
+   "type": "superlative",
+   "prompt": "Which towel is the hardest?",
+   "hint": "",
+   "answer": "Diamonds are the hardest material",
+   "options": [
+    "Diamonds are the hardest material",
+    "Wood is the softest material",
+    "Glasses are the longest material"
+   ]
+  },
+  {
+   "type": "superlative",
+   "prompt": "Which shoes are the nicest?",
+   "hint": "",
+   "answer": "She is the nicest",
+   "options": [
+    "She is the nicest",
+    "He are the ugliest",
+    "They is the longest"
+   ]
+  },
+  {
+   "type": "superlative",
+   "prompt": "Which shoes are the ugliest?",
+   "hint": "",
+   "answer": "This painting is the ugliest",
+   "options": [
+    "This painting is the ugliest",
+    "This book is the nicest",
+    "This TV is the softest"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "An elephant is ___ than a mouse.",
+   "hint": "big",
+   "answer": "bigger",
+   "options": [
+    "bigger",
+    "big",
+    "more big"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Fish are ___ than whales.",
+   "hint": "small",
+   "answer": "smaller",
+   "options": [
+    "smaller",
+    "more small",
+    "more smaller"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Pigs are ___ than dogs.",
+   "hint": "dirty",
+   "answer": "dirtier",
+   "options": [
+    "dirtier",
+    "dirty",
+    "more dirty"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Swans are ___ than ducks.",
+   "hint": "beautiful",
+   "answer": "more beautiful",
+   "options": [
+    "more beautiful",
+    "beautifuller",
+    "beautifuler"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Horses are ___ than cows.",
+   "hint": "fast",
+   "answer": "faster",
+   "options": [
+    "faster",
+    "more fast",
+    "more faster"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Sharks are ___ than dolphins.",
+   "hint": "dangerous",
+   "answer": "more dangerous",
+   "options": [
+    "more dangerous",
+    "dangerouser",
+    "more dangerouser"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Turtles are ___ than rabbits.",
+   "hint": "slow",
+   "answer": "slower",
+   "options": [
+    "slower",
+    "more slow",
+    "slowing"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Rats are ___ than rabbits.",
+   "hint": "ugly",
+   "answer": "uglier",
+   "options": [
+    "uglier",
+    "uglyer",
+    "more ugly"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Cats are ___ than tigers.",
+   "hint": "safe",
+   "answer": "safer",
+   "options": [
+    "safer",
+    "more safe",
+    "saffier"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "A gorilla is ___ than a monkey.",
+   "hint": "strong",
+   "answer": "stronger",
+   "options": [
+    "stronger",
+    "strong",
+    "more strong"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "The parrot is ___ than the bird.",
+   "hint": "colorful",
+   "answer": "more colorful",
+   "options": [
+    "more colorful",
+    "colorer",
+    "colorfuller"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Goats are ___ than giraffes.",
+   "hint": "short",
+   "answer": "shorter",
+   "options": [
+    "shorter",
+    "more short",
+    "short"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "He is ___ than her.",
+   "hint": "fat",
+   "answer": "fatter",
+   "options": [
+    "fatter",
+    "fattest",
+    "more fat"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "He is ___ than her.",
+   "hint": "old",
+   "answer": "older",
+   "options": [
+    "older",
+    "old",
+    "more old"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Her hair is ___ than his hair.",
+   "hint": "long",
+   "answer": "longer",
+   "options": [
+    "longer",
+    "longier",
+    "more long"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "His hands are ___ than his hands.",
+   "hint": "clean",
+   "answer": "cleaner",
+   "options": [
+    "cleaner",
+    "more clean",
+    "more cleaner"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "He is ___ than her.",
+   "hint": "happy",
+   "answer": "happier",
+   "options": [
+    "happier",
+    "happyer",
+    "more happy"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "She is ___ than him.",
+   "hint": "beautiful",
+   "answer": "more beautiful",
+   "options": [
+    "more beautiful",
+    "most beautiful",
+    "max beautiful"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "He is ___ than her.",
+   "hint": "tall",
+   "answer": "taller",
+   "options": [
+    "taller",
+    "tall",
+    "tallest"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "She is ___ than him.",
+   "hint": "thin",
+   "answer": "thinner",
+   "options": [
+    "thinner",
+    "more thin",
+    "thiner"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Her hair is ___ than his hair.",
+   "hint": "short",
+   "answer": "shorter",
+   "options": [
+    "shorter",
+    "more short",
+    "more shorter"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "He is ___ than her.",
+   "hint": "sad",
+   "answer": "sadder",
+   "options": [
+    "sadder",
+    "saddier",
+    "saddest"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "She is ___ than him.",
+   "hint": "weak",
+   "answer": "weaker",
+   "options": [
+    "weaker",
+    "more weaker",
+    "weak"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "He is ___ than her.",
+   "hint": "young",
+   "answer": "younger",
+   "options": [
+    "younger",
+    "young",
+    "more young"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Her bag is ___ than his bag.",
+   "hint": "heavy",
+   "answer": "heavier",
+   "options": [
+    "heavier",
+    "more heavy",
+    "heavyer"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Her homework is ___ than his homework.",
+   "hint": "difficult",
+   "answer": "more difficult",
+   "options": [
+    "more difficult",
+    "difficulter",
+    "difficult"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "A computer is ___ than a book.",
+   "hint": "expensive",
+   "answer": "more expensive",
+   "options": [
+    "more expensive",
+    "expensiver",
+    "more expensiver"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "A plane is ___ than a ship.",
+   "hint": "fast",
+   "answer": "faster",
+   "options": [
+    "faster",
+    "more fast",
+    "more faster"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Computers are ___ than studying.",
+   "hint": "exciting",
+   "answer": "more exciting",
+   "options": [
+    "more exciting",
+    "excitinger",
+    "exciting"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "These dishes are ___ than those dishes.",
+   "hint": "dirty",
+   "answer": "dirtier",
+   "options": [
+    "dirtier",
+    "more dirty",
+    "dirtyer"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "This knife is ___ than that knife.",
+   "hint": "sharp",
+   "answer": "sharper",
+   "options": [
+    "sharper",
+    "more sharp",
+    "most sharp"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "A pencil is ___ than a ring.",
+   "hint": "cheap",
+   "answer": "cheaper",
+   "options": [
+    "cheaper",
+    "cheapest",
+    "cheap"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "The sun is ___ than the moon.",
+   "hint": "bright",
+   "answer": "brighter",
+   "options": [
+    "brighter",
+    "bright",
+    "more bright"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "This window is ___ than that window.",
+   "hint": "clean",
+   "answer": "cleaner",
+   "options": [
+    "cleaner",
+    "more clean",
+    "more cleaner"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "This book is ___ than that book.",
+   "hint": "new",
+   "answer": "newer",
+   "options": [
+    "newer",
+    "more new",
+    "more newer"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "A digger is ___ than a spade.",
+   "hint": "noisy",
+   "answer": "noisier",
+   "options": [
+    "noisier",
+    "noisyer",
+    "more noisier"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "His pizza is ___ than her pizza.",
+   "hint": "good",
+   "answer": "better",
+   "options": [
+    "better",
+    "gooder",
+    "more good"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "A steak is ___ than a sausage.",
+   "hint": "expensive",
+   "answer": "more expensive",
+   "options": [
+    "more expensive",
+    "expensiver",
+    "expensive"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Coffee is ___ than water.",
+   "hint": "hot",
+   "answer": "hotter",
+   "options": [
+    "hotter",
+    "hoter",
+    "more hot"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Pineapples are ___ than oranges.",
+   "hint": "heavy",
+   "answer": "heavier",
+   "options": [
+    "heavier",
+    "heavyer",
+    "more heavy"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "A watermelon is ___ than a pea.",
+   "hint": "big",
+   "answer": "bigger",
+   "options": [
+    "bigger",
+    "more big",
+    "biger"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Vegetables are ___ than fast food.",
+   "hint": "healthy",
+   "answer": "healthier",
+   "options": [
+    "healthier",
+    "healthy",
+    "healthyer"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Cherries are ___ than apples.",
+   "hint": "small",
+   "answer": "smaller",
+   "options": [
+    "smaller",
+    "small",
+    "more small"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Bread is ___ than pie.",
+   "hint": "cheap",
+   "answer": "cheaper",
+   "options": [
+    "cheaper",
+    "more cheaper",
+    "cheapper"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "His milk is ___ than her milk.",
+   "hint": "bad",
+   "answer": "worse",
+   "options": [
+    "worse",
+    "bader",
+    "badder"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "These bananas are ___ than those bananas.",
+   "hint": "ripe",
+   "answer": "riper",
+   "options": [
+    "riper",
+    "more ripe",
+    "more riper"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "This fish is ___ than that fish.",
+   "hint": "light",
+   "answer": "lighter",
+   "options": [
+    "lighter",
+    "more light",
+    "more lighter"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Ice is ___ than water.",
+   "hint": "cold",
+   "answer": "colder",
+   "options": [
+    "colder",
+    "more cold",
+    "more colder"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "This room is ___ than that room.",
+   "hint": "tidy",
+   "answer": "tidier",
+   "options": [
+    "tidier",
+    "more tidy",
+    "tidyer"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "The beach is ___ than the park.",
+   "hint": "sunny",
+   "answer": "sunnier",
+   "options": [
+    "sunnier",
+    "sunnyer",
+    "more sunny"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "This store is ___ than that store.",
+   "hint": "busy",
+   "answer": "busier",
+   "options": [
+    "busier",
+    "busyer",
+    "more busy"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "England is ___ than France.",
+   "hint": "wet",
+   "answer": "wetter",
+   "options": [
+    "wetter",
+    "weter",
+    "more wet"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "The river is ___ than the road.",
+   "hint": "wide",
+   "answer": "wider",
+   "options": [
+    "wider",
+    "widder",
+    "more wide"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "This pool is ___ than that pool.",
+   "hint": "deep",
+   "answer": "deeper",
+   "options": [
+    "deeper",
+    "deepper",
+    "more deep"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "This tunnel is ___ than that tunnel.",
+   "hint": "low",
+   "answer": "lower",
+   "options": [
+    "lower",
+    "more lower",
+    "lowier"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "A library is ___ than a cafe.",
+   "hint": "quiet",
+   "answer": "quieter",
+   "options": [
+    "quieter",
+    "quietier",
+    "more quiet"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "His job is ___ than her job.",
+   "hint": "boring",
+   "answer": "more boring",
+   "options": [
+    "more boring",
+    "boringer",
+    "boring"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "This class is ___ than that class.",
+   "hint": "easy",
+   "answer": "easier",
+   "options": [
+    "easier",
+    "easyer",
+    "more easy"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "This room is ___ than that room.",
+   "hint": "messy",
+   "answer": "messier",
+   "options": [
+    "messier",
+    "more messy",
+    "messyer"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Skyscrapers are ___ than mountains.",
+   "hint": "high",
+   "answer": "higher",
+   "options": [
+    "higher",
+    "more high",
+    "high"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "His T-shirt is ___ than his T-shirt.",
+   "hint": "small",
+   "answer": "smaller",
+   "options": [
+    "smaller",
+    "more small",
+    "smallier"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "This sweater is ___ than that sweater.",
+   "hint": "old",
+   "answer": "older",
+   "options": [
+    "older",
+    "oldder",
+    "more old"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Her coat is ___ than his coat.",
+   "hint": "warm",
+   "answer": "warmer",
+   "options": [
+    "warmer",
+    "more warm",
+    "warmier"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "His shirt is ___ than his shirt.",
+   "hint": "colorful",
+   "answer": "more colorful",
+   "options": [
+    "more colorful",
+    "colorfuler",
+    "more colorfuler"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "His sleeves are ___ than her sleeves.",
+   "hint": "short",
+   "answer": "shorter",
+   "options": [
+    "shorter",
+    "more short",
+    "more shorter"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Her clothes are ___ than her clothes.",
+   "hint": "casual",
+   "answer": "more casual",
+   "options": [
+    "more casual",
+    "casualler",
+    "casualer"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "These jeans are ___ than those jeans.",
+   "hint": "tight",
+   "answer": "tighter",
+   "options": [
+    "tighter",
+    "more tighter",
+    "more tight"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "This jacket is ___ than that jacket.",
+   "hint": "dark",
+   "answer": "darker",
+   "options": [
+    "darker",
+    "darkier",
+    "more dark"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Her skirt is ___ than her skirt.",
+   "hint": "long",
+   "answer": "longer",
+   "options": [
+    "longer",
+    "longger",
+    "more long"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Her sweater is ___ than her sweater.",
+   "hint": "big",
+   "answer": "bigger",
+   "options": [
+    "bigger",
+    "more big",
+    "biggier"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "His outfit is ___ than his outfit.",
+   "hint": "formal",
+   "answer": "more formal",
+   "options": [
+    "more formal",
+    "formaler",
+    "formaller"
+   ]
+  },
+  {
+   "type": "comparative",
+   "prompt": "Her shirt is ___ than his shirt.",
+   "hint": "dry",
+   "answer": "drier",
+   "options": [
+    "drier",
+    "dryer",
+    "more dry"
+   ]
+  }
+ ]
+}

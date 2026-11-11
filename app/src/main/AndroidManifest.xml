@@ -10,6 +10,13 @@
     <!-- 应用内自更新：下载并拉起安装器 -->
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
 
+    <!-- 趣味闯关用系统 TTS 发音；Android 11+ 需声明才能查询到语音引擎 -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+
     <!-- 关闭系统预测返回：Navigation 会提前组合上一页，造成双页叠层 -->
     <application
         android:name=".FeiyanApplication"

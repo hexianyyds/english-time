@@ -15,7 +15,9 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
@@ -136,7 +138,7 @@ fun DisclaimerScreen(
     LibraryListScaffold(
         eyebrow = "DISCLAIMER · 免责声明",
         title = "免责声明",
-        subtitle = "内容来源、使用范围与责任声明",
+        subtitle = "内容来源、素材授权与责任声明",
         action = null,
         onBack = onBack,
         modifier = modifier,
@@ -144,27 +146,32 @@ fun DisclaimerScreen(
         Column(
             Modifier
                 .fillMaxSize()
+                .verticalScroll(rememberScrollState())
                 .padding(bottom = LocalBottomOverlayPadding.current + 32.dp),
         ) {
             DisclaimerBlock(
                 title = "一、内容来源",
-                body = "本应用是个人学习用途的第三方客户端，自身不生产、不存储任何内容。应用内展示的文字、音频、图片、译文等，均来自公开可访问的第三方网站接口，包括但不限于飞岩播客（feiyanpod.com）、EnglishMeasure（englishmeasure.com）、小宇宙（xiaoyuzhoufm.com）、英语小说网（yingyuxiaoshuo.com）、BookYell（bookyell.com）、Englio（englio.ai）、单词森林（wordforest.cn）、爱词吧（word.iciba.com）、背单词365（beidanci365.com）、ENTTS（entts.com）与国际音标发音网站（wxaiway.com/ipa）。所有内容的著作权归原作者与各平台所有。",
+                body = "本应用是个人学习用途的第三方客户端，自身不生产、不存储任何内容。应用内展示的文字、音频、图片、译文等，均来自公开可访问的第三方网站接口，包括但不限于飞岩播客（feiyanpod.com）、EnglishMeasure（englishmeasure.com）、小宇宙（xiaoyuzhoufm.com）、英语小说网（yingyuxiaoshuo.com）、BookYell（bookyell.com）、Englio（englio.ai）、单词森林（wordforest.cn）、爱词吧（word.iciba.com）、背单词365（beidanci365.com）、ENTTS（entts.com）、国际音标发音网站（wxaiway.com/ipa）以及英语学习网站 Games to Learn English（gamestolearnenglish.com）。所有内容的著作权归原作者与各平台所有。",
             )
             DisclaimerBlock(
-                title = "二、使用范围",
-                body = "本应用仅供个人学习、研究与交流使用，不得用于任何商业用途，也不得二次分发、转售或批量抓取内容。若你喜欢某个节目、书籍或文章，请前往对应平台支持创作者。",
+                title = "二、游戏素材",
+                body = "「趣味闯关」中的词卡插画、真人发音与语法题库，取自英语学习网站 Games to Learn English（gamestolearnenglish.com）。这部分素材已随安装包内置，目的是完全离线可用，运行期间不会再向该网站发起请求；这也意味着本应用与该网站不存在任何合作、授权或隶属关系，不代表其立场。素材著作权归该网站及原作者所有，本应用仅在个人非商业学习范围内使用。若原作者或权利人不同意此种使用方式，请通过该网站联系，本应用会在后续版本中立即移除相关素材。",
             )
             DisclaimerBlock(
-                title = "三、接口稳定性",
-                body = "上述接口均为非官方公开接口，可能随时变更、限流或关闭，届时相关功能可能失效。本应用与这些平台没有任何隶属或合作关系，也不代表其立场。",
+                title = "三、使用范围",
+                body = "本应用仅供个人学习、研究与交流使用，不得用于任何商业用途，也不得二次分发、转售或批量抓取内容（含随包内置的游戏素材）。若你喜欢某个节目、书籍或文章，请前往对应平台支持创作者。",
             )
             DisclaimerBlock(
-                title = "四、账号与隐私",
+                title = "四、接口稳定性",
+                body = "上述接口均为非官方公开接口，可能随时变更、限流或关闭，届时相关功能可能失效。游戏模块的素材与题库已经内置，不受接口变动影响。本应用与这些平台没有任何隶属或合作关系，也不代表其立场。",
+            )
+            DisclaimerBlock(
+                title = "五、账号与隐私",
                 body = "你在设置中填写的登录凭证（Cookie / JWT）仅保存在本机，用于向对应站点发起你自己的请求，不会上传到任何自建服务器，也不会被收集。凭证等同账号密码，请勿分享安装包或截图。",
             )
             DisclaimerBlock(
-                title = "五、责任声明",
-                body = "使用本应用产生的任何后果由使用者自行承担。若权利人认为内容侵权，请通过对应平台联系下架；本应用会在收到通知后停止使用相关接口。",
+                title = "六、责任声明",
+                body = "使用本应用产生的任何后果由使用者自行承担。若权利人认为内容侵权，请通过对应平台联系下架；本应用会在收到通知后停止使用相关接口，或移除随包内置的素材。",
             )
 
             Spacer(Modifier.height(12.dp))
@@ -189,7 +196,7 @@ fun AboutAppScreen(
     LibraryListScaffold(
         eyebrow = "ABOUT · 关于",
         title = "关于",
-        subtitle = "英语时光 · 播客 / 小说 / 外刊",
+        subtitle = "英语时光 · 播客 / 小说 / 外刊 / 游戏",
         action = null,
         onBack = onBack,
         modifier = modifier,
@@ -197,6 +204,7 @@ fun AboutAppScreen(
         Column(
             Modifier
                 .fillMaxSize()
+                .verticalScroll(rememberScrollState())
                 .padding(bottom = LocalBottomOverlayPadding.current + 32.dp),
         ) {
             Column(Modifier.padding(horizontal = 24.dp).padding(top = 8.dp)) {

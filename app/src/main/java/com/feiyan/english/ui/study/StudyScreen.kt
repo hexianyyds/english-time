@@ -3,6 +3,7 @@ package com.feiyan.english.ui.study
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -13,6 +14,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.material3.Icon
@@ -37,6 +39,7 @@ import com.feiyan.english.ui.beidanci.BeidanciScreen
 import com.feiyan.english.ui.components.ThemeToggleButton
 import com.feiyan.english.ui.echo.EchoKaoyanHubScreen
 import com.feiyan.english.ui.eg.EgListScreen
+import com.feiyan.english.ui.game.GameHubScreen
 import com.feiyan.english.ui.home.HomeScreen
 import com.feiyan.english.ui.iciba.IcibaScreen
 import com.feiyan.english.ui.icons.FeiyanIcons
@@ -51,6 +54,7 @@ private enum class StudyMode(val label: String) {
     PODCAST("播客"),
     NOVELS("小说"),
     ARTICLES("文章"),
+    GAME("游戏"),
     ECHO("考研"),
     WORDFOREST("词林"),
     ICIBA("词霸"),
@@ -70,6 +74,7 @@ fun StudyScreen(
     onByBookClick: (String) -> Unit,
     onEgArticleClick: (String) -> Unit,
     onByArticleClick: (String, Long) -> Unit,
+    onGamePlayClick: (String) -> Unit,
     onEchoYearClick: (EchoExam, Int) -> Unit,
     onEchoDocumentClick: (String) -> Unit,
     onWfBookClick: (String) -> Unit,
@@ -181,6 +186,8 @@ fun StudyScreen(
                         onByArticleClick = onByArticleClick,
                     )
 
+                    StudyMode.GAME -> GameHubScreen(onGameClick = onGamePlayClick)
+
                     StudyMode.ECHO -> EchoKaoyanHubScreen(
                         onBack = {},
                         onYearClick = onEchoYearClick,
@@ -217,28 +224,33 @@ private fun StudyModeBar(
             .padding(horizontal = 24.dp)
             .clip(RoundedCornerShape(15.dp))
             .background(PaperCard)
-            .border(0.8.dp, MaterialTheme.colorScheme.outlineVariant, RoundedCornerShape(15.dp))
-            .padding(4.dp),
+            .border(0.8.dp, MaterialTheme.colorScheme.outlineVariant, RoundedCornerShape(15.dp)),
     ) {
-        StudyMode.entries.forEach { mode ->
-            val active = mode == selected
-            Box(
-                Modifier
-                    .weight(1f)
-                    .height(44.dp)
-                    .clip(RoundedCornerShape(11.dp))
-                    .background(if (active) Kaki else Color.Transparent)
-                    .selectable(selected = active) { onSelect(mode) },
-                contentAlignment = Alignment.Center,
-            ) {
-                Text(
-                    text = mode.label,
-                    style = MaterialTheme.typography.bodySmall.copy(
-                        fontSize = 12.sp,
-                        fontWeight = if (active) FontWeight.SemiBold else FontWeight.Normal,
-                    ),
-                    color = if (active) MaterialTheme.colorScheme.onPrimary else InkMuted,
-                )
+        Row(
+            Modifier
+                .horizontalScroll(rememberScrollState())
+                .padding(4.dp),
+        ) {
+            StudyMode.entries.forEach { mode ->
+                val active = mode == selected
+                Box(
+                    Modifier
+                        .height(42.dp)
+                        .clip(RoundedCornerShape(11.dp))
+                        .background(if (active) Kaki else Color.Transparent)
+                        .selectable(selected = active) { onSelect(mode) }
+                        .padding(horizontal = 13.dp),
+                    contentAlignment = Alignment.Center,
+                ) {
+                    Text(
+                        text = mode.label,
+                        style = MaterialTheme.typography.bodySmall.copy(
+                            fontSize = 12.sp,
+                            fontWeight = if (active) FontWeight.SemiBold else FontWeight.Normal,
+                        ),
+                        color = if (active) MaterialTheme.colorScheme.onPrimary else InkMuted,
+                    )
+                }
             }
         }
     }
